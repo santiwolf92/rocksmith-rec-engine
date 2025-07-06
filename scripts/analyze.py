@@ -52,7 +52,7 @@ all_spotify = pd.concat([liked_df[['Artist Name(s)', 'Track Name']],
 
 # Merge Last.fm artist data
 artist_priority = lastfm_df[['Artist Name(s)', 'Scrobbles']]
-artist_priority[:, 'Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
+artist_priority['Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
 artist_priority = artist_priority.dropna().sort_values(by='Scrobbles', ascending=False)
 
 # === 4. Cross-Match ===
