@@ -1,0 +1,5 @@
+```yaml
+instrument_focus: lead
+include_bass: true
+exclude_artists:
+  - Paramore
