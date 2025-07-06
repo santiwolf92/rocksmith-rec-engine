@@ -26,22 +26,6 @@ cdlc_df = pd.read_csv(BASE_PATH / 'cdlc_library.csv')
 liked_df = pd.read_csv(BASE_PATH / 'spotify_liked.csv')
 top_df = pd.read_csv(BASE_PATH / 'spotify_top.csv')
 
-def fix_mojibake(text):
-    if isinstance(text, str):
-        try:
-            return text.encode('latin1').decode('utf-8')
-        except UnicodeDecodeError:
-            return text
-    return text
-
-def fix_mojibake(text):
-    if isinstance(text, str):
-        try:
-            return text.encode('latin1').decode('utf-8')
-        except UnicodeDecodeError:
-            return text
-    return text
-
 # Load lastfm data and fix encoding
 lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv', encoding='latin1')
 lastfm_df = lastfm_df.applymap(fix_mojibake)
