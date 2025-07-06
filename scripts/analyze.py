@@ -16,7 +16,7 @@ BASE_PATH = Path(__file__).resolve().parent.parent / 'data'
 cdlc_df = pd.read_csv(BASE_PATH / 'cdlc_library.csv')
 liked_df = pd.read_csv(BASE_PATH / 'spotify_liked.csv')
 top_df = pd.read_csv(BASE_PATH / 'spotify_top.csv')
-lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_artists.csv')
+lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv')
 
 # === 2. Normalize Artist and Track Names ===
 
