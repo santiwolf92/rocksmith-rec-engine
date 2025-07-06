@@ -25,7 +25,7 @@ def normalize(text):
         return ''
     return text.strip().lower().replace('&', 'and')
 
-cdlc_df['Artist Name'] = cdlc_df['Artist Name'].apply(normalize)
+cdlc_df['Artist Name(s)'] = cdlc_df['Artist Name(s)'].apply(normalize)
 cdlc_df['Track Name'] = cdlc_df['Track Name'].apply(normalize)
 
 liked_df['Artist Name(s)'] = liked_df['Artist Name(s)'].apply(normalize)
@@ -34,7 +34,7 @@ liked_df['Track Name'] = liked_df['Track Name'].apply(normalize)
 top_df['Artist Name(s)'] = top_df['Artist Name(s)'].apply(normalize)
 top_df['Track Name'] = top_df['Track Name'].apply(normalize)
 
-lastfm_df['Artist Name'] = lastfm_df['Artist Name'].apply(normalize)
+lastfm_df['Artist Name(s)'] = lastfm_df['Artist Name(s)'].apply(normalize)
 
 # === 3. Build Listening Profile ===
 
@@ -43,7 +43,7 @@ all_spotify = pd.concat([liked_df[['Artist Name(s)', 'Track Name']],
                          top_df[['Artist Name(s)', 'Track Name']]]).drop_duplicates()
 
 # Merge Last.fm artist data
-artist_priority = lastfm_df[['Artist Name', 'Scrobbles']]
+artist_priority = lastfm_df[['Artist Name(s)', 'Scrobbles']]
 artist_priority['Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
 artist_priority = artist_priority.dropna().sort_values(by='Scrobbles', ascending=False)
 
@@ -53,7 +53,7 @@ artist_priority = artist_priority.dropna().sort_values(by='Scrobbles', ascending
 merged = pd.merge(all_spotify,
                   cdlc_df,
                   left_on=['Artist Name(s)', 'Track Name'],
-                  right_on=['Artist Name', 'Track Name'],
+                  right_on=['Artist Name(s)', 'Track Name'],
                   how='left',
                   indicator=True)
 
@@ -62,7 +62,7 @@ missing_songs = merged[merged['_merge'] == 'left_only'][['Artist Name(s)', 'Trac
 # Tag artist priority (from Last.fm)
 missing_songs = missing_songs.merge(artist_priority,
                                     left_on='Artist Name(s)',
-                                    right_on='Artist Name',
+                                    right_on='Artist Name(s)',
                                     how='left')
 
 # === 5. Output Recommendation Preview ===
