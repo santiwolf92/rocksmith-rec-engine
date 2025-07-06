@@ -26,19 +26,21 @@ cdlc_df = pd.read_csv(BASE_PATH / 'cdlc_library.csv')
 liked_df = pd.read_csv(BASE_PATH / 'spotify_liked.csv')
 top_df = pd.read_csv(BASE_PATH / 'spotify_top.csv')
 
-# Try all combinations to decode last.fm properly
-with open(BASE_PATH / 'lastfm_top_artists.csv', 'rb') as f:
-    raw = f.read()
+def fix_mojibake(text):
+    if isinstance(text, str):
+        try:
+            return text.encode('latin1').decode('utf-8')
+        except UnicodeDecodeError:
+            return text
+    return text
 
-for enc in ['utf-8', 'latin1', 'cp1252']:
-    try:
-        decoded = raw.decode(enc)
-        break
-    except UnicodeDecodeError:
-        continue
+# Try reading with fallback encodings
+try:
+    lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv')
+except UnicodeDecodeError:
+    lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv', encoding='latin1')
 
-from io import StringIO
-lastfm_df = pd.read_csv(StringIO(decoded))
+# Fix encoding issues in artist names
 lastfm_df = lastfm_df.applymap(fix_mojibake)
 # === 2. Normalize Artist and Track Names ===
 
