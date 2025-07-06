@@ -5,21 +5,21 @@ This project cross-references your **Rocksmith CDLC library** with your **listen
 ---
 
 ## 📁 Project Structure
-rocksmith-rec-engine/
-├── data/
-│   ├── cdlc_library.csv               # Your existing Rocksmith CDLCs
-│   ├── spotify_liked.csv              # Liked songs from Spotify
-│   ├── spotify_top.csv                # Top songs by year (2018–2024)
-│   ├── lastfm_artists.csv             # Most-played artists from Last.fm
-│   ├── playlists/                     # Manually curated Spotify playlists
-│   │   ├── 1000_de_aspen.csv
-│   │   └── hay_algo_ahi_musica.csv
-│   └── recommendations/              # Recommendation outputs
-│       └── recommendations.csv
-├── scripts/                           # Python scripts for analysis (coming soon)
-│   └── analyze.py
-├── .gitignore                         # Standard ignore rules
-└── README.md                          # This file
+
+- `data/`
+  - `cdlc_library.csv` – Your existing Rocksmith CDLCs
+  - `spotify_liked.csv` – Liked songs from Spotify
+  - `spotify_top.csv` – Top songs by year (2018–2024)
+  - `lastfm_artists.csv` – Most-played artists from Last.fm
+  - `playlists/`
+    - `1000_de_aspen.csv`
+    - `hay_algo_ahi_musica.csv`
+  - `recommendations/`
+    - `recommendations.csv`
+- `scripts/`
+  - `analyze.py` *(coming soon)*
+- `.gitignore`
+- `README.md` – This file
 ---
 
 ## 📊 Data Sources
