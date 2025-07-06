@@ -17,14 +17,15 @@ cdlc_df = pd.read_csv(BASE_PATH / 'cdlc_library.csv')
 liked_df = pd.read_csv(BASE_PATH / 'spotify_liked.csv')
 top_df = pd.read_csv(BASE_PATH / 'spotify_top.csv')
 lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv', encoding='latin1')
-def fix_encoding(text):
+lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv')
+
+# === Fix encoding issues for artist names ===
+def fix_mojibake(text):
     if isinstance(text, str):
-        return text.encode('latin1').decode('utf-8')
+        return text.encode('cp1252').decode('utf-8', errors='replace')
     return text
 
-# Fix all string columns in the lastfm dataframe
-lastfm_df = lastfm_df.applymap(fix_encoding)
-
+lastfm_df = lastfm_df.applymap(fix_mojibake)
 # === 2. Normalize Artist and Track Names ===
 
 def normalize(text):
@@ -51,7 +52,7 @@ all_spotify = pd.concat([liked_df[['Artist Name(s)', 'Track Name']],
 
 # Merge Last.fm artist data
 artist_priority = lastfm_df[['Artist Name(s)', 'Scrobbles']]
-artist_priority['Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
+artist_priority[:, 'Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
 artist_priority = artist_priority.dropna().sort_values(by='Scrobbles', ascending=False)
 
 # === 4. Cross-Match ===
