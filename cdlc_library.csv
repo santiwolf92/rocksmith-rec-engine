@@ -1,5 +1,5 @@
-artist,song,file_name
-ACDC,If You Want Blood (You Got It),﻿AC-DC_If-You-Want-Blood-(You-Got-It_v3_5_DD_p.psarc
+artist_name,track_name,file_name
+ACDC,If You Want Blood (You Got It),AC-DC_If-You-Want-Blood-(You-Got-It_v3_5_DD_p.psarc
 ACDC,Jailbreak,AC-DC_Jailbreak_v1_0_p.psarc
 ACDC,Rock 'n' Roll Singer,AC-DC_Rock-'n'-Roll-Singer_v4_0_DD_p.psarc
 ACDC,You shook me all night long,AC-DC_You-shook-me-all-night-long_v1_DD_p.psarc
@@ -575,7 +575,7 @@ Simple Plan,Perfect World,Simple-Plan_Perfect-World_v1_p.psarc
 Simple Plan,Perfect,Simple-Plan_Perfect_v1_DD_p.psarc
 Simple Plan,Shut Up,Simple-Plan_Shut-Up_v1_p.psarc
 Simple Plan,Welcome to my Life,Simple-Plan_Welcome-to-my-Life_v1_DD_p.psarc
-Simple Plan,Jump,Simple_Plan_Jump_v1,2_p.psarc
+Simple Plan,Jump,"Simple_Plan_Jump_v1,2_p.psarc"
 Slash feat Myles Kennedy And The Conspirators,Bent To Fly,Slash-feat-Myles-Kennedy-And-The-Conspirators_Bent-To-Fly_v1_2_DD_p.psarc
 Slash featuring Myles Kennedy and The Conspirators,No More Heroes,Slash-featuring-Myles-Kennedy-and-The-Conspirators_No-More-Heroes_v1_p.psarc
 Slash featuring Myles Kennedy and The Conspirators,Stone Blind,Slash-featuring-Myles-Kennedy-and-The-Conspirators_Stone-Blind_v1_p.psarc
@@ -641,8 +641,8 @@ Taylor Swift,Cruel Summer,Taylor-Swift_Cruel-Summer_v1_p.psarc
 Taylor Swift,Shake It Off,Taylor-Swift_Shake-It-Off_v_p.psarc
 Taylor Swift,Style ,Taylor-Swift_Style-Djpavs_v1_p.psarc
 Taylor Swift,You Belong With Me,Taylor-Swift_You-Belong-With-Me_v1_p.psarc
-The Beatles,It Won't Be Long,Beatles,-The_It-Won't-Be-Long_v1_1_p.psarc
-The Beatles,Oh! Darling,Beatles,-The_Oh!-Darling_v1_1_p.psarc
+The Beatles,It Won't Be Long,"Beatles,-The_It-Won't-Be-Long_v1_1_p.psarc"
+The Beatles,Oh! Darling,"Beatles,-The_Oh!-Darling_v1_1_p.psarc"
 The Beatles,All My Loving,Beatles-The_All-My-Loving_v3_5_DD_p.psarc
 The Beatles,And I Love Her,Beatles-The_And-I-Love-Her_v3_p.psarc
 The Beatles,Baby's In Black,Beatles-The_Baby's-In-Black_v1_p.psarc
@@ -814,5 +814,7 @@ ZZ Top,La Grange,ZZ-Top_La-Grange_v2_DD_p.psarc
 ZZ Top,Legs   LP Version,ZZ-Top_Legs---LP-Version_v5_0_p.psarc
 ZZ Top,Sharp Dressed Man,ZZ-Top_Sharp-Dressed-Man_v1_DD_p.psarc
 ZZ Top,Tush,ZZ-Top_Tush_v6_5_p.psarc
+ZZ Top,TV Dinners,ZZ-Top_TV-Dinners_v3_5_p.psarc
+ZZ Top,Waitin' For The Bus,ZZ-Top_Waitin'-For-The-Bus_v4_0_DD_p.psarc
 ZZ Top,TV Dinners,ZZ-Top_TV-Dinners_v3_5_p.psarc
 ZZ Top,Waitin' For The Bus,ZZ-Top_Waitin'-For-The-Bus_v4_0_DD_p.psarc
