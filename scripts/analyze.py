@@ -9,6 +9,15 @@ and outputs high-priority song and artist recommendations.
 import pandas as pd
 from pathlib import Path
 
+# Fix encoding issues from misinterpreted text
+def fix_mojibake(text):
+    if isinstance(text, str):
+        try:
+            return text.encode('latin1').decode('utf-8')
+        except UnicodeDecodeError:
+            return text
+    return text
+
 # === 1. Load Your Data ===
 
 BASE_PATH = Path(__file__).resolve().parent.parent / 'data'
@@ -16,15 +25,9 @@ BASE_PATH = Path(__file__).resolve().parent.parent / 'data'
 cdlc_df = pd.read_csv(BASE_PATH / 'cdlc_library.csv')
 liked_df = pd.read_csv(BASE_PATH / 'spotify_liked.csv')
 top_df = pd.read_csv(BASE_PATH / 'spotify_top.csv')
+
+# Load and clean last.fm artist data
 lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv', encoding='latin1')
-lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv')
-
-# === Fix encoding issues for artist names ===
-def fix_mojibake(text):
-    if isinstance(text, str):
-        return text.encode('cp1252').decode('utf-8', errors='replace')
-    return text
-
 lastfm_df = lastfm_df.applymap(fix_mojibake)
 # === 2. Normalize Artist and Track Names ===
 
