@@ -34,13 +34,16 @@ def fix_mojibake(text):
             return text
     return text
 
-# Try reading with fallback encodings
-try:
-    lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv')
-except UnicodeDecodeError:
-    lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv', encoding='latin1')
+def fix_mojibake(text):
+    if isinstance(text, str):
+        try:
+            return text.encode('latin1').decode('utf-8')
+        except UnicodeDecodeError:
+            return text
+    return text
 
-# Fix encoding issues in artist names
+# Load lastfm data and fix encoding
+lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv', encoding='latin1')
 lastfm_df = lastfm_df.applymap(fix_mojibake)
 # === 2. Normalize Artist and Track Names ===
 
