@@ -24,9 +24,12 @@ def load_reference_titles():
 
 # === NORMALIZATION ===
 def normalize_filename(filename):
+    # Strip trailing _p.psarc for clean matching
+    filename = re.sub(r'_p\.psarc$', '', filename, flags=re.IGNORECASE)
     name = re.sub(r'\[.*?\]|\(.*?\)|RS2014|v\d+|PART_REAL_GUITAR|_vocals|_lead|_rhythm|\.psarc', '', filename, flags=re.IGNORECASE)
     name = re.sub(r'[_\.]+', ' ', name)
     return name.strip().title()
+
 
 def clean_string(s):
     import string
@@ -66,20 +69,18 @@ def normalize_cdlc():
                 normalized_name = normalize_filename(filename)
                 match = best_match(normalized_name, reference_titles)
 
-                if match:
-                    safe_match = re.sub(r'[\\/:*?"<>|]', '-', match)
-                    new_filename = f"{safe_match}_p.psarc"
-                    new_path = os.path.join(root, new_filename)
+if match:
+    safe_match = re.sub(r'[\/:*?"<>|]', '-', match)
+    if not safe_match.lower().endswith('_p'):
+        safe_match += '_p'
+    new_filename = f"{safe_match}.psarc"
+    new_path = os.path.join(root, new_filename)
 
-                    if not os.path.exists(new_path):
-                        os.rename(original_path, new_path)
-                        log_entries.append(["RENAMED", original_path, new_path])
-                    else:
-                        log_entries.append(["SKIPPED (duplicate)", original_path, new_path])
-                else:
-                    unmatched_path = os.path.join(UNMATCHED_FOLDER, filename)
-                    shutil.move(original_path, unmatched_path)
-                    log_entries.append(["UNMATCHED", original_path, unmatched_path])
+    if not os.path.exists(new_path):
+        os.rename(original_path, new_path)
+        log_entries.append(["RENAMED", original_path, new_path])
+    else:
+        log_entries.append(["SKIPPED (duplicate)", original_path, new_path])
 
     df_log = pd.DataFrame(log_entries, columns=["Status", "Original Path", "New Path"])
     df_log.to_csv(LOG_PATH, index=False, encoding="utf-8")
