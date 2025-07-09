@@ -32,10 +32,14 @@ lastfm_df = lastfm_df.applymap(fix_mojibake)
 
 # === 2. Normalize Artist and Track Names ===
 
+import re
+
 def normalize(text):
     if not isinstance(text, str):
         return ''
-    return text.strip().lower().replace('&', 'and')
+    text = text.lower()
+    text = text.replace('&', 'and')  # Optional: handle common alias
+    return re.sub(r'[^a-z0-9]', '', text)
 
 cdlc_df['Artist Name(s)'] = cdlc_df['Artist Name(s)'].apply(normalize)
 cdlc_df['Track Name'] = cdlc_df['Track Name'].apply(normalize)
