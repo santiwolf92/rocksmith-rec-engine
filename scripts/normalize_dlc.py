@@ -28,7 +28,10 @@ def normalize_filename(filename):
     return name.strip().title()
 
 def best_match(name, reference_titles):
-    match, score = process.extractOne(name, reference_titles, scorer=fuzz.token_sort_ratio)
+    result = process.extractOne(name, reference_titles, scorer=fuzz.token_sort_ratio)
+    if result is None:
+        return None
+    match, score = result
     return match if score >= 80 else None
 
 # === MAIN LOGIC ===
