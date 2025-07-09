@@ -71,4 +71,3 @@ def normalize_cdlc():
 if __name__ == "__main__":
     normalize_cdlc()
 
-
