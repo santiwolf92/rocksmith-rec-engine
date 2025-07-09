@@ -28,12 +28,22 @@ def normalize_filename(filename):
     name = re.sub(r'[_\.]+', ' ', name)
     return name.strip().title()
 
+def clean_string(s):
+    import string
+    s = s.lower()
+    s = s.translate(str.maketrans('', '', string.punctuation))
+    s = re.sub(r'\s+', ' ', s)
+    return s.strip()
+
 def best_match(name, reference_titles):
-    result = process.extractOne(name, reference_titles, scorer=fuzz.token_sort_ratio)
+    cleaned_reference = {clean_string(t): t for t in reference_titles}
+    cleaned_input = clean_string(name)
+    result = process.extractOne(cleaned_input, list(cleaned_reference.keys()), scorer=fuzz.token_sort_ratio)
     if result is None:
         return None
-    match, score = result
-    return match if score >= 80 else None
+    match_key, score = result
+    return cleaned_reference[match_key] if score >= 80 else None
+
 
 # === MAIN LOGIC ===
 def normalize_cdlc():
