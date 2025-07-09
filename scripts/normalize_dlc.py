@@ -37,10 +37,11 @@ def load_reference_titles():
             for artist, track in zip(df['artist'], df['track']):
                 full_title = f"{artist.strip()} - {track.strip()}"
 
-                # Remove fluff from track name
-                full_title = re.sub(r'(?i)\s*\((remastered|deluxe|explicit|version.*?)\)', '', full_title)
-                full_title = re.sub(r'(?i)\s*-\s*(remastered|deluxe|explicit|version.*?)$', '', full_title)
+                # Strip fluff like "remastered 2011", "version 2", etc.
+                full_title = re.sub(r'(?i)\s*\((.*?)\)', '', full_title)
+                full_title = re.sub(r'(?i)\s*-\s*(remastered|deluxe|explicit|version.*)$', '', full_title)
                 full_title = full_title.strip()
+
 
                 titles.add(full_title)
 
@@ -57,12 +58,13 @@ def load_reference_titles():
 def normalize_filename(filename):
     base = re.sub(r'_p\.psarc$', '', filename, flags=re.IGNORECASE)
 
-    # Remove version tags and suffixes like v1, v1.2, RS2014, remastered, etc.
+    # Remove version suffixes like v1, v1.2, RS2014, remastered, etc.
     base = re.sub(
-        r'(?i)(\bv\d+(\.\d+)*\b|RS2014|DD|remastered|deluxe|explicit|lead|rhythm|combo|alt\d*|part\d+)',
-        '',
-        base
+    r'(?i)(\bv\d+(\.\d+)*\b|rs2014|remastered|deluxe|explicit|version|lead|rhythm|combo|alt\d*|part\d+)',
+    '',
+    base
     )
+
 
     # Replace separators with space
     base = re.sub(r'[-_.]+', ' ', base)
