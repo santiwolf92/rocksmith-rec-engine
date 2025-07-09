@@ -38,12 +38,12 @@ def load_reference_titles():
                 full_title = f"{artist.strip()} - {track.strip()}"
 
                 # Remove parenthetical fluff like "(Remastered 2011)", "(Deluxe Edition)", etc.
-                full_title = re.sub(r'\s*\(([^)]*\b(remaster(ed)?|deluxe|explicit|version)[^)]*)\)', '', full_title, flags=re.IGNORECASE)
+                full_title = re.sub(r'\s*\([^)]*(remaster(ed)?|deluxe|explicit|version)[^)]*\)', '', full_title, flags=re.IGNORECASE)
 
-                # Remove trailing stuff like " - Remastered", " - Deluxe Version", etc.
-                full_title = re.sub(r'\s*[-–—]\s*\b(remaster(ed)?|deluxe|explicit|version.*)$', '', full_title, flags=re.IGNORECASE)
+                # Remove dash-separated suffixes like " - Remastered 2011", " - Deluxe Version", etc.
+                full_title = re.sub(r'\s*-\s*(Remaster(ed)?(?:\s+\d{4})?|Deluxe(?:\s+Edition)?|Explicit|Version(?:\s+\d+\.\d+)?)$', '', full_title, flags=re.IGNORECASE)
 
-                # Clean double spaces
+                # Clean up multiple spaces
                 full_title = re.sub(r'\s+', ' ', full_title).strip()
 
 
