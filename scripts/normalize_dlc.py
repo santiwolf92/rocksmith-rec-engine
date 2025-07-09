@@ -36,7 +36,14 @@ def load_reference_titles():
 
             for artist, track in zip(df['artist'], df['track']):
                 full_title = f"{artist.strip()} - {track.strip()}"
+
+                # Remove fluff from track name
+                full_title = re.sub(r'(?i)\s*\((remastered|deluxe|explicit|version.*?)\)', '', full_title)
+                full_title = re.sub(r'(?i)\s*-\s*(remastered|deluxe|explicit|version.*?)$', '', full_title)
+                full_title = full_title.strip()
+
                 titles.add(full_title)
+
         else:
             print(f" → NOT FOUND: {path}")
 
@@ -59,6 +66,12 @@ def normalize_filename(filename):
 
     # Replace separators with space
     base = re.sub(r'[-_.]+', ' ', base)
+
+    # Remove known junk words
+    base = re.sub(r'(?i)\b(rs2014|remastered|deluxe|explicit|v\d+(\.\d+)*|psarc)\b', '', base)
+
+    # Collapse multiple spaces
+    base = re.sub(r'\s+', ' ', base)
 
     return base.strip().title()
 
