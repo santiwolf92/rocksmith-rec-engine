@@ -24,6 +24,11 @@ def load_reference_titles():
 
             for artist, track in zip(df['artist'], df['track']):
                 titles.add(f"{artist.strip()} - {track.strip()}")
+                
+print("Loaded reference titles:")
+for title in sorted(titles):
+    print("-", title)
+
 
     return titles
 
