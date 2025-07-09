@@ -12,25 +12,32 @@ def load_reference_titles():
     sources = ["data/lastfm_history.csv", "data/spotify_liked.csv"]
     titles = set()
     for path in sources:
+        print(f"Checking: {path}")
         if os.path.exists(path):
+            print(f" → Found: {path}")
             df = pd.read_csv(path)
+            print(f" → Columns: {list(df.columns)}")
 
             if 'Artist Name(s)' in df.columns and 'Track Name' in df.columns:
                 df = df.rename(columns={'Artist Name(s)': 'artist', 'Track Name': 'track'})
             elif 'artist_name' in df.columns and 'track_name' in df.columns:
                 df = df.rename(columns={'artist_name': 'artist', 'track_name': 'track'})
             else:
-                continue  # skip unknown format
+                print(" → Column names did not match expected formats.")
+                continue
+
+            print(f" → Rows loaded: {len(df)}")
 
             for artist, track in zip(df['artist'], df['track']):
                 full_title = f"{artist.strip()} - {track.strip()}"
                 titles.add(full_title)
 
-    print("Loaded reference titles:")
-    for title in sorted(titles):
+    print(f"\nLoaded {len(titles)} reference titles:")
+    for title in sorted(titles)[:20]:  # Only show first 20 to avoid clutter
         print("-", title)
 
     return titles
+
 
 # === FILENAME NORMALIZATION ===
 def normalize_filename(filename):
