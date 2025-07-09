@@ -29,7 +29,7 @@ top_df = pd.read_csv(BASE_PATH / 'spotify_top.csv')
 
 # Load lastfm data and fix encoding
 lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv')
-lastfm_df = lastfm_df.applymap(fix_mojibake)
+lastfm_df = lastfm_df.apply(lambda col: col.map(fix_mojibake))
 
 # === 2. Normalize Artist and Track Names ===
 
@@ -61,27 +61,31 @@ all_spotify = pd.concat([
 
 # Merge Last.fm artist data
 artist_priority = lastfm_df[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']]
-artist_priority['Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
+artist_priority.loc[:, 'Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
 artist_priority = artist_priority.dropna().sort_values(by='Scrobbles', ascending=False)
 
 # === 4. Cross-Match ===
 
-# Which favorite Spotify songs are missing in your CDLCs?
-merged = pd.merge(all_spotify,
-                  cdlc_df,
-                  on=['Artist Normalized', 'Track Normalized'],
-                  how='left',
-                  indicator=True)
+# Merge normalized keys only to preserve original Spotify data
+merged = pd.merge(
+    all_spotify,
+    cdlc_df[['Artist Normalized', 'Track Normalized']],
+    on=['Artist Normalized', 'Track Normalized'],
+    how='left',
+    indicator=True
+)
 
 missing_songs = merged[merged['_merge'] == 'left_only'][[
     'Artist Name(s)', 'Track Name', 'Artist Normalized'
 ]].drop_duplicates()
 
 # Tag artist priority (from Last.fm)
-missing_songs = missing_songs.merge(artist_priority[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']],
-                                    on='Artist Normalized',
-                                    how='left',
-                                    suffixes=('', '_LastFM'))
+missing_songs = missing_songs.merge(
+    artist_priority[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']],
+    on='Artist Normalized',
+    how='left',
+    suffixes=('', '_LastFM')
+)
 
 # === 5. Output Recommendation Preview ===
 
@@ -97,6 +101,10 @@ for _, row in top_recommendations.iterrows():
 # Save CSV
 output_dir = BASE_PATH / 'recommendations'
 output_dir.mkdir(exist_ok=True)
-top_recommendations[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(output_dir / 'recommendations.csv', index=False)
+top_recommendations[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(
+    output_dir / 'recommendations.csv',
+    index=False
+)
 
 print("\n✅ Saved to data/recommendations/recommendations.csv")
+
