@@ -68,7 +68,7 @@ def normalize_cdlc():
 
                 if match:
                     safe_match = re.sub(r'[\\/:*?"<>|]', '-', match)
-                    new_filename = f"{safe_match}.psarc"
+                    new_filename = f"{safe_match}_p.psarc"
                     new_path = os.path.join(root, new_filename)
 
                     if not os.path.exists(new_path):
