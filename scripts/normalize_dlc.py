@@ -37,25 +37,26 @@ def normalize_cdlc():
     reference_titles = load_reference_titles()
     log_entries = []
 
-    for filename in os.listdir(CDLC_FOLDER):
-        if filename.lower().endswith(".psarc"):
-            original_path = os.path.join(CDLC_FOLDER, filename)
-            normalized_name = normalize_filename(filename)
-            match = best_match(normalized_name, reference_titles)
+    for root, _, files in os.walk(CDLC_FOLDER):
+        for filename in files:
+            if filename.lower().endswith(".psarc"):
+                original_path = os.path.join(root, filename)
+                normalized_name = normalize_filename(filename)
+                match = best_match(normalized_name, reference_titles)
 
-            if match:
-                new_filename = f"{match}.psarc"
-                new_path = os.path.join(CDLC_FOLDER, new_filename)
+                if match:
+                    new_filename = f"{match}.psarc"
+                    new_path = os.path.join(root, new_filename)
 
-                if not os.path.exists(new_path):
-                    os.rename(original_path, new_path)
-                    log_entries.append(f"RENAMED: {filename} -> {new_filename}")
+                    if not os.path.exists(new_path):
+                        os.rename(original_path, new_path)
+                        log_entries.append(f"RENAMED: {original_path} -> {new_path}")
+                    else:
+                        log_entries.append(f"SKIPPED (duplicate): {original_path} -> {new_path}")
                 else:
-                    log_entries.append(f"SKIPPED (duplicate): {filename} -> {new_filename}")
-            else:
-                unmatched_path = os.path.join(UNMATCHED_FOLDER, filename)
-                shutil.move(original_path, unmatched_path)
-                log_entries.append(f"UNMATCHED: {filename} -> moved to unmatched")
+                    unmatched_path = os.path.join(UNMATCHED_FOLDER, filename)
+                    shutil.move(original_path, unmatched_path)
+                    log_entries.append(f"UNMATCHED: {original_path} -> moved to unmatched")
 
     with open(LOG_PATH, "w", encoding="utf-8") as log_file:
         log_file.write("\n".join(log_entries))
@@ -64,3 +65,4 @@ def normalize_cdlc():
 
 if __name__ == "__main__":
     normalize_cdlc()
+
