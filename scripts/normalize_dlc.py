@@ -14,10 +14,17 @@ def load_reference_titles():
     for path in sources:
         if os.path.exists(path):
             df = pd.read_csv(path)
+
             if 'Artist Name(s)' in df.columns and 'Track Name' in df.columns:
                 df = df.rename(columns={'Artist Name(s)': 'artist', 'Track Name': 'track'})
-                for artist, track in zip(df['artist'], df['track']):
-                    titles.add(f"{artist.strip()} - {track.strip()}")
+            elif 'artist_name' in df.columns and 'track_name' in df.columns:
+                df = df.rename(columns={'artist_name': 'artist', 'track_name': 'track'})
+            else:
+                continue  # skip unknown format
+
+            for artist, track in zip(df['artist'], df['track']):
+                titles.add(f"{artist.strip()} - {track.strip()}")
+
     return titles
 
 # === FILENAME NORMALIZATION ===
