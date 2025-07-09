@@ -10,7 +10,9 @@ dummy_filenames = [
     "Queen_Bohemian-Rhapsody_v1_lead.psarc",
     "Led.Zeppelin-Stairway_To_Heaven_alt1_p.psarc",
     "Arctic_Monkeys-Do_I_Wanna_Know_v3.1_combo.psarc",
+    "RadioheadLuckyv1.0RS2014.psarc",
     "Radiohead-Idioteque_v1.0_RS2014.psarc",
+
 ]
 
 for name in dummy_filenames:
