@@ -23,12 +23,12 @@ def load_reference_titles():
                 continue  # skip unknown format
 
             for artist, track in zip(df['artist'], df['track']):
-                titles.add(f"{artist.strip()} - {track.strip()}")
-                
-print("Loaded reference titles:")
-for title in sorted(titles):
-    print("-", title)
+                full_title = f"{artist.strip()} - {track.strip()}"
+                titles.add(full_title)
 
+    print("Loaded reference titles:")
+    for title in sorted(titles):
+        print("-", title)
 
     return titles
 
