@@ -49,7 +49,8 @@ def normalize_cdlc():
                 match = best_match(normalized_name, reference_titles)
 
                 if match:
-                    new_filename = f"{match}.psarc"
+                    safe_match = re.sub(r'[\/:*?\"<>|]', '-', match)
+                    new_filename = f"{safe_match}.psarc"
                     new_path = os.path.join(root, new_filename)
 
                     if not os.path.exists(new_path):
@@ -69,4 +70,5 @@ def normalize_cdlc():
 
 if __name__ == "__main__":
     normalize_cdlc()
+
 
