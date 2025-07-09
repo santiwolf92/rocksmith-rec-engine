@@ -50,8 +50,12 @@ def load_reference_titles():
 def normalize_filename(filename):
     base = re.sub(r'_p\.psarc$', '', filename, flags=re.IGNORECASE)
 
-    # Remove common suffixes: v1, v2.1, DD, RS, etc.
-    base = re.sub(r'(\bv\d+(\.\d+)?\b|_?DD\b|_?RS\b|_?lead|_?rhythm|_?combo|_?alt\d*|_?part\d+)', '', base, flags=re.IGNORECASE)
+    # Remove version tags and suffixes like v1, v1.2, RS2014, remastered, etc.
+    base = re.sub(
+        r'(?i)(\bv\d+(\.\d+)*\b|RS2014|DD|remastered|deluxe|explicit|lead|rhythm|combo|alt\d*|part\d+)',
+        '',
+        base
+    )
 
     # Replace separators with space
     base = re.sub(r'[-_.]+', ' ', base)
