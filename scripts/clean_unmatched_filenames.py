@@ -2,7 +2,7 @@ import os
 import re
 
 # === SETTINGS ===
-CDLC_FOLDER = r"C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc"
+CDLC_FOLDER = r"C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\01_CDLC Normalizer"
 UNMATCHED_FOLDER = os.path.join(CDLC_FOLDER, "unmatched")
 
 # Regex to remove common suffixes like _v1, _DD, _RS, etc.
