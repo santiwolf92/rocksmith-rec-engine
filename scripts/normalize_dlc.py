@@ -37,13 +37,13 @@ def load_reference_titles():
             for artist, track in zip(df['artist'], df['track']):
                 full_title = f"{artist.strip()} - {track.strip()}"
 
-                # Remove anything inside parentheses like "(Remastered 2011)"
-                full_title = re.sub(r'\s*\([^)]*(remaster|version|deluxe|explicit)[^)]*\)', '', full_title, flags=re.IGNORECASE)
+                # Remove parenthetical fluff like "(Remastered 2011)", "(Deluxe Edition)", etc.
+                full_title = re.sub(r'\s*\(([^)]*\b(remaster(ed)?|deluxe|explicit|version)[^)]*)\)', '', full_title, flags=re.IGNORECASE)
 
-                # Remove standalone suffixes like " - Remastered 2011", " - Deluxe Version", etc.
-                full_title = re.sub(r'\s*-\s*(remaster(ed)?|deluxe|explicit|version.*)$', '', full_title, flags=re.IGNORECASE)
+                # Remove trailing stuff like " - Remastered", " - Deluxe Version", etc.
+                full_title = re.sub(r'\s*[-–—]\s*\b(remaster(ed)?|deluxe|explicit|version.*)$', '', full_title, flags=re.IGNORECASE)
 
-                # Clean double spaces and trailing punctuation
+                # Clean double spaces
                 full_title = re.sub(r'\s+', ' ', full_title).strip()
 
 
