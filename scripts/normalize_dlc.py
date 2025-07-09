@@ -4,7 +4,7 @@ import pandas as pd
 from fuzzywuzzy import process, fuzz
 
 # === PATHS ===
-UNMATCHED_FOLDER = r"C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched"
+UNMATCHED_FOLDER = r"C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\01_CDLC Normalizer\unmatched"
 LOG_PATH = os.path.join(UNMATCHED_FOLDER, "rename_log.csv")
 
 # === LOAD LISTENING HISTORY ===
