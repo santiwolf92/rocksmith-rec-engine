@@ -4,14 +4,20 @@ import pandas as pd
 from fuzzywuzzy import process, fuzz
 
 # === PATHS ===
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_FOLDER = os.path.join(PROJECT_ROOT, "data")
 UNMATCHED_FOLDER = r"C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\01_CDLC Normalizer\unmatched"
 LOG_PATH = os.path.join(UNMATCHED_FOLDER, "rename_log.csv")
 
+HISTORY_FILES = [
+    os.path.join(DATA_FOLDER, "lastfm_history.csv"),
+    os.path.join(DATA_FOLDER, "spotify_liked.csv"),
+]
+
 # === LOAD LISTENING HISTORY ===
 def load_reference_titles():
-    sources = ["data/lastfm_history.csv", "data/spotify_liked.csv"]
     titles = set()
-    for path in sources:
+    for path in HISTORY_FILES:
         print(f"Checking: {path}")
         if os.path.exists(path):
             print(f" → Found: {path}")
@@ -31,13 +37,14 @@ def load_reference_titles():
             for artist, track in zip(df['artist'], df['track']):
                 full_title = f"{artist.strip()} - {track.strip()}"
                 titles.add(full_title)
+        else:
+            print(f" → NOT FOUND: {path}")
 
     print(f"\nLoaded {len(titles)} reference titles:")
-    for title in sorted(titles)[:20]:  # Only show first 20 to avoid clutter
+    for title in sorted(titles)[:20]:  # Print first 20
         print("-", title)
 
     return titles
-
 
 # === FILENAME NORMALIZATION ===
 def normalize_filename(filename):
@@ -67,6 +74,7 @@ def best_match(name, reference_titles):
     if result is None:
         return None
     match_key, score = result
+    print(f" → Matching '{cleaned_input}' to '{match_key}' (score: {score})")
     return cleaned_reference[match_key] if score >= 80 else None
 
 # === MAIN SCRIPT ===
@@ -80,6 +88,7 @@ def normalize_unmatched():
 
         original_path = os.path.join(UNMATCHED_FOLDER, filename)
         normalized_name = normalize_filename(filename)
+        print(f"\nProcessing: {filename} → {normalized_name}")
         match = best_match(normalized_name, reference_titles)
 
         if match:
@@ -102,8 +111,9 @@ def normalize_unmatched():
     # Save log
     df_log = pd.DataFrame(log_entries, columns=["Status", "Original Filename", "New Filename"])
     df_log.to_csv(LOG_PATH, index=False, encoding="utf-8")
-    print(f"Done. Log saved to: {LOG_PATH}")
+    print(f"\nDone. Log saved to: {LOG_PATH}")
 
 if __name__ == "__main__":
     normalize_unmatched()
+
 
