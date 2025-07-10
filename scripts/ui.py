@@ -12,8 +12,14 @@ if "recs" not in st.session_state:
     if st.button("🎯 Generate Recommendations"):
         with st.spinner("Crunching data..."):
             recs = generate_recommendations(save=False)
+
+            st.write("🔍 Raw Data Preview:", recs.head(10))
+            st.write("🔢 Column Types:", recs.dtypes)
+            st.write("📊 Scrobbles Stats:", recs['Scrobbles'].describe())
+
             recs['Scrobbles'] = pd.to_numeric(recs['Scrobbles'], errors='coerce').fillna(0).astype(int)
             st.session_state.recs = recs
+
 else:
     recs = st.session_state.recs
 
