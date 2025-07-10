@@ -1,0 +1,29 @@
+Folder PATH listing for volume Windows11
+Volume serial number is 54A5-19E1
+C:.
+¦   .gitignore
+¦   config.yaml
+¦   README.md
+¦   structure.txt
+¦   
++---data
+¦   ¦   .gitkeep
+¦   ¦   cdlc_library.csv
+¦   ¦   lastfm_history.csv
+¦   ¦   lastfm_top_artists.csv
+¦   ¦   spotify_liked.csv
+¦   ¦   spotify_top.csv
+¦   ¦   
+¦   +---playlists
+¦   ¦       .gitkeep
+¦   ¦       1000_de_aspen.csv
+¦   ¦       hay_algo_ahi.csv
+¦   ¦       
+¦   +---recommendations
+¦           recommendations.csv
+¦           
++---scripts
+        analyze.py
+        engine.py
+        ui.py
+        

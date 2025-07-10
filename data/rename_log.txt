@@ -1,0 +1,817 @@
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\06. Polly_v2_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\AC-DC_If-You-Want-Blood-(You-Got-It_v3_5_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\AC-DC_Jailbreak_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\AC-DC_Rock-'n'-Roll-Singer_v4_0_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\AC-DC_You-shook-me-all-night-long_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\AC-DC - You Shook Me All Night Long.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC - The Jack v1.7_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Beating-Around-the-Bush_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Burnin'-Alive_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Can-I-Sit-Next-To-You-Girl_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Dirty-Deeds-Done-Dirt-Cheap-Full-Album_v1_0_DD_p (1).psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Dirty-Deeds-Done-Dirt-Cheap-Full-Album_v1_0_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\acdc_dog-eat-dog_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Girls-Got-Rhythm_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Gone-Shootin_v1_DD_syvaa_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Have-a-Drink-on-Me_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\AC-DC - Have a Drink on Me.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Hell-Aint-a-Bad-Place-to-Be_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Hells-Bells_v2_0_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\AC-DC - Hells Bells.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_High-Voltage_v1_5_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Highway-To-Hell_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\AC-DC - Highway to Hell.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Its-A-Long-Way-To-The-Top_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Kicked-In-The-Teeth_v1_1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Let-Me-Put-My-Love-Into-You_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_LettherebeRock_v1_2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\acdc_moneytalks_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Problem-Child_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Riff-Raff_v1_2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Rock-And-Roll-Ain't-Noise-Pollution_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Rock-N-Roll-Train_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\AC-DC - Rock N Roll Train.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Shoot-to-Thrill_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\AC-DC - Shoot to Thrill.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Show-Business_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Sin-City_v2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Stiff-Upper-Lip_v1_1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Thunderstruck_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\AC-DC - Thunderstruck.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Touch-Too-Much_Standard_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Walk-All-Over-You_v1_0_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_What-Do-You-Do-For-Money-Honey_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Whats-Next-To-The-Moon_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ACDC_Whole-Lotta-Rosie-Standard_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\acdc_whole-lotta-rosie_v1_2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Adele_Easy-On-Me_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Adele_Hello_v2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Adele_Rolling-in-the-Deep_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Adele - Rolling in the Deep.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Adele_Set-Fire-To-The-Rain_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Adele_Skyfall_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Aerosmith_Amazing-_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Aerosmith_Cryin-TS_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Aerosmith - Cryin'.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Aerosmith_I-Dont-Want-To-Miss-A-Thing_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Aerosmith_Last-Child_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Aerosmith - Last Child.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Aerosmith_Livin-On-The-Edge-_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Aerosmith - Livin' On The Edge.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Airbourne_Back-In-The-Game_v_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Airbourne_Stand-Up-For-Rock-N-Roll_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Anderson-Paak-and-Free-Nationals_Come-Down_v1_0_p (1).psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Anderson-Paak-and-Free-Nationals_Come-Down_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Anderson-Paak_Am-I-Wrong_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Anderson-Paak_Heart-Dont-Stand-A-Chance_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Anderson .Paak - Heart Don't Stand A Chance.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Anderson-Paak_Put-Me-Thru_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Anderson .Paak - Put Me Thru.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Anderson-Paak_Winners-Circle_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Anderson .Paak - Winners Circle.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arcade-Fire_Suburbs-The_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arcade Fire - The Suburbs.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arcade-Fire_We-Exist_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ArcadeFire_ReadytoStart_v1_0_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_505_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - 505.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Arabella_v5_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Arabella.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Balaclava_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Brianstorm_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Brianstorm.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Do-I-Wanna-Know_v2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Do I Wanna Know-.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Do-me-a-favour_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Do Me a Favour.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Fake-Tales-Of-San-Francisco_v3_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Fluorescent-Adolescent_v4_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Fluorescent Adolescent.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_I-Bet-You-Look-Good-On-The-Dancefloor_v1_2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - I Bet You Look Good On The Dancefloor.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-monkeys_I-wanna-be-yours_v1_3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - I Wanna Be Yours.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Knee-Socks_v4_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Knee Socks.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Library-Pictures_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Library Pictures.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Mardy-Bum_v1_4_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Mardy Bum.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Old-Yellow-Bricks_v1_0_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_One-For-The-Road_v3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - One for the Road.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Perhaps-Vampires-Is-A-Bit-Strong-But_v2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Piledriver-Waltz_v3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Piledriver Waltz.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Reckless-Serenade_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Reckless Serenade.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Red-Light-Indicates-Doors-Are-Secured_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Riot-Van_v3_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Teddy-Picker_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Teddy Picker.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_The-Hellcat-Spangled-Shalalala_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - The Hellcat Spangled Shalalala.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_The-View-From-The-Afternoon_v2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_This-House-Is-A-Circus_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - This House Is a Circus.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_When-The-Sun-Goes-Down_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - When the Sun Goes Down.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic-Monkeys_Whyd-You-Only-Call-Me-When-Youre-High_v4_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic Monkeys - Why'd You Only Call Me When You're High-.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Arctic_Monkeys_Still_Take_You_Home_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Audioslave_Shadow-on-the-Sun_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Audioslave_What-You-Are_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Audioslave - What You Are.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Backstreet-Boys_Everybody-Backstreets-Back_v2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Backstreet Boys - Everybody (Backstreet's Back).psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles,-The_It-Won't-Be-Long_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles,-The_Oh!-Darling_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_All-My-Loving_v3_5_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_And-I-Love-Her_v3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Baby's-In-Black_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Because_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Can't-Buy-Me-Love_v4_0_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Come-Together_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Beatles - Come Together - Remastered 2009.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Day-Tripper_v1_0_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Dear-Prudence-Full-Band_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Devil-in-Her-Heart_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Dizzy-Miss-Lizzy_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Doctor-Robert_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Eight-Days-a-Week_v3_5_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Eleanor-Rigby_v3_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Getting-Better_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Girl_v4_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Glass-Onion_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Golden-Slumbers_v2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Happy-Birthday_v3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Hello-Goodbye_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Hello-Goodbye_v4_0_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Here-Comes-The-Sun_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Hey-Bulldog_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_I-Feel-Fine_v3_5_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_I-Want-to-Hold-Your-Hand_v3_5_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_I-Want-You-she's-so-heavy_v7_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_If-I-Fell_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Magical-Mystery-Tour_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Martha-My-Dear_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Maxwell's-Silver-Hammer_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Norwegian-Wood_v4_0_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Please-Please-Me_v3_5_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Polythene-Pam-She-Came-In-Through-The-Bathroom-Window_v2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Revolution_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Savoy-Truffle_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Sun-King_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Taxman_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_When-Im-Sixty-Four_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_Yer-Blues_v2_2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_You're-Going-To-Lose-That-Girl_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles-The_You-Never-Give-Me-Your-Money_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_A-Hard-Days-Night_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Across-The-Universe_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Dig-A-Pony_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Do-You-Want-To-Know-A-Secret-DD_v3_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Dont-Let-Me-Down_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Drive-My-Car_v_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Eleanor-Rigby_v2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Help_v_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Helter-Skelter_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Hey-Jude-DD_v5_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_I've-Got-a-Feeling_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_I-Me-Mine_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Im-Looking-Through-You_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Im-Only-Sleeping_v1_0_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_In-my-life_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Lucy-in-the-Sky-with-Diamonds_v3_5_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Michelle_v4_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Nowhere-Man_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Octopus's-Garden_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Penny-Lane_v3_5_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Sexy-Sadie-Full-Band_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Sgt-Peppers-Lonely-Hearts-Club-Band-With-A-Little-Help-From-My-Friends_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_The-End_v1_0_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Wait_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Beatles_Word_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bikini-Kill_Rebel-Girl_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bikini Kill - Rebel Girl.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Billie-Eilish_Bad-Guy_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Billie Eilish - bad guy.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Billie-Eilish_BIRDS-OF-A-FEATHER-Djpavs_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Billie Eilish - BIRDS OF A FEATHER.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Billie-Eilish_Therefore-I-Am_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Billie Eilish - Therefore I Am.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Billy-Idol_Eyes-Without-A-Face_v1_0_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Billy-Idol_Rebel-Yell_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Billy Idol - Rebel Yell.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\BillyIdol_DancingWithMyself_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Black-Sabbath_N.I.B_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Black-Sabbath_Paranoid_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Black Sabbath - Paranoid.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Black-Sabbath_Sabbath-Bloody-Sabbath_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Black-Sabbath_War-Pigs_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\BlackSabbath_IronMan_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blink-182_Aliens-Exist_v4_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blink-182_Anthem-Part-2_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blink-182_Down_v3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blink-182_Reckless-Abandon_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blink-182_Shut-Up_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blink-182_Story-Of-A-Lonely-Guy_v2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blondie_Heart-of-Glass_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blondie - Heart of Glass.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blondie_One-Way-or-Another_v2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blue-Oyster-Cult_Cities-On-Flame-with-Rock-and-Roll_v5_4_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blue Öyster Cult - Cities on Flame With Rock and Roll.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blue-Oyster-Cult_Joan-Crawford_v_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blue-Oyster-Cult_Sole-Survivor_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blur_Beetlebum_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blur_Coffee--TV_v10_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blur_Ghost-Ship_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blur_Girls--Boys_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blur - Girls & Boys.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blur_Parklife_v2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blur - Parklife.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Blur_There's-no-Other-Way_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bob-Dylan_Lay-Lady-Lay_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bob-Dylan_Tangled-Up-In-Blue_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\BowieJagger_DancingInTheStreet_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Britney-Spears_Oops-I-Did-It-Again_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Britney-Spears_Toxic_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\BritneySpears_BabyOneMoreTime_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno-Mars-Anderson-Paak-Silk-Sonic_777_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno-Mars-Anderson-Paak-Silk-Sonic_After-Last-Night_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno-Mars-Anderson-Paak-Silk-Sonic_Blast-Off_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno-Mars-Anderson-Paak-Silk-Sonic_Fly-As-Me_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno-Mars-Anderson-Paak-Silk-Sonic_Leave-The-Door-Open_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno-Mars-Anderson-Paak-Silk-Sonic_Skate_v2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno-Mars-Anderson-Paak-Silk-Sonic_Smokin-Out-The-Window_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno Mars,Anderson .Paak,Silk Sonic - Smokin Out The Window.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno-Mars_24k-Magic_v1_1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno-Mars_Locked-out-of-Heaven_v2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno Mars - Locked out of Heaven.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno-Mars_Thats-What-I-Like_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bruno-Mars_Treasure_v_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Bryan-Adams_Summer-of-'69_v1_1_DD_bojar_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash-The_Koka-Kola_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash_Clampdown_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash_Death-or-Glory_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash_Four-Horsemen_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash_Jimmy-Jazz_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash_Lost-in-the-supermarket_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Clash - Lost in the Supermarket - Remastered.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash_Police--Thieves_v11_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash_Police-on-my-back_v4_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash_Rock-The-Casbah_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash_Rudie-Cant-Fail_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash_Spanish-Bombs_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Clash_Train-In-Vain_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Coldplay - Talk_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Coldplay_God-Put-A-Smile-Upon-Your-Face_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Coldplay_Speed-of-Sound_v1_5_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Coldplay - Speed of Sound.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Coldplay_The-Hardest-Part_v1_1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedance-Clearwater-Revival_Tombstone-Shadow_v3_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence Clearwater Revival - Lookin Out my Back Door_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence Clearwater Revival - Who'll Stop the Rain_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence Clearwater Revival - Have You Ever Seen The Rain.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence-Clearwater-Revival_Green-River-DD_v4_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence Clearwater Revival - Green River.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence-Clearwater-Revival_I-Heard-It-Through-the-Grapevine_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence-Clearwater-Revival_I-Put-A-Spell-On-You_v_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence-Clearwater-Revival_Long-As-I-Can-See-The-Light_v1_5_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence-Clearwater-Revival_Night-Time-Is-The-Right-Time_v1_0_p.psarc -> moved to unmatched
+SKIPPED (duplicate): C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence-Clearwater-Revival_Suzie-Q_v5_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence Clearwater Revival - Green River.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence-Clearwater-Revival_Travelin-Band_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence Clearwater Revival - Bad Moon Rising.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence-Clearwater-Revival_Up-Around-the-bend_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Creedence Clearwater Revival - Up Around The Bend.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft-Punk_Fragments-Of-Time-Feat-Todd-Edwards_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft Punk - Fragments of Time (feat. Todd Edwards).psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft-Punk_Get-LuckyDell_v2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft-Punk_Giorgio-by-Moroder_v3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft Punk - Giorgio by Moroder.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft-Punk_Give-Life-Back-To-Music_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft Punk - Give Life Back to Music.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft-Punk_Instant-Crush_ZK_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft-Punk_Lose-Yourself-to-Dance_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft-Punk_One-More-TimeDell_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft-Punk_Robot-RockDell_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft-Punk_Something-About-Us_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft Punk - Something About Us.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft_Punk-Around-the-World_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daft Punk - Around the World.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daryl-Hall-and-John-Oates_Maneater_v3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Daryl Hall & John Oates - Maneater.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\David-Bowie_Fame_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\David-Bowie_Lady-Stardust_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\David-Bowie_Life-On-Mars_v1_2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\David-Bowie_RocknRoll-suicide_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\David-Bowie_Soul-Love-_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\David Bowie - Soul Love - 2012 Remaster.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\David-Bowie_Starman_v2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\David_Bowie-Black_Country_Rock_v1_DD_Aludog_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Deep-Purple_Black-Night_v5_5_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Deep-Purple_Burn_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Deep-Purple_Lazy_6L_v2_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Deep-Purple_Space-Truckin'_v5_5_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Deep-Purple_Speed-king_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Def-Leppard_Foolin'_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Def Leppard - Foolin'.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Def-Leppard_Photograph_v7_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dire-Straits_Money-For-Nothing_v1_bojar_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dire-Straits_Sultans-of-Swing_v443_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dire Straits - Sultans of Swing.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Doors-The_Peace-Frog_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Doors - Peace Frog.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Doors_Hello-I-Love-You_v1_1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Doors - Hello I Love You.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Doors_Soul-Kitchen_v3_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Doors - Soul Kitchen.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Doors_Touch-Me_v1_0_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua-Lipa_Break-My-Heart-Djpavs_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua Lipa - Break My Heart.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua-Lipa_Cool_v1_0_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua-Lipa_Dont-Start-NowDell_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua Lipa - Don't Start Now.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua-Lipa_Hallucinate_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua-Lipa_HoudiniDell_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua-Lipa_IDGAF_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua-Lipa_Levitating_v3_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua-Lipa_Love-AgainDell_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua-Lipa_New-Rules_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua Lipa - New Rules.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua-Lipa_Physical_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua Lipa - Physical.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Dua-Lipa_Pretty-PleaseDell_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Eagles_Hotel-California_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Eagles - Hotel California - 2013 Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Electric-Light-Orchestra_Last-Train-to-London_v2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Electric Light Orchestra - Last Train to London.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Europe - Carrie_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Europe - Carrie.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Europe_Cherokee_v1_2_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Europe_Rock-The-Night_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Europe - Rock the Night.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Eurythmics_Sweet-Dreams_v_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Fall-out-Boy_Beat-it-cover_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\FFButHonestly_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\FF_Feast-and-The-Famine_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Fleetwood-Mac_Chain-The_v2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Fleetwood-Mac_Dont-Stop_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Fleetwood-Mac_Dreams_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Florence_Dog-Days-Are-Over_v2_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foals_My-Number_v2_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foals - My Number.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo Fighters - Come Back_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_Alandria_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo Fighters - Arlandria.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_All-My-Life_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo Fighters - All My Life.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_Back--Forth_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_Breakout_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo Fighters - Breakout.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_Bridge-Burning_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo Fighters - Bridge Burning.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_End-Over-End_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_Free-Me_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_Hey-Johnny-Park_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo Fighters - Hey Johnny Park!.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_In-Your-Honor_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_Last-Song_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_Let-It-Die_v1_2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_Miss-The-Misery_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_No-Way-Back_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_Resolve_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo Fighters - Resolve.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_These-Days_v2_0_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo Fighters - These Days.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foo-Fighters_White-Limo_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\foosomething_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\foostrange_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foreigner - I Want to Know What Love Is_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foreigner - I Want to Know What Love Is - 1999 Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foreigner_Urgent_v1_6_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Foreigner - Urgent.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz-Ferdinand_40_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz-Ferdinand_Dark-of-the-Matinee_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz Ferdinand - The Dark of the Matinée.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz-Ferdinand_Darts-Of-Pleasure_v2_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz-Ferdinand_Do-You-Want-To_v2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz Ferdinand - Do You Want To.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz-Ferdinand_Jacqueline_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz-Ferdinand_Michael_v_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz-Ferdinand_No-you-Girls_v_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz Ferdinand - No You Girls.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz-Ferdinand_This-Fire_v_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Franz Ferdinand - This Fire.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Gary-Moore_Parisienne-Walkways_v3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Good-Charlotte_Predictable_v1.1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Gorillaz_Clint-Eastwood_v2_0_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Gorillaz_Feel Good Inc._v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Gorillaz - Feel Good Inc..psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Gorillaz_On-Melancholy-Hill_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Gorillaz - On Melancholy Hill.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Gorillaz_Tomorrow-Comes-Today_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Gorillaz - Tomorrow Comes Today.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green-Day_Hitchin'-A-Ride_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green Day - Hitchin' a Ride.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green-Day_Homecoming_v1_3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green-Day_King-For-a-Day_v3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green-Day_Letterbomb_v1_2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green-Day_Nice-Guys-Finish-Last_v1_1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green-Day_Redundant_v1_5_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green-Day_She_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green Day - She.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green-Day_St-Jimmy_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green-Day_The-Grouch_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green-Day_Waiting_v1_2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Green-Day_Whatsername_v1_3_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N Roses - Sweet Child OMine_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Sweet Child o' Mine.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N Roses - Welcome to the Jungle_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Welcome To The Jungle.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N'-Roses_Chinese-Democracy_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Chinese Democracy.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N'-Roses_Hard-Skool_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Hard Skool.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N'-Roses_Nightrain_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Nightrain.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-n'-Roses_Paradise-City-TS_v1_2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Paradise City.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N'-Roses_Shadow-Of-Your-Love_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Shadow Of Your Love.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N'-Roses_Shotgun-Blues_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Shotgun Blues.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N'-Roses_You're-Crazy_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - You're Crazy.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N-Roses_Down-On-The-Farm_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Down on the Farm.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N-Roses_Estranged_v4_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Estranged.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N-Roses_Mr-Brownstone_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Mr. Brownstone.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N-Roses_November-Rain_v4_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - November Rain.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N-Roses_Since-I-Dont-Have-You_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Since I Don't Have You.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N-Roses_Used-to-Love-Her_v2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Used to Love Her.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns-N-Roses_You-Could-Be-Mine_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - You Could Be Mine.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_14Years_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_AnythingGoes_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Anything Goes.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_Attitude_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Attitude.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_BackOffBitch_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_BadApples_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_Better_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Better.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_Breakdown_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Breakdown.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_Coma_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Guns N' Roses - Coma.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_DeadHorse_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_DontDamnMe_v3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_DoubleTalkinJive_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_DustNBones_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_ItsSoEasy_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_KnockinOnHeavensDoor_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_LiveAndLetDie_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_OutTaGetMe_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_RightNextDoorToHell_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_RocketQueen_v3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_StreetOfDreams_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_ThereWasATime_v2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_ThinkAboutYou_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\GunsNRoses_ThisILove_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Harry-Styles_Adore-You_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Harry Styles - Adore You.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Harry-Styles_As-It-Was_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Harry Styles - As It Was.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Harry-Styles_Late-Night-Talking_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Harry Styles - Late Night Talking.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Harry-Styles_Watermelon-Sugar_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Harry Styles - Watermelon Sugar.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Hives_Tick-Tick-Boom_v_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Hives - Tick Tick Boom.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Iron Maiden - Wasted Years final_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Iron-Maiden_Evil-That-Men-Do_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Iron-Maiden_Iron-Maiden_v2_3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Iron-Maiden_Phantom-of-the-Opera_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Iron-Maiden_Wasted-Years_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Jack-White_Lazaretto_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Jack White - Lazaretto.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\James-Brown_Get-Up-I-Feel-Like-Being-A-Sex-Machine_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\James Brown - Get Up I Feel Like Being A Sex Machine - Pt. 1 - Single Version.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\James-Brown_Get-Up-Offa-That-Thing_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\James Brown - Get Up Offa That Thing.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\James-Brown_I-Got-You-I-Feel-Good_v2_noDD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Jimi-Hendrix-Experience-The_All-Along-the-Watchtower_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Jimi Hendrix - All Along the Watchtower.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Jimi-Hendrix-Experience-The_Hey-Joe_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Jimi-Hendrix-Experience_Spanish-Castle-Magic_v3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Jimi Hendrix - Spanish Castle Magic.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Jimi-Hendrix_Crosstown-Traffic_v3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Jimi Hendrix - Crosstown Traffic.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_Belief_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - Belief.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_Gravity_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - Gravity.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_Helpless_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - Helpless.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_I-Dont-Trust-Myself_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_Im-Gonna-Find-Another-You_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - I'm Gonna Find Another You.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_In-Repair_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - In Repair.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_Last-Train-Home_v2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_New-Light_v3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - New Light.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_Perfectly-Lonely_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - Perfectly Lonely.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_Rosie_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - Rosie.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_Slow-Dancing-in-a-Burning-Room-Live_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - Slow Dancing in a Burning Room.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_The-Heart-of-Life_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - The Heart of Life.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John-Mayer_Waiting-on-the-World-to-Change_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - Waiting on the World to Change.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John_Mayer - Vultures_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - Vultures.psarc
+SKIPPED (duplicate): C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John_Mayer_Gravity_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\John Mayer - Gravity.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Journey_Any-Way-You-Want-It_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Journey - Any Way You Want It.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Journey_Dont-Stop-Believin-Arnel_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\JP_RideOn_2v0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\JP_WhoMadeWho_2v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kasabian_Fire_v_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Keane_Bedshaped_v_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Keane_Bend-And-Break_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Keane_Everybody's-Changing_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Keane - Everybody's Changing.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Keane_Somewhere-Only-We-Know_v1_0_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Keane - Somewhere Only We Know.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kendrick-Lamar_Humble_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kendrick Lamar - HUMBLE..psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kendrick-Lamar_King-Kuna_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kendrick Lamar - King Kunta.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kendrick-Lamar_Not-Like-Us_v1_1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kendrick Lamar - Not Like Us.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Killers_All-These-Things-That-I've-Done_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Killers - All These Things That I've Done.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kings-of-Leon_Closer_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kings of Leon - Closer.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kings-of-Leon_Revelry_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kings-of-Leon_Sex-on-Fire_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kings of Leon - Sex on Fire.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\KISS_Cold-Gin_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kiss_Crazy-Crazy-Nights_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kiss_Deuce_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kiss - Deuce.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kiss_Shout-It-Out-Loud_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kiss_War-Machine_v3_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Lamar-Kendrick_Wesley's-Theory_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Kendrick Lamar - Wesley's Theory.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Good Times Bad Times_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Good Times Bad Times - 1993 Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Babe-Im-Gonna-Leave-You_v1_2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Babe I'm Gonna Leave You - 1990 Remaster.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Bring-It-On-Home_v1_1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Communication-Breakdown_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Communication Breakdown - 1990 Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Dancing-Days_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Dancing Days - Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Dazed-and-Confused_v1_2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Dazed and Confused - 1990 Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Heartbreaker_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Heartbreaker - 1990 Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Houses-of-the-Holy_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Houses Of The Holy - Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Misty-Mountain-Hop_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Misty Mountain Hop - Remaster.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_No-Quarter_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Nobodys-Fault-But-Mine_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Ocean-The_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - The Ocean - Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Over-the-Hills-and-Far-Away_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Over the Hills and Far Away - Remaster.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Ramble-On_v2_0_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Rock-And-Roll_v7_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Rock and Roll - Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Since-Ive-Been-Loving-You_v1_2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Since I've Been Loving You - Remaster.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_The-Rover_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_Trampled-Under-Foot_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Trampled Under Foot - Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_What-is-and-What-Should-Never-Be_v2_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - What Is and What Should Never Be - 1990 Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led-Zeppelin_When-the-Levee-Breaks_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - When the Levee Breaks - Remaster.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led_Zeppelin_Kashmir_v1_3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led_Zeppelin_Living_Loving_Maid_(She's_Just_a_Woman)_v1_0_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led_Zeppelin_Moby_Dick_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Moby Dick.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led_Zeppelin_Tangerine_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - Tangerine - Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led_Zeppelin_The_Lemon_Song_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Led Zeppelin - The Lemon Song - 1993 Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Lenny-Kravitz_Always-On-The-Run_v1_2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Lenny Kravitz - Always On The Run.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Lenny-Kravitz_American-Woman_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Lenny Kravitz - American Woman.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Lenny-Kravitz_Fly-Away_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Lenny Kravitz - Fly Away.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Lenny-Kravitz_It-Aint-Over-Til-Its-Over_v3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Lenny Kravitz - It Ain't Over 'til It's Over.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Limp-Bizkit_Break-Stuff_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Limp Bizkit - Break Stuff.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Limp-Bizkit_My-Generation-LB-_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Limp-Bizkit_Nookie_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Limp Bizkit - Nookie.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Limp-Bizkit_Rollin-(Air-Raid-Vehicle)_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\LimpBizkit_TakeALookAround_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Luis-Miguel_Ahora-te-puedes-marchar_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Luis-Miguel_Cuando-Calienta-el-Sol_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Luis-Miguel_Culpable-o-No-Mienteme-Como-Siempre_v2_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Luis-Miguel_Suave_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\LZ_Ten_Years_Gone_1_2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maneskin_Beggin_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Måneskin - Beggin'.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Marilyn Manson - Sweet Dreams_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Mark-Ronson-Ft-Bruno-Mars_Uptown-Funk_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Mark Ronson - Uptown Funk (feat. Bruno Mars).psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Goodnight Goodnight_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Goodnight Goodnight.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Makes Me Wonder_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Makes Me Wonder.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Sunday Morning_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Sunday Morning.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Wake Up Call_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Wake Up Call.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Wont Go Home Without You_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Won't Go Home Without You.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon-5_Must-Get-Out_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Must Get Out.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon-5_Secret_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Secret.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon-5_Sugar_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - Sugar.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon-5_Sun-The_v01_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Maroon 5 - The Sun.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica_Enter-Sandman-Nacho_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica - Enter Sandman.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica_For-Whom-The-Bell-Tolls_v3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica - For Whom The Bell Tolls - Remastered.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica_Fuel_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica - Fuel.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica_Master-of-Puppets_Nacholede_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica - Master of Puppets.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica_Nothing-Else-Matters_v1_0_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica - Nothing Else Matters.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica_One_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica - One.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica_Sad-But-True_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica - Sad but True.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica_Seek-And-Destroy_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica_Whiskey-In-The-Jar_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Metallica - Whiskey In The Jar.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\MGMT_Electric-Feel_v1.1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\MGMT - Electric Feel.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\MGMT_Kids_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\MGMT - Kids.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\MGMT_Little-Dark-Age_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Michael-Jackson_Beat-It-Nacho_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Michael Jackson - Beat It.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Michael-Jackson_Billie-Jean_v2_0_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Michael Jackson - Billie Jean.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Michael-Jackson_Dont-Stoptil-You-Get-Enough_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Michael Jackson - Don't Stop 'Til You Get Enough.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Michael-Jackson_Rock-With-You_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Michael-Jackson_Smooth-Criminal_syvaa_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Miley-Cyrus_Prisoner-feat-Dua-Lipa_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Miley Cyrus,Dua Lipa - Prisoner (feat. Dua Lipa).psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Motley-Crue_Live-Wire_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Mötley Crüe - Live Wire.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Motley-Crue_Same-Ol-Situation_v1.1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Mötley Crüe - Same Ol' Situation (S.O.S.).psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Motley-Crue_Too-Young-to-Fall-in-Love_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\MRCRolling-Stones_Undercover-of-the-Night_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Mumford-and-Sons_Ditmas_v2_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Muse_Psycho_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Muse - Psycho.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Muse_Reapers_v3_1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Muse_Uprising_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Muse - Uprising.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My-Chemical-Romance_Cemetery-Drive_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My Chemical Romance - Cemetery Drive.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My-Chemical-Romance_Hang-'Em-High_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My Chemical Romance - Hang 'Em High.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My-Chemical-Romance_It's-Not-a-Fashion-Statement-It's-a-Fucking-Deathwish_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My Chemical Romance - It's Not a Fashion Statement It's a Deathwish.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My-Chemical-Romance_Thank-You-For-The-Venom_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My Chemical Romance - Thank You for the Venom.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My-Chemical-Romance_The-Ghost-of-You_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My Chemical Romance - The Ghost of You.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My-Chemical-Romance_To-the-End_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My Chemical Romance - To the End.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My-Chemical-Romance_You-Know-What-They-Do-to-Guys-Like-Us-Is-Prison_v1_1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\My Chemical Romance - You Know What They Do to Guys Like Us in Prison.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\MyChemicalRomance_Give-'Em-Hell-Kid_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\MyChemicalRomance_I-Never-Told-You-What-I-Do-for-a-Living_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana - Come As You Are_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana - Come As You Are.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana_About-a-Girl_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana - About a Girl.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana_All-Apologies_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana - All Apologies.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana_Drain-You_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana - Drain You.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana_Lithium_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana - Lithium.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana_On-A-Plain_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana_Rape-Me_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana - Rape Me.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana_Something-In-The-Way_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Nirvana - Something in the Way.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\NSYNC_Bye-Bye-Bye_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\-NSYNC - Bye Bye Bye.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\NSYNC_It's-Gonna-Be-Me_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Oasis_Cigarettes--Alcohol_v1_2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Oasis_Hello_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Oasis_Morning_Glory_LRBV_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Oasis_Rock-N-Roll-Star_v1_1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Oasis_Roll-With-It_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Oasis_Shes-Electric_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Oasis_Slide-Away_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Oasis_Stand-by-Me_v1_1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Oasis - Stand by Me.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Olivia-Rodrigo_Good-4-u_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Olivia Rodrigo - good 4 u.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne-_Goodbye-To-Romance-_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne-_Road-To-Nowhere-_v2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Bark-at-the-Moon_v7_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy Osbourne - Bark at the Moon.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Believer_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Breaking-All-The-Rules_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Crazy-Train_v7_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy Osbourne - Crazy Train.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Desire_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Diary-of-a-Madman_v5_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Flying-High-Again_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_I-Dont-Want-To-Change-The-World_v1_0_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Mama-Im-Coming-Home_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy Osbourne - Mama I'm Coming Home.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_No-More-Tears_v2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy Osbourne - No More Tears.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Over-The-MountainDD_v5_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Perry-Mason_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Suicide-Solution-_v3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Thunder-Underground_v1_2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy-Osbourne_Youre-No-Different_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\OzzyOsbourne_IDontKnow_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy_Osbourne_Mr_Crowley_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ozzy Osbourne - Mr. Crowley.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_All-I-Wanted_v1_3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_Big-Man-Little-Dignity_v1_1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_Brighter_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_Feeling-Sorry_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_Last-Hope_v2_261_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_Let-The-Flames-Begin_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_Looking-Up_v2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_Miracle_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_My-Heart_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_One-of-Those-Crazy-Girls_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_Proof_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_Thats-What-You-Get_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Paramore_When-It-Rains_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Parcels_Gamesofluck_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Parcels - Gamesofluck.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Parcels_Lightenup_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Parcels - Lightenup.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Parcels_Overnight_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Parcels - Overnight.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Parcels_Tieduprightnow_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Parcels - Tieduprightnow.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Patricio-Rey-y-sus-Redonditos-de-Ricota_Ji-ji-ji_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Patricio-Rey-y-sus-Redonditos-de-Ricota_Vencedores-Vencidos_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pearl-Jam_Why-Go_v2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Peter-Bjorn-and-John_Young-Folks_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Peter Bjorn and John - Young Folks.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink-Floyd_Another-Brick-in-the-Wall-Part-2_v3_0_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink Floyd - Another Brick in the Wall Pt. 2.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink-Floyd_Comfortably-NumbDell_v2_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink Floyd - Comfortably Numb.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink-Floyd_Have-A-Cigar_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink Floyd - Have a Cigar.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink-Floyd_Money_v4_0_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink Floyd - Money.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink-Floyd_Shine-On-Your-Crazy-Diamond_v2_0_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink-Floyd_Time_v2_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink Floyd - Time.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink-Floyd_Wish-You-Were-Here_v5_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink Floyd - Wish You Were Here.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink-Floyd_Young-Lust_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Pink Floyd - Young Lust.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Power-Rangers_Go-Go-Power-Rangers_V2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\pressureandtime_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Queens-of-the-Stone-Age_Song-For-The-Deaf_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Queens of the Stone Age - Song For The Dead.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Queensryche_Walk-In-The-Shadows_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Queensrÿche - Walk In The Shadows.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Queen_A-Kind-of-MAgic_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Queen_Flash_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Queen_Friends-Will-Be-Friends_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Queen_One-Vision_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Queen_The-Show-Must-Go-On_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Raconteurs-The_Many-Shades-of-Black_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Radiohead_Let-Down_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Radiohead_Lucky_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Radiohead - Lucky.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rainbow-Kitten-Surprise_It's-Called-Freefall_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rainbow Kitten Surprise - It's Called- Freefall.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rammstein-Du-Hast-_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rammstein - Du hast.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rammstein_Amerika_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rammstein - Amerika.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rammstein_Deutschland_v1_1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rammstein_Mein-Herz-Brennt-Drop-C_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rammstein - Mein Herz brennt.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rammstein_Sonne_v3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rammstein - Sonne.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ramones_Beat-on-the-Brat_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ramones_Cretin-Hop_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ramones_Havana-Affair_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ramones_IWannaBeSedated_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ramones_Now-I-Wanna-Sniff-Some-Glue_v2_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ramones_Pet-SemataryDell_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ramones - Pet Sematary.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ramones_Rockaway-Beach_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ramones_Sheena-Is-a-Punk-Rocker_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ramones_The-KKK-Took-My-Baby-Away_v1_0_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rare-Occasions-The_Notion_v1_1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rare Occasions - Notion.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rasmus-The_Guilty_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rasmus - Guilty.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rasmus-The_Justify_v2_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rasmus-The_Livin'-In-A-World-Without-You_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rasmus_In-my-Life_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rasmus - In My Life.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rasmus_Still-Standing_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rasmus - Still Standing.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ratt_Wanted-Man_v1_NDD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ratt - Wanted Man.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ratt_Your-In-Love_v6_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Ratt - You're in Love.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chilli Peppers_Tell Me Baby_vNA_BLRV_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Tell Me Baby.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_By-the-Way_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - By the Way.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Californication_v5_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Californication.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Cant-Stop_v5_0_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Can't Stop.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Dani-California_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Dani California.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Death-of-Martian_v2_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Get-On-Top_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Snow (Hey Oh).psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Give-it-Away_v4_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Give It Away.psarc
+SKIPPED (duplicate): C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Hey_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Snow (Hey Oh).psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Hump-De-Bump_v1_0_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_I-Could-Have-Lied_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_I-Like-Dirt_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Parallel-Universe_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Parallel Universe.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Scar-Tissue_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Scar Tissue.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Slow-Cheetah_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_So-Much-I_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Suck My Kiss.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Stadium-Arcadium_v1-2_p.psarc -> moved to unmatched
+SKIPPED (duplicate): C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Suck-My-Kiss_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Suck My Kiss.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Torture-Me_v2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot-Chili-Peppers_Under-the-Bridge_v5_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Under the Bridge.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red-Hot_Otherside_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red_Hot_Chili_Peppers_Around_the_World_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red Hot Chili Peppers - Around the World.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red_Hot_Chili_Peppers_Especially_in_Michigan_v1a_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red_Hot_Chili_Peppers_She_looks_to_me_v1a_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Red_Hot_Chili_Peppers_Strip_my_mind_v1a_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\RHCP_Aeroplane_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\RHCP_Snow_V1e_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rival-Sons_Electric-Man_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rival Sons - Electric Man.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rival-Sons_Get-Whats-Coming_v_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rival-Sons_Keep-On-Swinging_v1_1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rival Sons - Keep on Swinging.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\RM_-Beatles_I-Am-The-Walrus_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rolling-Stones-The_Doom-And-Gloom_v_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rolling-Stones_Dead-Flowers_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rolling Stones - Dead Flowers - 2009 Mix.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rolling-Stones_Doo-Doo-Doo-Doo-Doo-Heartbreaker_syvaa_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rolling Stones - Doo Doo Doo Doo Doo (Heartbreaker).psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rolling-Stones_Lets-Spend-The-Night-Together_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rolling Stones - Let's Spend the Night Together.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rolling-Stones_She's-A-Rainbow_v1_0_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rolling Stones - She's A Rainbow.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Rolling-Stones_Under-My-Thumb_v1_3_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rolling Stones - Under My Thumb.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Royal-Blood_Ten-Tonne-Skeleton_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Royal Blood - Ten Tonne Skeleton.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sabrina-Carpenter_Espresso_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sabrina Carpenter - Espresso.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sabrina-Carpenter_Juno_v1_5_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sabrina-Carpenter_Please-Please-Please_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sabrina Carpenter - Please Please Please.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Scorpions_No-One-Like-You_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Scorpions - No One Like You.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Scorpions_Rock-You-Like-A-Hurricane_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Scorpions - Rock You Like A Hurricane.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Scorpions_Still-Loving-You_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Scorpions_Wind-of-Change-ComeBlack_v22_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Scorpions - Wind Of Change.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sex-Pistols_Anarchy-In-The-UK_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sex Pistols - Anarchy In The UK.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sex-Pistols_EMI_v1_0_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sex-Pistols_God-Save-The-Queen_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sex-Pistols_No-Feelings_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sex-Pistols_Pretty-Vacant_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Sex-Pistols_Problems_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ShesaRebel_GreenDay_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Simple Plan - Crazy_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Simple-Plan_Addicted_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Simple-Plan_I'm-Just-a-Kid_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Simple Plan - I'm Just a Kid.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Simple-Plan_Perfect-World_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Simple-Plan_Perfect_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Simple-Plan_Shut-Up_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Simple-Plan_Welcome-to-my-Life_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Simple_Plan_Jump_v1,2_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash's-Snakepit_Beggars-and-Hangers-On_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash's Snakepit - Beggars & Hangers-On.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash-feat-Myles-Kennedy-And-The-Conspirators_Bent-To-Fly_v1_2_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash-featuring-Myles-Kennedy-and-The-Conspirators_No-More-Heroes_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash,Myles Kennedy And The Conspirators - No More Heroes.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash-featuring-Myles-Kennedy-and-The-Conspirators_Stone-Blind_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash,Myles Kennedy And The Conspirators - Far And Away.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash-featuring-Myles-Kennedy-and-The-Conspirators_Too-Far-Gone_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash,Myles Kennedy And The Conspirators - Hard & Fast.psarc
+SKIPPED (duplicate): C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash-featuring-Myles-Kennedy-and-The-Conspirators_Unholy_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash,Myles Kennedy And The Conspirators - Hard & Fast.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash-featuring-Myles-Kennedy-and-The-Conspirators__Apocalyptic-Love_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash,Myles Kennedy And The Conspirators - Apocalyptic Love.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash-_Ghost_v4_3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Ghost.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slashs-Snakepit_Dime-Store-Rock_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash's Snakepit - Dime Store Rock.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slashs-Snakepit_Speed-Parade_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash's Snakepit - Speed Parade.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\SlashsSnakepit_AintLifeGrand_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\SlashsSnakepit_BackToTheMoment_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\SlashsSnakepit_BeenThereLately_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\SlashsSnakepit_MeanBone_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\SlashsSnakepit_Shine_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash's Snakepit - Shine.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_30-Years-To-Life_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - 30 Years to Life.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Automatic-Overdrive_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Automatic Overdrive.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Avalon_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Avalon.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Bad-Rain_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Bad Rain.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Battleground_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Battleground.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_BeautifulDangerous_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash,Fergie - Beautiful Dangerous.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_By-the-Sword_v2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - By the Sword.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Crucify-The-Dead_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Crucify the Dead.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_DoctorAlibi_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Far-and-away 3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Far and Away.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Gotten_v_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Gotten.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Halo_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Halo.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_IHoldOn_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Nothing-To-Say_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_One-Last-Thrill_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Promise_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Promise.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Standing-In-The-Sun_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Standing in the Sun.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_Wicked-Stone_v1_2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - Wicked Stone.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash_World-On-Fire_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slash - World on Fire.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slipknot_Before-I-Forget_v2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slipknot - Before I Forget.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slipknot_Duality_v3_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Slipknot - Duality.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Soda-Stereo_De-Musica-Ligera_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Soda-Stereo_Persiana-Americana_v1_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Soda-Stereo_Profugos_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\sodanada_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Stevie-Ray-Vaughan-&-Double-Trouble_House-Is-Rockin'_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Stevie-Ray-Vaughan-and-Double-Trouble_Lenny_v2_1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Stevie-Ray-Vaughan-and-Double-Trouble_Superstition_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Stevie-Ray-Vaughan-and-Double-Trouble_Tin-Pan-Alley_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Stevie-Ray-Vaughan_Crossfire_v2_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Stevie-Ray-Vaughan_Look-At-Little-Sister-DD_v3_5_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Stevie Ray Vaughan - Look at Little Sister.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Stevie-Ray-Vaughan_Mary-Had-A-Little-Lamb_v2_0_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\StevieNicks_EdgeOfSeventeen_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Stone-Roses_Fools-Gold_v1_1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Stone-Temple-Pilots_Dead-And-Bloated_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Stone Temple Pilots - Dead & Bloated.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_All-The-Time_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_Automatic-Stop_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_End-Has-No-End_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_Fear-Of-Sleep_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_Gratisfaction_v3_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_Heart-in-a-Cage_v3_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Strokes - Heart In a Cage.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_I-Can't-Win_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_Razor-Blade_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_Razorblade_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_Take-It-Or-Leave-It_v2_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_The-End-Has-No-End_v3_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_Vision-Of-Division_v4_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Strokes_Welcome-to-Japan_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Strokes - Welcome to Japan.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\System-of-a-Down-RadioVideo-v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\System-of-a-Down_Cigaro_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\System of a Down - Cigaro.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\System-Of-A-Down_Lost-In-Hollywood_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\System-of-a-Down_Question_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\System-of-a-Down_Revenga_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\SystemofaDown-ChopSuey_v11_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\System_of_a_Down_Violent_Pornography_v1.1DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\System of a Down - Violent Pornography.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Tame-Impala_Borderline_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Tame Impala - Borderline.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Tame-Impala_Feels-Like-We-Only-Go-Backwards_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Tame Impala - Feels Like We Only Go Backwards.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Tame-Impala_Less-I-Know-The-Better_v4_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Tame Impala - The Less I Know the Better.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Taylor Swift - Trouble With Tone Change_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Taylor-Swift_Blank-Space_v_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Taylor Swift - Blank Space.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Taylor-Swift_Cruel-Summer_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Taylor Swift - Cruel Summer.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Taylor-Swift_Shake-It-Off_v_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Taylor Swift - Shake It Off.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Taylor-Swift_Style-Djpavs_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Taylor-Swift_You-Belong-With-Me_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Beatles_Back-In-The-USSR_v1_2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Beatles_Get-Back_v1_7_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Beatles_I-Saw-Her-Standing-There-Full-Band_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Beatles_Paperback-Writer_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Beatles_Something-Full-Band-DD_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Clash_The-Magnificent-Seven_v1_1-BV-Jamoan_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Cult_Love-Removal-Machine_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Cult - Love Removal Machine.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Cult_She-Sells-Sanctuary_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Cult - She Sells Sanctuary.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Killers_Human_v_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Killers - Human.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Rasmus_In-the-shadows_v2_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rasmus - In the Shadows.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Rasmus_No-fear_v2_0_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Rasmus_Not-like-the-other-Girls_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rasmus - Not Like the Other Girls.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Rolling-Stones_Beast-Of-Burden_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\the-Rolling-Stones_Cant-You-Hear-Me-Knocking_v_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rolling Stones - Can't You Hear Me Knocking - 2009 Mix.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Rolling-Stones_Miss-You_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rolling Stones - Miss You - Remastered.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Rolling-Stones_Ruby-Tuesday_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Rolling Stones - Ruby Tuesday.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Rolling-Stones_Start-Me-Up_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Strokes_Machu-Picchu_v2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Strokes - Machu Picchu.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Who_The-Real-Me_v1_2_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Who - The Real Me.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The-Who_Wont-Get-Fooled-Again_v3_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The_Beatles_Rocky_Raccoon_v1b_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Tom-Petty-and-the-Heartbreakers_Dont-Do-Me-Like-That_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Tom-Petty-And-The-Heartbreakers_I-Should-Have-Known-It_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Tom-Petty-And-The-Heartbreakers_Rockin-Around-With-You_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Tool_Schism_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\TOOL - Schism.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Toto_Africa_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Toto - Africa.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Twenty-One-Pilots_Heathens_v1-1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Twenty One Pilots - Heathens.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Twenty-One-Pilots_Ride_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\twenty one pilots - Ride.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Van-Halen_Ain't-Talking-'Bout-Love_v5_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Van Halen - Ain't Talkin' 'Bout Love - 2015 Remaster.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Van-Halen_Jump_v1_6_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Van-Halen_Panama_syvaa_v3_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Van-Halen_Running-With-The-Devil_v4_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Van Halen - Runnin' with the Devil - 2015 Remaster.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Van-Halen_Unchained_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet-Revolver_Do-It-For-The-Kids_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet Revolver - Do It For The Kids.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet-Revolver_Fall-To-Pieces_v1.1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet Revolver - Fall to Pieces.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet-Revolver_Headspace_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet Revolver - Headspace.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet-Revolver_Let-It-Roll_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet Revolver - Let It Roll.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet-Revolver_She-Builds-Quick-Machines_v1_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet Revolver - She Builds Quick Machines.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet-Revolver_Sucker-Train-Blues_v1_0_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet Revolver - Sucker Train Blues.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Velvet-Revolver_Superhuman_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\VelvetRevolver_SetMeFree_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Weeknd-The_Blinding-Light_v1_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Weeknd-The_In-Your-Eyes_v1_0_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Weeknd-The_Less-Than-Zero_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Weeknd - Less Than Zero.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Weeknd-The_Out-of-Time_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Weeknd - Out of Time.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Weeknd-The_Sacrifice_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Weeknd - Sacrifice.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Weeknd-The_Save-Your-Tears_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Weeknd - Save Your Tears.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Weeknd-The_Take-My-Breath_v1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Weeknd - Take My Breath.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\whilemyguitar_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Whitesnake_Here-I-Go-Again-2020-Remix_v1_1_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Whitesnake - Here I Go Again - 2018 Remaster.psarc
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Who-The_Love-Reign-Oer-Me_v1_3_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\The Who - Love Reign O'er Me.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\With-The-Beatles_Roll-Over-Beethoven_v1_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Yeah-Yeah-Yeahs_Heads-Will-Roll_v2_DD_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\Yeah Yeah Yeahs - Heads Will Roll.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ZZ-Top_Cheap-Sunglasses_v1_DD_p.psarc -> moved to unmatched
+RENAMED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ZZ-Top_Gimme-All-Your-Lovin'_v3_5_p.psarc -> C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ZZ Top - Gimme All Your Lovin'.psarc
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ZZ-Top_Jesus-Just-Left-Chicago_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ZZ-Top_La-Grange_v2_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ZZ-Top_Legs---LP-Version_v5_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ZZ-Top_Sharp-Dressed-Man_v1_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ZZ-Top_Tush_v6_5_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ZZ-Top_TV-Dinners_v3_5_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\ZZ-Top_Waitin'-For-The-Bus_v4_0_DD_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\_Clash_Janie_Jones_v1_0_p.psarc -> moved to unmatched
+UNMATCHED: C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\unmatched\_Ramones_DoYouWannaDanceV1.0_p.psarc -> moved to unmatched
