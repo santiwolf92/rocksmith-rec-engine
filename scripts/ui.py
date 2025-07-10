@@ -3,30 +3,58 @@ import pandas as pd
 from engine import generate_recommendations
 
 st.set_page_config(page_title="Rocksmith Recommender", layout="wide")
+
 st.title("🎸 Rocksmith CDLC Recommender")
 st.markdown("Compare your Spotify + Last.fm listening data with your CDLC library.")
 
-# Placeholder to avoid errors before generation
-recs = pd.DataFrame()
+# Initialize session state
+if 'recs' not in st.session_state:
+    st.session_state.recs = pd.DataFrame()
+if 'offset' not in st.session_state:
+    st.session_state.offset = 0
+if 'min_scrobbles' not in st.session_state:
+    st.session_state.min_scrobbles = 0
+if 'max_scrobbles' not in st.session_state:
+    st.session_state.max_scrobbles = 1000  # default cap
 
-# Set default slider ranges (you can adjust these)
-min_slider_default = 0
-max_slider_default = 1000
+# Sliders for generation filters
+min_scrobbles = st.slider("Minimum Scrobbles", 0, 1000, st.session_state.min_scrobbles)
+max_scrobbles = st.slider("Maximum Scrobbles", 0, 1000, st.session_state.max_scrobbles)
 
-# Sliders that now affect recommendation generation
-min_scrobbles = st.slider("Minimum Scrobbles", min_slider_default, max_slider_default, min_slider_default)
-max_scrobbles = st.slider("Maximum Scrobbles", min_slider_default, max_slider_default, max_slider_default)
-
+# Generate button
 if st.button("🎯 Generate Recommendations"):
     with st.spinner("Crunching data..."):
-        recs = generate_recommendations(min_scrobbles=min_scrobbles, max_scrobbles=max_scrobbles, save=False)
-        st.success(f"Found {len(recs)} missing songs!")
+        st.session_state.offset = 0
+        st.session_state.min_scrobbles = min_scrobbles
+        st.session_state.max_scrobbles = max_scrobbles
 
-        # Display table
-        st.dataframe(
-            recs[['Artist Name(s)', 'Track Name', 'Scrobbles']].reset_index(drop=True),
-            use_container_width=True
-        )
+        all_recs = generate_recommendations(top_n=500, save=False)  # generate a big pool
+        filtered = all_recs[
+            all_recs['Scrobbles'].fillna(0).between(min_scrobbles, max_scrobbles)
+        ].reset_index(drop=True)
+
+        st.session_state.recs = filtered.head(50)
+        st.session_state.all_filtered = filtered
+
+# Load More button
+if not st.session_state.recs.empty and st.button("➕ Load 50 More"):
+    st.session_state.offset += 50
+    start = st.session_state.offset
+    end = start + 50
+    new_recs = st.session_state.all_filtered.iloc[start:end]
+    st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
+
+# Display recommendations
+if not st.session_state.recs.empty:
+    st.success(f"Showing {len(st.session_state.recs)} recommendations")
+    st.dataframe(
+        st.session_state.recs[['Artist Name(s)', 'Track Name', 'Scrobbles']],
+        use_container_width=True
+    )
+
+    # Download button
+    csv = st.session_state.recs.to_csv(index=False).encode('utf-8')
+    st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
 
         # Download button
         csv = recs[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(index=False).encode('utf-8')
