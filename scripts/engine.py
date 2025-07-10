@@ -1,5 +1,7 @@
 import pandas as pd
 import re
+import requests
+import time
 from pathlib import Path
 
 BASE_PATH = Path(__file__).resolve().parent.parent / 'data'
@@ -19,6 +21,38 @@ def normalize(text):
     text = text.lower().replace('&', 'and')
     return re.sub(r'[^a-z0-9]', '', text)
 
+def cdlc_exists_on_customsforge(artist, track):
+    query = f"{artist} {track}"
+    payload = {
+        "draw": 1,
+        "columns[0][data]": "Add",
+        "columns[0][name]": "",
+        "columns[0][searchable]": "true",
+        "columns[0][orderable]": "false",
+        "columns[0][search][value]": "",
+        "columns[0][search][regex]": "false",
+        "search[value]": query,
+        "search[regex]": "false",
+        "start": 0,
+        "length": 10,
+    }
+
+    try:
+        response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload)
+        if response.status_code != 200:
+            return False
+
+        data = response.json()
+        for result in data.get("data", []):
+            result_artist = result.get("Artist", "").lower()
+            result_title = result.get("Title", "").lower()
+            if artist.lower() in result_artist and track.lower() in result_title:
+                return True
+        return False
+    except Exception as e:
+        print(f"Error querying CustomsForge for {artist} - {track}: {e}")
+        return False
+
 def load_and_prepare_data():
     # Load files
     cdlc_df = pd.read_csv(BASE_PATH / 'cdlc_library.csv')
@@ -35,7 +69,7 @@ def load_and_prepare_data():
 
     return cdlc_df, liked_df, top_df, lastfm_df
 
-def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles=None):
+def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles=None, filter_existing=False):
     cdlc_df, liked_df, top_df, lastfm_df = load_and_prepare_data()
 
     all_spotify = pd.concat([
@@ -74,7 +108,20 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         suffixes=('', '_LastFM')
     )
 
-    top_recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False).head(top_n)
+    recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
+
+    if filter_existing:
+        print("🔍 Checking CustomsForge availability...")
+        filtered = []
+        for _, row in recommendations.iterrows():
+            artist = row['Artist Name(s)']
+            track = row['Track Name']
+            if cdlc_exists_on_customsforge(artist, track):
+                filtered.append(row)
+            time.sleep(1)  # avoid hammering the server
+        recommendations = pd.DataFrame(filtered)
+
+    top_recommendations = recommendations.head(top_n)
 
     print("\U0001F3AF Top Missing Songs from Your Favorite Artists:\n")
     for _, row in top_recommendations.iterrows():
