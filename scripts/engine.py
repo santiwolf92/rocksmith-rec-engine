@@ -35,7 +35,7 @@ def load_and_prepare_data():
 
     return cdlc_df, liked_df, top_df, lastfm_df
 
-def generate_recommendations(top_n=50, save=True):
+def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles=None):
     cdlc_df, liked_df, top_df, lastfm_df = load_and_prepare_data()
 
     all_spotify = pd.concat([
@@ -44,8 +44,17 @@ def generate_recommendations(top_n=50, save=True):
     ]).drop_duplicates(subset=['Artist Normalized', 'Track Normalized'])
 
     artist_priority = lastfm_df[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']]
-    artist_priority.loc[:, 'Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
-    artist_priority = artist_priority.dropna().sort_values(by='Scrobbles', ascending=False)
+    artist_priority['Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
+    artist_priority = artist_priority.dropna()
+
+    if max_scrobbles is not None:
+        artist_priority = artist_priority[
+            (artist_priority['Scrobbles'] >= min_scrobbles) & (artist_priority['Scrobbles'] <= max_scrobbles)
+        ]
+    else:
+        artist_priority = artist_priority[artist_priority['Scrobbles'] >= min_scrobbles]
+
+    artist_priority = artist_priority.sort_values(by='Scrobbles', ascending=False)
 
     merged = pd.merge(
         all_spotify,
@@ -56,8 +65,7 @@ def generate_recommendations(top_n=50, save=True):
     )
 
     missing_songs = merged[merged['_merge'] == 'left_only'][[
-        'Artist Name(s)', 'Track Name', 'Artist Normalized'
-    ]].drop_duplicates()
+        'Artist Name(s)', 'Track Name', 'Artist Normalized']].drop_duplicates()
 
     missing_songs = missing_songs.merge(
         artist_priority[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']],
@@ -68,7 +76,7 @@ def generate_recommendations(top_n=50, save=True):
 
     top_recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False).head(top_n)
 
-    print("🎯 Top Missing Songs from Your Favorite Artists:\n")
+    print("\U0001F3AF Top Missing Songs from Your Favorite Artists:\n")
     for _, row in top_recommendations.iterrows():
         artist = row['Artist Name(s)'].title()
         song = row['Track Name'].title()
@@ -82,3 +90,4 @@ def generate_recommendations(top_n=50, save=True):
         print(f"\n✅ Saved to {output_file}")
 
     return top_recommendations
+
