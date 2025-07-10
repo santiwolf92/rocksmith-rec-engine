@@ -1,7 +1,7 @@
 import os
 
 # Folder to create test files in
-UNMATCHED_FOLDER = r"C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\01_CDLC Normalizer\unmatched"
+UNMATCHED_FOLDER = r"F:\Rocksmith\dlc\01_CDLC Normalizer\unmatched"
 
 # Some intentionally messy examples
 dummy_filenames = [
