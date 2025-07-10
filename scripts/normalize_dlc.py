@@ -6,7 +6,7 @@ from fuzzywuzzy import process, fuzz
 # === PATHS ===
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FOLDER = os.path.join(PROJECT_ROOT, "data")
-UNMATCHED_FOLDER = r"C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc\01_CDLC Normalizer\unmatched"
+UNMATCHED_FOLDER = r"F:\Rocksmith\dlc\01_CDLC Normalizer\unmatched"
 LOG_PATH = os.path.join(UNMATCHED_FOLDER, "rename_log.csv")
 
 HISTORY_FILES = [
