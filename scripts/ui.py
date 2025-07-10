@@ -70,7 +70,7 @@ def load_and_prepare_data():
 
     return cdlc_df, liked_df, top_df, lastfm_df
 
-def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles=None, filter_existing=False):
+def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles=None, filter_existing=False, update_progress=None):
     cdlc_df, liked_df, top_df, lastfm_df = load_and_prepare_data()
 
     all_spotify = pd.concat([
@@ -112,13 +112,13 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
 
     if filter_existing:
-        print("🔍 Checking CustomsForge availability...")
         filtered = []
         total = len(recommendations.head(top_n))
         for i, (_, row) in enumerate(recommendations.head(top_n).iterrows(), 1):
             artist = row['Artist Name(s)']
             track = row['Track Name']
-            st.info(f"🔍 Checking {i} of {total}: {artist} — {track}")
+            if update_progress:
+                update_progress(i, total, artist, track)
             if cdlc_exists_on_customsforge(artist, track):
                 filtered.append(row)
             time.sleep(1)
@@ -140,4 +140,3 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         print(f"\n✅ Saved to {output_file}")
 
     return top_recommendations
-
