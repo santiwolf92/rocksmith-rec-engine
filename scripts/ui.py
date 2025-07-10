@@ -96,7 +96,7 @@ if not st.session_state.recs.empty:
 # Optional: Update CDLC button
 if st.button("🔁 Update CDLC Library"):
     try:
-        result = subprocess.run(["python", "scripts/update_cdlc_library.py"], check=True, capture_output=True, text=True)
+        result = subprocess.run(["python", "update_cdlc_library.py"], check=True, capture_output=True, text=True)
         st.success("✅ CDLC library updated successfully.")
         st.text(result.stdout)
     except subprocess.CalledProcessError as e:
