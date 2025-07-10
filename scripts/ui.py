@@ -28,7 +28,7 @@ if st.button("🎯 Generate Recommendations"):
         st.session_state.min_scrobbles = min_scrobbles
         st.session_state.max_scrobbles = max_scrobbles
 
-        all_recs = generate_recommendations(top_n=500, save=False)  # generate a big pool
+        all_recs = generate_recommendations(top_n=500, save=False)
         filtered = all_recs[
             all_recs['Scrobbles'].fillna(0).between(min_scrobbles, max_scrobbles)
         ].reset_index(drop=True)
@@ -55,8 +55,4 @@ if not st.session_state.recs.empty:
     # Download button
     csv = st.session_state.recs.to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
-
-        # Download button
-        csv = recs[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(index=False).encode('utf-8')
-        st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
 
