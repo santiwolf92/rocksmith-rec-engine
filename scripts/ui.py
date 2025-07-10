@@ -1,81 +1,143 @@
-import streamlit as st
 import pandas as pd
-from engine import generate_recommendations
-import subprocess
+import re
+import requests
+import time
+from pathlib import Path
+import streamlit as st
 
-st.set_page_config(page_title="Rocksmith Recommender", layout="wide")
+BASE_PATH = Path(__file__).resolve().parent.parent / 'data'
+OUTPUT_PATH = BASE_PATH / 'recommendations'
 
-st.title("🎸 Rocksmith CDLC Recommender")
-st.markdown("Compare your Spotify + Last.fm listening data with your CDLC library.")
+def fix_mojibake(text):
+    if isinstance(text, str):
+        try:
+            return text.encode('latin1').decode('utf-8')
+        except UnicodeDecodeError:
+            return text
+    return text
 
-# Initialize session state
-if 'recs' not in st.session_state:
-    st.session_state.recs = pd.DataFrame()
-if 'offset' not in st.session_state:
-    st.session_state.offset = 0
-if 'min_scrobbles' not in st.session_state:
-    st.session_state.min_scrobbles = 0
-if 'max_scrobbles' not in st.session_state:
-    st.session_state.max_scrobbles = 500  # default cap
+def normalize(text):
+    if not isinstance(text, str):
+        return ''
+    text = text.lower().replace('&', 'and')
+    return re.sub(r'[^a-z0-9]', '', text)
 
-# Determine dynamic max based on real data, with 500 as upper cap
-temp_recs = generate_recommendations(top_n=1, save=False)
-true_max = int(temp_recs['Scrobbles'].max() or 0)
-slider_cap = min(500, true_max)
+def cdlc_exists_on_customsforge(artist, track):
+    query = f"{artist} {track}"
+    payload = {
+        "draw": 1,
+        "columns[0][data]": "Add",
+        "columns[0][name]": "",
+        "columns[0][searchable]": "true",
+        "columns[0][orderable]": "false",
+        "columns[0][search][value]": "",
+        "columns[0][search][regex]": "false",
+        "search[value]": query,
+        "search[regex]": "false",
+        "start": 0,
+        "length": 10,
+    }
 
-# Sliders for generation filters
-min_scrobbles = st.slider("Minimum Scrobbles", 0, slider_cap, st.session_state.min_scrobbles)
-max_scrobbles = st.slider("Maximum Scrobbles", 0, slider_cap, st.session_state.max_scrobbles)
+    try:
+        response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload)
+        if response.status_code != 200:
+            return False
 
-# Checkbox for filtering existing CDLC
-filter_existing = st.checkbox("Only show songs available on CustomsForge")
+        data = response.json()
+        for result in data.get("data", []):
+            result_artist = result.get("Artist", "").lower()
+            result_title = result.get("Title", "").lower()
+            if artist.lower() in result_artist and track.lower() in result_title:
+                return True
+        return False
+    except Exception as e:
+        print(f"Error querying CustomsForge for {artist} - {track}: {e}")
+        return False
 
-# Generate button
-if st.button("🎯 Generate Recommendations"):
-    with st.spinner("Crunching data..."):
-        st.session_state.offset = 0
-        st.session_state.min_scrobbles = min_scrobbles
-        st.session_state.max_scrobbles = max_scrobbles
+def load_and_prepare_data():
+    # Load files
+    cdlc_df = pd.read_csv(BASE_PATH / 'cdlc_library.csv')
+    liked_df = pd.read_csv(BASE_PATH / 'spotify_liked.csv')
+    top_df = pd.read_csv(BASE_PATH / 'spotify_top.csv')
+    lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv')
+    lastfm_df = lastfm_df.apply(lambda col: col.map(fix_mojibake))
 
-        all_recs = generate_recommendations(
-            top_n=500,
-            save=False,
-            min_scrobbles=min_scrobbles,
-            max_scrobbles=max_scrobbles,
-            filter_existing=filter_existing
-        )
-        filtered = all_recs.reset_index(drop=True)
+    # Normalize
+    for df in [cdlc_df, liked_df, top_df]:
+        df['Artist Normalized'] = df['Artist Name(s)'].apply(normalize)
+        df['Track Normalized'] = df['Track Name'].apply(normalize)
+    lastfm_df['Artist Normalized'] = lastfm_df['Artist Name(s)'].apply(normalize)
 
-        st.session_state.recs = filtered.head(50)
-        st.session_state.all_filtered = filtered
+    return cdlc_df, liked_df, top_df, lastfm_df
 
-# Load More button
-if not st.session_state.recs.empty and st.button("➕ Load 50 More"):
-    st.session_state.offset += 50
-    start = st.session_state.offset
-    end = start + 50
-    new_recs = st.session_state.all_filtered.iloc[start:end]
-    st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
+def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles=None, filter_existing=False):
+    cdlc_df, liked_df, top_df, lastfm_df = load_and_prepare_data()
 
-# Display recommendations
-if not st.session_state.recs.empty:
-    st.success(f"Showing {len(st.session_state.recs)} recommendations")
-    st.dataframe(
-        st.session_state.recs[['Artist Name(s)', 'Track Name', 'Scrobbles']],
-        use_container_width=True
+    all_spotify = pd.concat([
+        liked_df[['Artist Name(s)', 'Track Name', 'Artist Normalized', 'Track Normalized']],
+        top_df[['Artist Name(s)', 'Track Name', 'Artist Normalized', 'Track Normalized']]
+    ]).drop_duplicates(subset=['Artist Normalized', 'Track Normalized'])
+
+    artist_priority = lastfm_df[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']]
+    artist_priority['Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
+    artist_priority = artist_priority.dropna()
+
+    if max_scrobbles is not None:
+        artist_priority = artist_priority[
+            (artist_priority['Scrobbles'] >= min_scrobbles) & (artist_priority['Scrobbles'] <= max_scrobbles)
+        ]
+    else:
+        artist_priority = artist_priority[artist_priority['Scrobbles'] >= min_scrobbles]
+
+    artist_priority = artist_priority.sort_values(by='Scrobbles', ascending=False)
+
+    merged = pd.merge(
+        all_spotify,
+        cdlc_df[['Artist Normalized', 'Track Normalized']],
+        on=['Artist Normalized', 'Track Normalized'],
+        how='left',
+        indicator=True
     )
 
-    # Download button
-    csv = st.session_state.recs.to_csv(index=False).encode('utf-8')
-    st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
+    missing_songs = merged[merged['_merge'] == 'left_only'][[
+        'Artist Name(s)', 'Track Name', 'Artist Normalized']].drop_duplicates()
 
-# Update CDLC library button
-if st.button("🔄 Update CDLC Library"):
-    with st.spinner("Updating CDLC library..."):
-        result = subprocess.run(["python", "scripts/update_cdlc_library.py"], capture_output=True, text=True)
-        if result.returncode == 0:
-            st.success("CDLC library updated successfully.")
-        else:
-            st.error("❌ Failed to update CDLC library.")
-            st.code(result.stderr)
+    missing_songs = missing_songs.merge(
+        artist_priority[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']],
+        on='Artist Normalized',
+        how='left',
+        suffixes=('', '_LastFM')
+    )
+
+    recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
+
+    if filter_existing:
+        print("🔍 Checking CustomsForge availability...")
+        filtered = []
+        total = len(recommendations.head(top_n))
+        for i, (_, row) in enumerate(recommendations.head(top_n).iterrows(), 1):
+            artist = row['Artist Name(s)']
+            track = row['Track Name']
+            st.info(f"🔍 Checking {i} of {total}: {artist} — {track}")
+            if cdlc_exists_on_customsforge(artist, track):
+                filtered.append(row)
+            time.sleep(1)
+        recommendations = pd.DataFrame(filtered)
+
+    top_recommendations = recommendations.head(top_n)
+
+    print("\U0001F3AF Top Missing Songs from Your Favorite Artists:\n")
+    for _, row in top_recommendations.iterrows():
+        artist = row['Artist Name(s)'].title()
+        song = row['Track Name'].title()
+        scrobbles = int(row['Scrobbles']) if pd.notna(row['Scrobbles']) else '?'
+        print(f"- {artist} — {song}  ({scrobbles} scrobbles)")
+
+    if save:
+        OUTPUT_PATH.mkdir(exist_ok=True)
+        output_file = OUTPUT_PATH / 'recommendations.csv'
+        top_recommendations[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(output_file, index=False)
+        print(f"\n✅ Saved to {output_file}")
+
+    return top_recommendations
 
