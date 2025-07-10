@@ -1,63 +1,64 @@
 import os
-import csv
 import re
+import csv
+import git
 from pathlib import Path
-import subprocess
 
-# === CONFIGURATION ===
-DLF_PATH = Path(r"F:/SteamLibrary/steamapps/common/Rocksmith2014/dlc")
-EXCLUDE_FOLDER = DLF_PATH / "01_CDLC Normalizer"
+# === CONFIG ===
+DLC_FOLDER = Path(r"F:/Rocksmith/dlc")
+EXCLUDED_FOLDER = DLC_FOLDER / "01_CDLC Normalizer"
 OUTPUT_CSV = Path(__file__).resolve().parent.parent / "data" / "cdlc_library.csv"
+REPO_PATH = Path(__file__).resolve().parent.parent
 
-# === HELPERS ===
+# === PARSE ===
 def parse_filename(filename):
-    name = filename.replace("_p.psarc", "").replace(".psarc", "")
-    name = re.sub(r"[_]+", " ", name)  # underscores to space
-    name = re.sub(r"(?i)\b(v|ver|rs2014|remastered|explicit|deluxe|lead|rhythm|combo|alt|part)\d*(\.\d+)*\b", "", name)
-    name = re.sub(r"[\[\](){}]", "", name)
-    name = re.sub(r"\s+", " ", name).strip()
+    match = re.match(r"(.+?) - (.+?)_p\.psarc$", filename)
+    if match:
+        artist = match.group(1).strip()
+        track = match.group(2).strip()
+        return artist, track
+    return None, None
 
-    if " - " in name:
-        artist, track = name.split(" - ", 1)
-    else:
-        parts = name.split(" ")
-        artist = parts[0]
-        track = " ".join(parts[1:])
-
-    return artist.strip().title(), track.strip().title()
-
-# === MAIN ===
-def collect_psarcs():
-    all_entries = []
-    for root, dirs, files in os.walk(DLF_PATH):
-        if EXCLUDE_FOLDER in Path(root).parents or Path(root) == EXCLUDE_FOLDER:
+# === WALK DLC FOLDER ===
+def collect_cdlc():
+    entries = []
+    for root, dirs, files in os.walk(DLC_FOLDER):
+        if EXCLUDED_FOLDER in map(Path, [root] + [os.path.join(root, d) for d in dirs]):
             continue
         for file in files:
-            if file.lower().endswith(".psarc"):
-                full_path = Path(root) / file
+            if file.lower().endswith("_p.psarc"):
                 artist, track = parse_filename(file)
-                all_entries.append([artist, track, file])
-    return all_entries
+                if artist and track:
+                    entries.append([artist, track, file])
+    return entries
 
+# === SAVE TO CSV ===
 def save_to_csv(entries):
     OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_CSV, "w", newline='', encoding="utf-8") as f:
+    with open(OUTPUT_CSV, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow(["Artist Name(s)", "Track Name", "file_name"])
         writer.writerows(entries)
-    print(f"✅ Saved {len(entries)} entries to {OUTPUT_CSV}")
+    print(f"\n✅ Saved {len(entries)} entries to {OUTPUT_CSV}")
 
+# === COMMIT TO GIT ===
 def push_to_git():
     try:
-        subprocess.run(["git", "add", str(OUTPUT_CSV)], check=True)
-        subprocess.run(["git", "commit", "-m", "Update CDLC library"], check=True)
-        subprocess.run(["git", "push"], check=True)
-        print("🚀 Pushed changes to GitHub")
-    except subprocess.CalledProcessError as e:
-        print("⚠️ Git operation failed:", e)
+        repo = git.Repo(REPO_PATH)
+        repo.git.add(OUTPUT_CSV)
+        if repo.is_dirty():
+            repo.index.commit("Update CDLC library")
+            origin = repo.remote(name='origin')
+            origin.push()
+            print("🚀 Pushed changes to GitHub")
+        else:
+            print("✅ No changes to commit")
+    except Exception as e:
+        print(f"⚠️ Git operation failed: {e}")
 
+# === RUN ===
 if __name__ == "__main__":
-    entries = collect_psarcs()
-    save_to_csv(entries)
+    cdlc_entries = collect_cdlc()
+    save_to_csv(cdlc_entries)
     push_to_git()
 
