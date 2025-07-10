@@ -4,7 +4,7 @@ import pandas as pd
 from fuzzywuzzy import process, fuzz
 
 # === PATHS ===
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = PROJECT_ROOT = r"F:\rocksmith-rec-engine"  # Path hardcoded for external drive use
 DATA_FOLDER = os.path.join(PROJECT_ROOT, "data")
 UNMATCHED_FOLDER = r"F:\Rocksmith\dlc\01_CDLC Normalizer\unmatched"
 LOG_PATH = os.path.join(UNMATCHED_FOLDER, "rename_log.csv")
