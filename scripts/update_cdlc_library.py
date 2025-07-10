@@ -37,13 +37,15 @@ def save_to_csv(entries):
     print(f"\nSaved {len(entries)} entries to {OUTPUT_CSV}")
 
 def push_to_git():
-    try:
-        subprocess.run(["git", "add", str(OUTPUT_CSV)], check=True, cwd=Path(__file__).resolve().parent.parent)
-        subprocess.run(["git", "commit", "-m", "Update CDLC library"], check=True)
-        subprocess.run(["git", "push"], check=True)
-        print("🚀 Pushed changes to GitHub")
-    except subprocess.CalledProcessError as e:
-        print(f"⚠️ Git operation failed: {e}")
+    def push_to_git():
+    repo_dir = Path(__file__).resolve().parent.parent  # go up to project root
+
+        try:
+            subprocess.run(["git", "add", str(OUTPUT_CSV)], check=True, cwd=repo_dir)
+            subprocess.run(["git", "commit", "-m", "Update CDLC library"], check=True, cwd=repo_dir)
+            subprocess.run(["git", "push"], check=True, cwd=repo_dir)
+        except subprocess.CalledProcessError as e:
+            print("Git operation failed:", e)
 
 if __name__ == "__main__":
     cdlc_entries = collect_cdlc_entries()
