@@ -4,62 +4,70 @@ import pandas as pd
 from pathlib import Path
 import subprocess
 
-# === PATHS ===
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-DATA_FOLDER = PROJECT_ROOT / "data"
-CDLC_CSV_PATH = DATA_FOLDER / "cdlc_library.csv"
-DLF_FOLDER = Path(r"F:\Rocksmith2014\dlc")
+DLC_FOLDER = Path(r"C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc")
+OUTPUT_CSV = Path(__file__).resolve().parent.parent / "data" / "cdlc_library.csv"
+EXCLUDED_DIRS = {"01_CDLC Normalizer"}
 
-# === PARSE FILENAME ===
-def parse_filename(filename):
-    name = filename.replace("_p", "").replace(".psarc", "")
-    name = re.sub(r'[_\-]', ' ', name)
-    name = re.sub(r'(?i)\bv\d+(\.\d+)*\b|rs2014|remastered|deluxe|explicit|version|lead|rhythm|combo|alt\d*|part\d+', '', name)
-    name = re.sub(r'\s+', ' ', name).strip().title()
+def parse_psarc_filename(filename):
+    base = filename.replace("_p.psarc", "").replace(".psarc", "")
+    base = re.sub(r'(?i)(\bv\d+(\.\d+)*\b|rs2014|remastered|deluxe|explicit|version|lead|rhythm|combo|alt\d*|part\d+)', '', base)
+    base = re.sub(r'[-_.]+', ' ', base)
+    base = re.sub(r'\s+', ' ', base).strip().title()
+    return base
 
-    if " - " in name:
-        parts = name.split(" - ", 1)
-    elif " " in name:
-        parts = name.split(" ", 1)
+def extract_metadata(base_name):
+    if ' - ' in base_name:
+        parts = base_name.split(' - ', 1)
+    elif '_' in base_name:
+        parts = base_name.split('_', 1)
     else:
-        parts = [name, ""]
+        parts = base_name.split(None, 1)
 
-    artist = parts[0].strip()
-    track = parts[1].strip() if len(parts) > 1 else ""
-    return artist, track
+    if len(parts) == 2:
+        artist, track = parts
+    else:
+        artist, track = "Unknown", parts[0]
+    return artist.strip(), track.strip()
 
-# === MAIN SCRIPT ===
-def build_cdlc_library():
+def scan_dlc_folder():
     entries = []
-
-    for root, dirs, files in os.walk(DLF_FOLDER):
-        if "01_CDLC Normalizer" in root:
+    for root, dirs, files in os.walk(DLC_FOLDER):
+        # Skip excluded directories
+        if any(excluded in root for excluded in EXCLUDED_DIRS):
             continue
+
         for file in files:
             if file.lower().endswith(".psarc"):
-                artist, track = parse_filename(file)
+                file_path = Path(root) / file
+                base_name = parse_psarc_filename(file)
+                artist, track = extract_metadata(base_name)
                 entries.append({
                     "Artist Name(s)": artist,
                     "Track Name": track,
                     "file_name": file
                 })
+    return entries
+
+def update_library():
+    entries = scan_dlc_folder()
+    print(f"✅ Found {len(entries)} valid .psarc entries")
+
+    if not entries:
+        print("⚠️ No files found. Aborting update to avoid data loss.")
+        return
 
     df = pd.DataFrame(entries)
-    df.to_csv(CDLC_CSV_PATH, index=False, encoding="utf-8")
-    print(f"✅ Saved {len(df)} entries to {CDLC_CSV_PATH}")
-    return True
+    df.to_csv(OUTPUT_CSV, index=False)
+    print(f"✅ Saved {len(df)} entries to {OUTPUT_CSV}")
 
-# === GIT PUSH ===
-def git_push():
     try:
-        subprocess.run(["git", "add", str(CDLC_CSV_PATH)], cwd=str(PROJECT_ROOT), check=True)
-        subprocess.run(["git", "commit", "-m", "Update CDLC library"], cwd=str(PROJECT_ROOT), check=True)
-        subprocess.run(["git", "push"], cwd=str(PROJECT_ROOT), check=True)
+        subprocess.run(["git", "add", str(OUTPUT_CSV)], check=True)
+        subprocess.run(["git", "commit", "-m", "Update CDLC library"], check=True)
+        subprocess.run(["git", "push"], check=True)
         print("🚀 Pushed changes to GitHub")
     except subprocess.CalledProcessError as e:
-        print("⚠️ Git operation failed:", e)
+        print(f"⚠️ Git operation failed: {e}")
 
-# === RUN ===
 if __name__ == "__main__":
-    if build_cdlc_library():
-        git_push()
+    update_library()
+
