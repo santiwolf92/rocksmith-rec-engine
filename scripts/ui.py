@@ -12,9 +12,19 @@ if st.button("🎯 Generate Recommendations"):
         recs = generate_recommendations(save=False)
         st.success(f"Found {len(recs)} missing songs!")
 
-        # Filter by scrobbles
-        min_scrobbles = st.slider("Minimum Scrobbles", 0, int(recs['Scrobbles'].max() or 0), 0)
-        filtered = recs[recs['Scrobbles'].fillna(0) >= min_scrobbles]
+        # Determine slider range
+        max_possible = int(recs['Scrobbles'].max() or 100)
+        min_possible = int(recs['Scrobbles'].min() or 0)
+
+        # Dual sliders: min and max scrobbles
+        min_scrobbles, max_scrobbles = st.slider(
+            "Scrobble Range", min_possible, max_possible, (min_possible, max_possible)
+        )
+
+        # Filter by range
+        filtered = recs[
+            recs['Scrobbles'].fillna(0).between(min_scrobbles, max_scrobbles)
+        ]
 
         # Display table
         st.dataframe(
@@ -25,3 +35,4 @@ if st.button("🎯 Generate Recommendations"):
         # Download button
         csv = filtered[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(index=False).encode('utf-8')
         st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
+
