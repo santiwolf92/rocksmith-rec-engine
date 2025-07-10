@@ -6,27 +6,29 @@ st.set_page_config(page_title="Rocksmith Recommender", layout="wide")
 st.title("🎸 Rocksmith CDLC Recommender")
 st.markdown("Compare your Spotify + Last.fm listening data with your CDLC library.")
 
-# User input sliders BEFORE recommendation generation
-st.markdown("### Filter by Scrobbles Before Generating:")
-min_scrobbles = st.slider("Minimum Scrobbles", 0, 1000, 0)
-max_scrobbles = st.slider("Maximum Scrobbles", min_scrobbles + 1, 1000, 1000)
+# Placeholder to avoid errors before generation
+recs = pd.DataFrame()
+
+# Set default slider ranges (you can adjust these)
+min_slider_default = 0
+max_slider_default = 1000
+
+# Sliders that now affect recommendation generation
+min_scrobbles = st.slider("Minimum Scrobbles", min_slider_default, max_slider_default, min_slider_default)
+max_scrobbles = st.slider("Maximum Scrobbles", min_slider_default, max_slider_default, max_slider_default)
 
 if st.button("🎯 Generate Recommendations"):
     with st.spinner("Crunching data..."):
-        recs = generate_recommendations(
-            save=False,
-            min_scrobbles=min_scrobbles,
-            max_scrobbles=max_scrobbles
-        )
-        st.success(f"Found {len(recs)} matching songs!")
+        recs = generate_recommendations(min_scrobbles=min_scrobbles, max_scrobbles=max_scrobbles, save=False)
+        st.success(f"Found {len(recs)} missing songs!")
 
-        if recs.empty:
-            st.warning("No recommendations matched your filters.")
-        else:
-            st.dataframe(
-                recs[['Artist Name(s)', 'Track Name', 'Scrobbles']].reset_index(drop=True),
-                use_container_width=True
-            )
-            csv = recs[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(index=False).encode('utf-8')
-            st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
+        # Display table
+        st.dataframe(
+            recs[['Artist Name(s)', 'Track Name', 'Scrobbles']].reset_index(drop=True),
+            use_container_width=True
+        )
+
+        # Download button
+        csv = recs[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(index=False).encode('utf-8')
+        st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
 
