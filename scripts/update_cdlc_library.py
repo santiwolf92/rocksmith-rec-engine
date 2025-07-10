@@ -1,67 +1,52 @@
 import os
-import re
 import csv
-import git
+import re
+import subprocess
 from pathlib import Path
 
-# === CONFIG ===
-DLC_FOLDER = Path(r"F:/Rocksmith/dlc")
+DLC_FOLDER = Path(r"F:\Rocksmith\dlc")
 EXCLUDED_FOLDER = DLC_FOLDER / "01_CDLC Normalizer"
 OUTPUT_CSV = Path(__file__).resolve().parent.parent / "data" / "cdlc_library.csv"
-REPO_PATH = Path(__file__).resolve().parent.parent
 
-# === PARSE ===
-def parse_filename(filename):
-    match = re.match(r"(.+?) - (.+?)_p\.psarc$", filename)
-    if match:
-        artist = match.group(1).strip()
-        track = match.group(2).strip()
-        return artist, track
+def parse_filename(file_name):
+    # Expecting: "Artist Name(s) - Track Name_p.psarc"
+    name = file_name.replace("_p.psarc", "").strip()
+    if " - " in name:
+        artist, track = name.split(" - ", 1)
+        return artist.strip(), track.strip()
     return None, None
 
-# === WALK DLC FOLDER ===
-def collect_cdlc():
+def collect_cdlc_entries():
     entries = []
     for root, dirs, files in os.walk(DLC_FOLDER):
-        # Skip the "01_CDLC Normalizer" folder entirely
-        if "01_CDLC Normalizer" in dirs:
-            dirs.remove("01_CDLC Normalizer")
-
+        if EXCLUDED_FOLDER in Path(root).parents or Path(root) == EXCLUDED_FOLDER:
+            continue
         for file in files:
             if file.lower().endswith("_p.psarc"):
                 artist, track = parse_filename(file)
                 if artist and track:
                     entries.append([artist, track, file])
-
     return entries
 
-# === SAVE TO CSV ===
 def save_to_csv(entries):
-    OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_CSV, 'w', newline='', encoding='utf-8') as f:
+    OUTPUT_CSV.parent.mkdir(exist_ok=True)
+    with open(OUTPUT_CSV, "w", newline='', encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(["Artist Name(s)", "Track Name", "file_name"])
         writer.writerows(entries)
-    print(f"\n✅ Saved {len(entries)} entries to {OUTPUT_CSV}")
+    print(f"\nSaved {len(entries)} entries to {OUTPUT_CSV}")
 
-# === COMMIT TO GIT ===
 def push_to_git():
     try:
-        repo = git.Repo(REPO_PATH)
-        repo.git.add(OUTPUT_CSV)
-        if repo.is_dirty():
-            repo.index.commit("Update CDLC library")
-            origin = repo.remote(name='origin')
-            origin.push()
-            print("🚀 Pushed changes to GitHub")
-        else:
-            print("✅ No changes to commit")
-    except Exception as e:
+        subprocess.run(["git", "add", str(OUTPUT_CSV)], check=True)
+        subprocess.run(["git", "commit", "-m", "Update CDLC library"], check=True)
+        subprocess.run(["git", "push"], check=True)
+        print("🚀 Pushed changes to GitHub")
+    except subprocess.CalledProcessError as e:
         print(f"⚠️ Git operation failed: {e}")
 
-# === RUN ===
 if __name__ == "__main__":
-    cdlc_entries = collect_cdlc()
+    cdlc_entries = collect_cdlc_entries()
     save_to_csv(cdlc_entries)
     push_to_git()
 
