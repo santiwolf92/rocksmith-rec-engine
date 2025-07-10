@@ -71,10 +71,10 @@ if not st.session_state.recs.empty:
     st.success(f"Showing {len(st.session_state.recs)} recommendations")
     st.dataframe(
         st.session_state.recs[['Artist Name(s)', 'Track Name', 'Scrobbles']],
-        use_co_
+        use_container_width=True
+    )  # ← This closing parenthesis was missing
 
-    # Download button
+    # === Download Button ===
     csv = st.session_state.recs.to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
-
 
