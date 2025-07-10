@@ -1,11 +1,9 @@
 Artist Name(s),Track Name,file_name
-Ac,Dc Have A Drink On Me,AC-DC - Have a Drink on Me_p.psarc
-Ac,Dc Hells Bells,AC-DC - Hells Bells_p.psarc
-Ac,Dc Highway To Hell,AC-DC - Highway to Hell_p.psarc
-Ac,Dc Rock N Roll Train,AC-DC - Rock N Roll Train_p.psarc
-Ac,Dc Shoot To Thrill,AC-DC - Shoot to Thrill_p.psarc
-Ac,Dc Thunderstruck,AC-DC - Thunderstruck_p.psarc
-Ac,Dc You Shook Me All Night Long,AC-DC - You Shook Me All Night Long_p.psarc
+Acdc,Have A Drink On Me,ACDC - Have a Drink on Me_p.psarc
+Acdc,Hells Bells,ACDC - Hells Bells_p.psarc
+Acdc,Rock N Roll Train,ACDC - Rock N Roll Train_p.psarc
+Acdc,Thunderstruck,ACDC - Thunderstruck_p.psarc
+Acdc,You Shook Me All Night Long,ACDC - You Shook Me All Night Long_p.psarc
 Acdc,Moneytalks,ACDC -  Moneytalks_p.psarc
 Acdc,Beating Around The Bush,ACDC - Beating Around The Bush_p.psarc
 Acdc,Burnin' Alive,ACDC - Burnin' Alive_p.psarc
@@ -37,6 +35,8 @@ Acdc,What Do You Do For Money Honey,ACDC - What Do You Do For Money Honey_p.psar
 Acdc,Whats Next To The Moon,ACDC - Whats Next To The Moon_p.psarc
 Acdc,Who Made Who,ACDC - Who Made Who_p.psarc
 Acdc,Whole Lotta Rosie,ACDC - Whole Lotta Rosie_p.psarc
+Acdc,Shoot To Thrill,ACDC - Shoot to Thrill_p.psarc
+Acdc,Highway To Hell,ACDC - Highway to Hell_p.psarc
 Adele,Easy On Me,Adele - Easy On Me_p.psarc
 Adele,Hello,Adele - Hello_p.psarc
 Adele,Rolling In The Deep,Adele - Rolling in the Deep_p.psarc
@@ -109,7 +109,7 @@ Blondie,Heart Of Glass,Blondie - Heart of Glass_p.psarc
 Blondie,One Way Or Another,Blondie - One Way Or Another_p.psarc
 Blue,Oyster Cult Joan Crawford,Blue Oyster Cult - Joan Crawford_p.psarc
 Blue,Oyster Cult Sole Survivor,Blue Oyster Cult - Sole Survivor_p.psarc
-Blue,Öyster Cult Cities On Flame With Rock And Roll,Blue Öyster Cult - Cities on Flame With Rock and Roll_p.psarc
+Blue,Oyster Cult Cities On Flame With Rock And Roll,Blue Oyster Cult - Cities on Flame With Rock and Roll_p.psarc
 Blur,Beetlebum,Blur - Beetlebum_p.psarc
 Blur,Coffee & Tv,Blur - Coffee & TV_p.psarc
 Blur,Ghost Ship,Blur - Ghost Ship_p.psarc
