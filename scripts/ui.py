@@ -126,17 +126,9 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
 
     top_recommendations = recommendations.head(top_n)
 
-    print("\U0001F3AF Top Missing Songs from Your Favorite Artists:\n")
-    for _, row in top_recommendations.iterrows():
-        artist = row['Artist Name(s)'].title()
-        song = row['Track Name'].title()
-        scrobbles = int(row['Scrobbles']) if pd.notna(row['Scrobbles']) else '?'
-        print(f"- {artist} — {song}  ({scrobbles} scrobbles)")
-
     if save:
         OUTPUT_PATH.mkdir(exist_ok=True)
         output_file = OUTPUT_PATH / 'recommendations.csv'
         top_recommendations[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(output_file, index=False)
-        print(f"\n✅ Saved to {output_file}")
 
     return top_recommendations
