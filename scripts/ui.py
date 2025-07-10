@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import subprocess
+from pathlib import Path
 from engine import generate_recommendations
 
 st.set_page_config(page_title="Rocksmith Recommender", layout="wide")
@@ -8,23 +9,7 @@ st.set_page_config(page_title="Rocksmith Recommender", layout="wide")
 st.title("🎸 Rocksmith CDLC Recommender")
 st.markdown("Compare your Spotify + Last.fm listening data with your CDLC library.")
 
-# ✅ CDLC Update Button
-if st.button("🔄 Update CDLC Library"):
-    with st.spinner("Scanning DLC folder and updating library..."):
-        try:
-            result = subprocess.run(
-                ["python", "scripts/update_cdlc_library.py"],
-                capture_output=True,
-                text=True,
-                check=True
-            )
-            st.success("✅ CDLC library updated successfully.")
-            st.text(result.stdout)
-        except subprocess.CalledProcessError as e:
-            st.error("⚠️ Failed to update CDLC library.")
-            st.text(e.stderr)
-
-# === Session State Setup ===
+# === Session state ===
 if 'recs' not in st.session_state:
     st.session_state.recs = pd.DataFrame()
 if 'offset' not in st.session_state:
@@ -32,9 +17,9 @@ if 'offset' not in st.session_state:
 if 'min_scrobbles' not in st.session_state:
     st.session_state.min_scrobbles = 0
 if 'max_scrobbles' not in st.session_state:
-    st.session_state.max_scrobbles = 500  # default cap
+    st.session_state.max_scrobbles = 500
 
-# === Dynamic slider range ===
+# === Dynamic slider cap ===
 temp_recs = generate_recommendations(top_n=1, save=False)
 true_max = int(temp_recs['Scrobbles'].max() or 0)
 slider_cap = min(500, true_max)
@@ -58,7 +43,7 @@ if st.button("🎯 Generate Recommendations"):
         st.session_state.recs = filtered.head(50)
         st.session_state.all_filtered = filtered
 
-# === Load More ===
+# === Load More Button ===
 if not st.session_state.recs.empty and st.button("➕ Load 50 More"):
     st.session_state.offset += 50
     start = st.session_state.offset
@@ -66,15 +51,32 @@ if not st.session_state.recs.empty and st.button("➕ Load 50 More"):
     new_recs = st.session_state.all_filtered.iloc[start:end]
     st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
 
-# === Display Results ===
+# === Display Recommendations ===
 if not st.session_state.recs.empty:
     st.success(f"Showing {len(st.session_state.recs)} recommendations")
     st.dataframe(
         st.session_state.recs[['Artist Name(s)', 'Track Name', 'Scrobbles']],
         use_container_width=True
-    )  # ← This closing parenthesis was missing
+    )
 
-    # === Download Button ===
     csv = st.session_state.recs.to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
+
+# === Update CDLC Library Button ===
+SCRIPT_PATH = Path(__file__).resolve().parent / "update_cdlc_library.py"
+
+if st.button("🔄 Update CDLC Library"):
+    with st.spinner("Scanning DLC folder and updating..."):
+        try:
+            result = subprocess.run(
+                ["python", str(SCRIPT_PATH)],
+                capture_output=True,
+                text=True,
+                check=True
+            )
+            st.success("✅ CDLC library updated successfully!")
+            st.text(result.stdout)
+        except subprocess.CalledProcessError as e:
+            st.error("❌ Failed to update CDLC library.")
+            st.text(e.stderr)
 
