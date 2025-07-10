@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from engine import generate_recommendations
 import subprocess
+import os
 
 st.set_page_config(page_title="Rocksmith Recommender", layout="wide")
 st.title("🎸 Rocksmith CDLC Recommender")
@@ -46,33 +47,25 @@ def streamlit_progress_callback():
 # Generate button
 if st.button("🎯 Generate Recommendations"):
     with st.spinner("Crunching data..."):
-        try:
-            st.session_state.offset = 0
-            st.session_state.min_scrobbles = min_scrobbles
-            st.session_state.max_scrobbles = max_scrobbles
-            st.session_state.filter_existing = filter_existing
+        st.session_state.offset = 0
+        st.session_state.min_scrobbles = min_scrobbles
+        st.session_state.max_scrobbles = max_scrobbles
+        st.session_state.filter_existing = filter_existing
 
-            update_cb = streamlit_progress_callback() if filter_existing else None
+        update_cb = streamlit_progress_callback() if filter_existing else None
 
-            all_recs = generate_recommendations(
-                top_n=500,
-                save=False,
-                min_scrobbles=min_scrobbles,
-                max_scrobbles=max_scrobbles,
-                filter_existing=filter_existing,
-                update_progress=update_cb,
-            )
+        all_recs = generate_recommendations(
+            top_n=500,
+            save=False,
+            min_scrobbles=min_scrobbles,
+            max_scrobbles=max_scrobbles,
+            filter_existing=filter_existing,
+            update_progress=update_cb,
+        )
 
-            if all_recs.empty:
-                st.warning("⚠️ No recommendations found after filtering.")
-            else:
-                filtered = all_recs.reset_index(drop=True)
-                st.session_state.recs = filtered.head(50)
-                st.session_state.all_filtered = filtered
-
-        except Exception as e:
-            st.error("❌ An error occurred while generating recommendations.")
-            st.exception(e)
+        filtered = all_recs.reset_index(drop=True)
+        st.session_state.recs = filtered.head(50)
+        st.session_state.all_filtered = filtered
 
 # Load More button
 if not st.session_state.recs.empty and st.button("➕ Load 50 More"):
@@ -93,12 +86,14 @@ if not st.session_state.recs.empty:
     csv = st.session_state.recs.to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
 
-# Optional: Update CDLC button
+# Update CDLC Library button
 if st.button("🔁 Update CDLC Library"):
     try:
-        result = subprocess.run(["python", "update_cdlc_library.py"], check=True, capture_output=True, text=True)
+        script_path = os.path.join(os.path.dirname(__file__), "update_cdlc_library.py")
+        result = subprocess.run(["python", script_path], check=True, capture_output=True, text=True)
         st.success("✅ CDLC library updated successfully.")
         st.text(result.stdout)
     except subprocess.CalledProcessError as e:
         st.error("❌ Failed to update CDLC library.")
         st.text(e.stderr)
+
