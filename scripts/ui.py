@@ -15,11 +15,16 @@ if 'offset' not in st.session_state:
 if 'min_scrobbles' not in st.session_state:
     st.session_state.min_scrobbles = 0
 if 'max_scrobbles' not in st.session_state:
-    st.session_state.max_scrobbles = 1000  # default cap
+    st.session_state.max_scrobbles = 500  # default cap
+
+# Determine dynamic max based on real data, with 500 as upper cap
+temp_recs = generate_recommendations(top_n=1, save=False)
+true_max = int(temp_recs['Scrobbles'].max() or 0)
+slider_cap = min(500, true_max)
 
 # Sliders for generation filters
-min_scrobbles = st.slider("Minimum Scrobbles", 0, 1000, st.session_state.min_scrobbles)
-max_scrobbles = st.slider("Maximum Scrobbles", 0, 1000, st.session_state.max_scrobbles)
+min_scrobbles = st.slider("Minimum Scrobbles", 0, slider_cap, st.session_state.min_scrobbles)
+max_scrobbles = st.slider("Maximum Scrobbles", 0, slider_cap, st.session_state.max_scrobbles)
 
 # Generate button
 if st.button("🎯 Generate Recommendations"):
@@ -55,4 +60,5 @@ if not st.session_state.recs.empty:
     # Download button
     csv = st.session_state.recs.to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
+
 
