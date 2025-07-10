@@ -3,7 +3,7 @@ import pandas as pd
 from engine import generate_recommendations
 import subprocess
 
-st.set_page_config(page_title="Rocksmith Recommender", layout="wide")
+st.set_page_config(page_title="Rocksmith CDLC Recommender", layout="wide")
 st.title("🎸 Rocksmith CDLC Recommender")
 st.markdown("Compare your Spotify + Last.fm listening data with your CDLC library.")
 
@@ -85,13 +85,14 @@ if not st.session_state.recs.empty:
     csv = st.session_state.recs.to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
 
-# Optional: Update CDLC button
-if st.button("🔁 Update CDLC Library"):
-    try:
-        result = subprocess.run(["python", "scripts/update_cdlc_library.py"], check=True, capture_output=True, text=True)
-        st.success("✅ CDLC library updated successfully.")
-        st.text(result.stdout)
-    except subprocess.CalledProcessError as e:
-        st.error("❌ Failed to update CDLC library.")
-        st.text(e.stderr)
-
+# Update CDLC button
+with st.sidebar:
+    if st.button("🔁 Update CDLC Library"):
+        with st.spinner("Updating CDLC library..."):
+            try:
+                result = subprocess.run(["python", "scripts/update_cdlc_library.py"], check=True, capture_output=True, text=True)
+                st.success("✅ CDLC library updated successfully.")
+                st.text(result.stdout)
+            except subprocess.CalledProcessError as e:
+                st.error("❌ Failed to update CDLC library.")
+                st.text(e.stderr)
