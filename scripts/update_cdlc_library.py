@@ -23,13 +23,16 @@ def parse_filename(filename):
 def collect_cdlc():
     entries = []
     for root, dirs, files in os.walk(DLC_FOLDER):
-        if EXCLUDED_FOLDER in map(Path, [root] + [os.path.join(root, d) for d in dirs]):
-            continue
+        # Skip the "01_CDLC Normalizer" folder entirely
+        if "01_CDLC Normalizer" in dirs:
+            dirs.remove("01_CDLC Normalizer")
+
         for file in files:
             if file.lower().endswith("_p.psarc"):
                 artist, track = parse_filename(file)
                 if artist and track:
                     entries.append([artist, track, file])
+
     return entries
 
 # === SAVE TO CSV ===
