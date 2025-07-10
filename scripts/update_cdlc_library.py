@@ -1,73 +1,59 @@
 import os
 import re
-import pandas as pd
-from pathlib import Path
-import subprocess
+import csv
 
-DLC_FOLDER = Path(r"C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc")
-OUTPUT_CSV = Path(__file__).resolve().parent.parent / "data" / "cdlc_library.csv"
+# === PATHS ===
+DLC_FOLDER = r"C:\Program Files (x86)\Steam\steamapps\common\Rocksmith2014\dlc"
 EXCLUDED_DIRS = {"01_CDLC Normalizer"}
+OUTPUT_CSV = r"F:\rocksmith-rec-engine\data\cdlc_library.csv"
 
-def parse_psarc_filename(filename):
-    base = filename.replace("_p.psarc", "").replace(".psarc", "")
-    base = re.sub(r'(?i)(\bv\d+(\.\d+)*\b|rs2014|remastered|deluxe|explicit|version|lead|rhythm|combo|alt\d*|part\d+)', '', base)
+# === NORMALIZATION ===
+def normalize_filename(filename):
+    base = re.sub(r'_p\.psarc$', '', filename, flags=re.IGNORECASE)
+
+    # Remove version suffixes like v1, v1.2, RS2014, etc.
+    base = re.sub(
+        r'(?i)(\bv\d+(\.\d+)*\b|rs2014|remastered|deluxe|explicit|version|lead|rhythm|combo|alt\d*|part\d+)',
+        '',
+        base
+    )
+
+    # Replace separators with space
     base = re.sub(r'[-_.]+', ' ', base)
-    base = re.sub(r'\s+', ' ', base).strip().title()
-    return base
 
-def extract_metadata(base_name):
-    if ' - ' in base_name:
-        parts = base_name.split(' - ', 1)
-    elif '_' in base_name:
-        parts = base_name.split('_', 1)
-    else:
-        parts = base_name.split(None, 1)
+    # Collapse multiple spaces
+    return re.sub(r'\s+', ' ', base).strip().title()
 
-    if len(parts) == 2:
-        artist, track = parts
-    else:
-        artist, track = "Unknown", parts[0]
-    return artist.strip(), track.strip()
-
-def scan_dlc_folder():
+# === MAIN SCRIPT ===
+def update_cdlc_library():
     entries = []
+
     for root, dirs, files in os.walk(DLC_FOLDER):
-        # Skip excluded directories
         if any(excluded in root for excluded in EXCLUDED_DIRS):
             continue
 
         for file in files:
-            if file.lower().endswith(".psarc"):
-                file_path = Path(root) / file
-                base_name = parse_psarc_filename(file)
-                artist, track = extract_metadata(base_name)
-                entries.append({
-                    "Artist Name(s)": artist,
-                    "Track Name": track,
-                    "file_name": file
-                })
-    return entries
+            if file.endswith(".psarc"):
+                clean_name = normalize_filename(file)
+                parts = clean_name.split(" ", 1)
 
-def update_library():
-    entries = scan_dlc_folder()
-    print(f"✅ Found {len(entries)} valid .psarc entries")
+                if len(parts) < 2:
+                    continue  # skip malformed files
 
-    if not entries:
-        print("⚠️ No files found. Aborting update to avoid data loss.")
-        return
+                artist, title = parts
+                artist = artist.strip()
+                title = title.strip()
 
-    df = pd.DataFrame(entries)
-    df.to_csv(OUTPUT_CSV, index=False)
-    print(f"✅ Saved {len(df)} entries to {OUTPUT_CSV}")
+                entries.append([artist, title, file])
 
-    try:
-        subprocess.run(["git", "add", str(OUTPUT_CSV)], check=True)
-        subprocess.run(["git", "commit", "-m", "Update CDLC library"], check=True)
-        subprocess.run(["git", "push"], check=True)
-        print("🚀 Pushed changes to GitHub")
-    except subprocess.CalledProcessError as e:
-        print(f"⚠️ Git operation failed: {e}")
+    # Save using CSV writer to handle commas properly
+    with open(OUTPUT_CSV, "w", newline='', encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["Artist Name(s)", "Track Name", "file_name"])
+        writer.writerows(entries)
+
+    print(f"✅ Saved {len(entries)} entries to {OUTPUT_CSV}")
 
 if __name__ == "__main__":
-    update_library()
+    update_cdlc_library()
 
