@@ -38,20 +38,26 @@ def cdlc_exists_on_customsforge(artist, track):
     }
 
     try:
-        response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload)
-        if response.status_code != 200:
-            return False
-
+        response = requests.post(
+            "https://ignition4.customsforge.com/tablesettings",
+            data=payload,
+            timeout=10  # prevents the call from hanging forever
+        )
+        response.raise_for_status()
         data = response.json()
+
         for result in data.get("data", []):
             result_artist = result.get("Artist", "").lower()
             result_title = result.get("Title", "").lower()
             if artist.lower() in result_artist and track.lower() in result_title:
                 return True
+
         return False
-    except Exception as e:
-        print(f"Error querying CustomsForge for {artist} - {track}: {e}")
+
+    except (requests.RequestException, ValueError) as e:
+        print(f"⚠️ CustomsForge error for '{artist} – {track}': {e}")
         return False
+
 
 def load_and_prepare_data():
     # Load files
