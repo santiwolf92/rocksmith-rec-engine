@@ -7,43 +7,39 @@ st.set_page_config(page_title="Rocksmith Recommender", layout="wide")
 st.title("🎸 Rocksmith CDLC Recommender")
 st.markdown("Compare your Spotify + Last.fm listening data with your CDLC library.")
 
-# Run recommendation generation only once
-if "recs" not in st.session_state:
-    if st.button("🎯 Generate Recommendations"):
-        with st.spinner("Crunching data..."):
-            recs = generate_recommendations(save=False)
+if st.button("🎯 Generate Recommendations"):
+    with st.spinner("Crunching data..."):
+        recs = generate_recommendations(save=False)
 
-            st.write("🔍 Raw Data Preview:", recs.head(10))
-            st.write("🔢 Column Types:", recs.dtypes)
-            st.write("📊 Scrobbles Stats:", recs['Scrobbles'].describe())
+        # Ensure Scrobbles column is numeric
+        recs["Scrobbles"] = pd.to_numeric(recs["Scrobbles"], errors="coerce")
 
-            recs['Scrobbles'] = pd.to_numeric(recs['Scrobbles'], errors='coerce').fillna(0).astype(int)
-            st.session_state.recs = recs
+        st.success(f"Found {len(recs)} missing songs!")
 
-else:
-    recs = st.session_state.recs
+        # Compute min/max for slider bounds
+        min_val = int(recs["Scrobbles"].min() or 0)
+        max_val = int(recs["Scrobbles"].max() or 0)
 
-    st.success(f"Found {len(recs)} missing songs!")
+        # Dual slider to filter scrobbles range
+        min_scrobbles, max_scrobbles = st.slider(
+            "Filter by Scrobbles",
+            min_value=min_val,
+            max_value=max_val,
+            value=(min_val, max_val),
+        )
 
-    # Set min/max range
-    min_val = int(recs['Scrobbles'].min())
-    max_val = int(recs['Scrobbles'].max())
+        # Apply filtering
+        filtered = recs[
+            recs["Scrobbles"].fillna(0).between(min_scrobbles, max_scrobbles)
+        ]
 
-    # Dual slider for range
-    scrobble_range = st.slider("Filter by Scrobbles", min_val, max_val, (min_val, max_val))
-    min_scrobbles, max_scrobbles = scrobble_range
+        # Display table
+        st.dataframe(
+            filtered[["Artist Name(s)", "Track Name", "Scrobbles"]].reset_index(drop=True),
+            use_container_width=True
+        )
 
-    # Filter
-    filtered = recs[
-        recs['Scrobbles'].between(min_scrobbles, max_scrobbles)
-    ]
+        # Download button
+        csv = filtered[["Artist Name(s)", "Track Name", "Scrobbles"]].to_csv(index=False).encode("utf-8")
+        st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
 
-    # Display table
-    st.dataframe(
-        filtered[['Artist Name(s)', 'Track Name', 'Scrobbles']].reset_index(drop=True),
-        use_container_width=True
-    )
-
-    # Download button
-    csv = filtered[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(index=False).encode('utf-8')
-    st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
