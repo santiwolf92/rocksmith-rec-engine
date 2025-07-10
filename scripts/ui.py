@@ -89,7 +89,7 @@ if not st.session_state.recs.empty:
 # Update CDLC Library button
 if st.button("🔁 Update CDLC Library"):
     try:
-        script_path = r"F:\rocksmith-rec-engine\scripts\update_cdlc_library.py"
+        script_path = os.path.join(os.path.dirname(__file__), "update_cdlc_library.py")
         result = subprocess.run(["python", script_path], check=True, capture_output=True, text=True)
         st.success("✅ CDLC library updated successfully.")
         st.text(result.stdout)
