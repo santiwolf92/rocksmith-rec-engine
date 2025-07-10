@@ -38,7 +38,7 @@ def save_to_csv(entries):
 
 def push_to_git():
     try:
-        subprocess.run(["git", "add", str(OUTPUT_CSV)], check=True)
+        subprocess.run(["git", "add", str(OUTPUT_CSV)], check=True, cwd=Path(__file__).resolve().parent.parent)
         subprocess.run(["git", "commit", "-m", "Update CDLC library"], check=True)
         subprocess.run(["git", "push"], check=True)
         print("🚀 Pushed changes to GitHub")
