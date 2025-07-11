@@ -37,32 +37,33 @@ def cdlc_exists_on_customsforge(artist, track):
         "length": 10,
     }
 
-try:
-    for attempt in range(3):
-        response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload, timeout=10)
-        if response.status_code != 200:
-            continue
+    try:
+        for attempt in range(3):
+            response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload, timeout=10)
+            if response.status_code != 200:
+                continue
 
-        try:
-            data = response.json()
-        except ValueError:
-            print(f"⚠️ Invalid JSON for: {artist} — {track}")
-            continue
+            try:
+                data = response.json()
+            except ValueError:
+                print(f"⚠️ Invalid JSON for: {artist} — {track}")
+                continue
 
-        print(f"✅ Received response for: {artist} — {track}")
+            print(f"✅ Received response for: {artist} — {track}")
 
-        for result in data.get("data", []):
-            result_artist = result.get("Artist", "").lower()
-            result_title = result.get("Title", "").lower()
-            if artist.lower() in result_artist and track.lower() in result_title:
-                return True
+            for result in data.get("data", []):
+                result_artist = result.get("Artist", "").lower()
+                result_title = result.get("Title", "").lower()
+                if artist.lower() in result_artist and track.lower() in result_title:
+                    return True
 
-        time.sleep(0.5)
-    return False
+            time.sleep(0.5)
 
-except Exception as e:
-    print(f"⚠️ CustomsForge error for '{artist} – {track}': {e}")
-    return False
+        return False
+
+    except Exception as e:
+        print(f"⚠️ CustomsForge error for '{artist} – {track}': {e}")
+        return False
 
 
 def load_and_prepare_data():
