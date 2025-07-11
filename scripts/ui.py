@@ -21,16 +21,19 @@ if 'filter_existing' not in st.session_state:
     st.session_state.filter_existing = False
 
 # Determine dynamic scrobble cap
-temp_recs = generate_recommendations(top_n=1, save=False)
-scrobble_max = temp_recs['Scrobbles'].max()
-true_max = int(scrobble_max) if pd.notna(scrobble_max) else 0
+if not temp_recs.empty and 'Scrobbles' in temp_recs.columns:
+    scrobble_max = temp_recs['Scrobbles'].max()
+    true_max = int(scrobble_max) if pd.notna(scrobble_max) else 0
+else:
+    true_max = 0
+
 slider_cap = max(1, min(500, true_max))
 
 # Sidebar options
 with st.sidebar:
     st.header("🔧 Settings")
-    min_scrobbles = st.slider("Minimum Scrobbles", 0, slider_cap, st.session_state.min_scrobbles)
-    max_scrobbles = st.slider("Maximum Scrobbles", 0, slider_cap, st.session_state.max_scrobbles)
+    min_scrobbles = st.slider("Minimum Scrobbles", 1, slider_cap, st.session_state.min_scrobbles)
+    max_scrobbles = st.slider("Maximum Scrobbles", 1, slider_cap, st.session_state.max_scrobbles)
     filter_existing = st.checkbox("✅ Only show songs that exist on CustomsForge", value=st.session_state.filter_existing)
 
 # Progress callback
