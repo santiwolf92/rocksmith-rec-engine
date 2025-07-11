@@ -21,6 +21,9 @@ def normalize(text):
     text = text.lower().replace('&', 'and')
     return re.sub(r'[^a-z0-9]', '', text)
 
+import requests
+import time
+
 def cdlc_exists_on_customsforge(artist, track):
     query = f"{artist} {track}"
     payload = {
@@ -38,21 +41,23 @@ def cdlc_exists_on_customsforge(artist, track):
     }
 
     try:
-        response = requests.post(
-            "https://ignition4.customsforge.com/tablesettings",
-            data=payload,
-            timeout=10  # prevents the call from hanging forever
-        )
-        response.raise_for_status()
-        data = response.json()
+        for attempt in range(3):  # try a few times in case the first one is too early
+            response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload)
+            if response.status_code != 200:
+                continue
 
-        for result in data.get("data", []):
-            result_artist = result.get("Artist", "").lower()
-            result_title = result.get("Title", "").lower()
-            if artist.lower() in result_artist and track.lower() in result_title:
-                return True
-
+            data = response.json()
+            for result in data.get("data", []):
+                result_artist = result.get("Artist", "").lower()
+                result_title = result.get("Title", "").lower()
+                if artist.lower() in result_artist and track.lower() in result_title:
+                    return True
+            time.sleep(0.5)  # wait before retrying
         return False
+    except Exception as e:
+        print(f"⚠️ CustomsForge error for '{artist} – {track}': {e}")
+        return False
+
 
     except (requests.RequestException, ValueError) as e:
         print(f"⚠️ CustomsForge error for '{artist} – {track}': {e}")
