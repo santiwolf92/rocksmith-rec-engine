@@ -77,6 +77,7 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     ]).drop_duplicates(subset=['Artist Normalized', 'Track Normalized'])
 
     artist_priority = lastfm_df[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']]
+    artist_priority = artist_priority.copy()
     artist_priority['Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
     artist_priority = artist_priority.dropna()
 
