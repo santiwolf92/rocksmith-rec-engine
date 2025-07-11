@@ -22,7 +22,8 @@ if 'filter_existing' not in st.session_state:
 
 # Determine dynamic scrobble cap
 temp_recs = generate_recommendations(top_n=1, save=False)
-true_max = int(temp_recs['Scrobbles'].max() or 0)
+scrobble_max = temp_recs['Scrobbles'].max()
+true_max = int(scrobble_max) if pd.notna(scrobble_max) else 0
 slider_cap = min(500, true_max)
 
 # Sidebar options
