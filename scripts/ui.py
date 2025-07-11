@@ -55,7 +55,7 @@ if st.button("🎯 Generate Recommendations"):
         update_cb = streamlit_progress_callback() if filter_existing else None
 
         all_recs = generate_recommendations(
-            top_n=500,
+            top_n=50,
             save=False,
             min_scrobbles=min_scrobbles,
             max_scrobbles=max_scrobbles,
