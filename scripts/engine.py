@@ -135,9 +135,8 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         if update_progress:
             update_progress(total, total, "Done", "")
             
-        recommendations = pd.DataFrame(filtered)
-        print(f"Filtered recommendations: {len(filtered)}")
-
+    recommendations = pd.DataFrame(filtered)
+    print(f"Filtered recommendations: {len(filtered)}")
 
     top_recommendations = recommendations.head(top_n)
 
@@ -155,4 +154,3 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         print(f"\n✅ Saved to {output_file}")
 
     return top_recommendations
-
