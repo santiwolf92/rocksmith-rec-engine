@@ -39,9 +39,11 @@ def cdlc_exists_on_customsforge(artist, track):
 
     try:
         for attempt in range(3):
-            response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload)
+            response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload, timeout=10)
             if response.status_code != 200:
                 continue
+            else:
+                print(f"✅ Received response for: {artist} — {track}")
             data = response.json()
             for result in data.get("data", []):
                 result_artist = result.get("Artist", "").lower()
