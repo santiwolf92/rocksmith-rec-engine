@@ -142,7 +142,7 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     if filtered.empty:
         print("⚠️ No filtered results were generated.")
         return pd.DataFrame(columns=['Artist Name(s)', 'Track Name', 'Scrobbles'])
-
+        print("✅ Returning empty recommendations DataFrame")
 
     recommendations = pd.DataFrame(filtered)
     print(f"Filtered recommendations: {len(filtered)}")
@@ -163,4 +163,6 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         top_recommendations[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(output_file, index=False)
         print(f"\n✅ Saved to {output_file}")
 
+    print("✅ Returning top recommendations")
     return top_recommendations
+
