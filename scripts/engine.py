@@ -139,8 +139,13 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         print("⚠️ No filtered results were generated.")
         filtered = pd.DataFrame(columns=["Artist Name(s)", "Track Name", "Scrobbles"])
 
+    if not filtered:
+        print("⚠️ No filtered results were generated.")
+        return pd.DataFrame(columns=['Artist Name(s)', 'Track Name', 'Scrobbles'])
+
     recommendations = pd.DataFrame(filtered)
     print(f"Filtered recommendations: {len(filtered)}")
+
 
     top_recommendations = recommendations.head(top_n)
 
