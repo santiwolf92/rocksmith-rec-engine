@@ -127,7 +127,11 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
             if cdlc_exists_on_customsforge(artist, track):
                 filtered.append(row)
             time.sleep(1)  # avoid hammering the server
+        if update_progress:
+            update_progress(total, total, "Done", "")
+            
         recommendations = pd.DataFrame(filtered)
+        
 
     top_recommendations = recommendations.head(top_n)
 
