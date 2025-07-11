@@ -137,8 +137,8 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
             
     if 'filtered' not in locals():
         print("⚠️ No filtered results were generated.")
-        filtered = []
-        
+        filtered = pd.DataFrame(columns=["Artist Name(s)", "Track Name", "Scrobbles"])
+
     recommendations = pd.DataFrame(filtered)
     print(f"Filtered recommendations: {len(filtered)}")
 
