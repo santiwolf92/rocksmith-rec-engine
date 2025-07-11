@@ -21,9 +21,6 @@ def normalize(text):
     text = text.lower().replace('&', 'and')
     return re.sub(r'[^a-z0-9]', '', text)
 
-import requests
-import time
-
 def cdlc_exists_on_customsforge(artist, track):
     query = f"{artist} {track}"
     payload = {
@@ -41,38 +38,29 @@ def cdlc_exists_on_customsforge(artist, track):
     }
 
     try:
-        for attempt in range(3):  # try a few times in case the first one is too early
+        for attempt in range(3):
             response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload)
             if response.status_code != 200:
                 continue
-
             data = response.json()
             for result in data.get("data", []):
                 result_artist = result.get("Artist", "").lower()
                 result_title = result.get("Title", "").lower()
                 if artist.lower() in result_artist and track.lower() in result_title:
                     return True
-            time.sleep(0.5)  # wait before retrying
+            time.sleep(0.5)
         return False
     except Exception as e:
         print(f"⚠️ CustomsForge error for '{artist} – {track}': {e}")
         return False
 
-
-    except (requests.RequestException, ValueError) as e:
-        print(f"⚠️ CustomsForge error for '{artist} – {track}': {e}")
-        return False
-
-
 def load_and_prepare_data():
-    # Load files
     cdlc_df = pd.read_csv(BASE_PATH / 'cdlc_library.csv')
     liked_df = pd.read_csv(BASE_PATH / 'spotify_liked.csv')
     top_df = pd.read_csv(BASE_PATH / 'spotify_top.csv')
     lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv')
     lastfm_df = lastfm_df.apply(lambda col: col.map(fix_mojibake))
 
-    # Normalize
     for df in [cdlc_df, liked_df, top_df]:
         df['Artist Normalized'] = df['Artist Name(s)'].apply(normalize)
         df['Track Normalized'] = df['Track Name'].apply(normalize)
@@ -131,22 +119,14 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
                 update_progress(i, total, artist, track)
             if cdlc_exists_on_customsforge(artist, track):
                 filtered.append(row)
-            time.sleep(1)  # avoid hammering the server
+            time.sleep(1)
         if update_progress:
             update_progress(total, total, "Done", "")
-            
-    if 'filtered' not in locals():
-        print("⚠️ No filtered results were generated.")
-        filtered = pd.DataFrame(columns=["Artist Name(s)", "Track Name", "Scrobbles"])
+        recommendations = pd.DataFrame(filtered)
 
-    if filtered.empty:
-        print("⚠️ No filtered results were generated.")
+    if recommendations.empty:
+        print("\u26a0\ufe0f No filtered results were generated.")
         return pd.DataFrame(columns=['Artist Name(s)', 'Track Name', 'Scrobbles'])
-        print("✅ Returning empty recommendations DataFrame")
-
-    recommendations = pd.DataFrame(filtered)
-    print(f"Filtered recommendations: {len(filtered)}")
-
 
     top_recommendations = recommendations.head(top_n)
 
@@ -163,6 +143,6 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         top_recommendations[['Artist Name(s)', 'Track Name', 'Scrobbles']].to_csv(output_file, index=False)
         print(f"\n✅ Saved to {output_file}")
 
-    print("✅ Returning top recommendations")
+    print("\u2705 Returning top recommendations")
     return top_recommendations
 
