@@ -131,7 +131,8 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
             update_progress(total, total, "Done", "")
             
         recommendations = pd.DataFrame(filtered)
-        
+        print(f"Filtered recommendations: {len(filtered)}")
+
 
     top_recommendations = recommendations.head(top_n)
 
