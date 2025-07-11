@@ -20,14 +20,8 @@ if 'max_scrobbles' not in st.session_state:
 if 'filter_existing' not in st.session_state:
     st.session_state.filter_existing = False
 
-# Determine dynamic scrobble cap
-if not temp_recs.empty and 'Scrobbles' in temp_recs.columns:
-    scrobble_max = temp_recs['Scrobbles'].max()
-    true_max = int(scrobble_max) if pd.notna(scrobble_max) else 0
-else:
-    true_max = 0
-
-slider_cap = max(1, min(500, true_max))
+# Fixed scrobble slider cap between 1 and 500
+slider_cap = 500
 
 # Sidebar options
 with st.sidebar:
