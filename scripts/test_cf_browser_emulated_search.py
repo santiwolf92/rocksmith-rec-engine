@@ -1,9 +1,9 @@
 import requests
-import re
+from bs4 import BeautifulSoup
 from urllib.parse import quote_plus
 
 # === CONFIGURATION ===
-SEARCH_TERM = "Stairway to Heaven"  # Change this to your desired search
+SEARCH_TERM = "Stairway to Heaven"
 ENCODED_TERM = quote_plus(SEARCH_TERM.lower())
 
 # === HEADERS & COOKIES ===
@@ -16,6 +16,7 @@ headers = {
 }
 
 cookies = {
+    # Your cookies go here
     "ips4_device_key": "645bd0b959cd970cd1075abf409b8d00",
     "ips4_forum_view": "table",
     "__eoi": "ID=0348d2efe62a6935:T=1738090324:RT=1738174489:S=AA-AfjZsCqcPCcQ0w3woMKhlIiYa",
@@ -25,9 +26,9 @@ cookies = {
     "ips4_login_key": "ec8240b88746352dd69ed968049f03de",
     "ips4_IPSSessionFront": "d63e881b49b4a25c2749f81f7e654373",
     "ips4_loggedIn": "1753306833",
-    "XSRF-TOKEN": "<your_token_here>",
-    "ignition4_session": "<your_session_here>",
-    "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "<your_remember_cookie_here>"
+    "XSRF-TOKEN": "eyJpdiI6IkhOT...<truncated>",
+    "ignition4_session": "eyJpdiI6IlNhZ...<truncated>",
+    "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "eyJpdiI6InB4c1...<truncated>"
 }
 
 # === REQUEST ===
@@ -42,32 +43,38 @@ params = {
 
 url = "https://ignition4.customsforge.com/"
 
-print(f"\U0001F50E Searching for: {SEARCH_TERM}")
+print(f"🔎 Searching for: {SEARCH_TERM}")
 try:
     response = requests.get(url, headers=headers, cookies=cookies, params=params)
-    print(f"\U0001F50E Status: {response.status_code}")
+    print(f"🔎 Status: {response.status_code}")
 
     try:
         json_data = response.json()
-        results = json_data.get("data", [])
-        print(f"✅ Found {len(results)} results:\n")
+        print(f"✅ Found {len(json_data.get('data', []))} results:\n")
 
-        for entry in results:
-            raw_html = entry.get("titleName", "")
-            artist_html = entry.get("artistName", "")
-            download = entry.get("downloadUrl", "")
+        for entry in json_data.get("data", []):
+            html = entry.get("DT_RowData", {}).get("content", "")
+            soup = BeautifulSoup(html, "html.parser")
 
-            # Clean artist, title, and link
-            artist_match = re.search(r">(.*?)<", artist_html)
-            title_match = re.search(r">(.*?)<", raw_html)
+            artist_tag = soup.find("span", class_="table-link truncate")
+            title_tag = soup.find("a", class_="table-link", href=lambda x: x and "/cdlc/" in x)
+            link_tag = soup.find_all("a")[-1]  # last <a> is usually the external download link
 
-            artist = artist_match.group(1).strip() if artist_match else artist_html.strip()
-            title = title_match.group(1).strip() if title_match else raw_html.strip()
-            print(f"🎵 {artist} — {title}\n🔗 {download}\n")
+            artist = artist_tag.text.strip() if artist_tag else ""
+            title = title_tag.text.strip() if title_tag else ""
+            link = link_tag["href"].strip() if link_tag else ""
+
+            # Skip if artist and title are both missing
+            if not artist and not title:
+                continue
+
+            print(f"🎵 {artist} — {title}")
+            print(f"🔗 {link}\n")
 
     except Exception:
         print("⚠️ Could not parse response as JSON")
-        print(response.text[:800])
+        print(response.text[:800])  # Show preview of HTML for debugging
 
 except requests.exceptions.RequestException as e:
     print(f"❌ Request failed: {e}")
+
