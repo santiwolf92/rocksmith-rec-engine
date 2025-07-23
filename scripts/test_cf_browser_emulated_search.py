@@ -24,9 +24,9 @@ cookies = {
     "ips4_login_key": "ec8240b88746352dd69ed968049f03de",
     "ips4_IPSSessionFront": "d63e881b49b4a25c2749f81f7e654373",
     "ips4_loggedIn": "1753306833",
-    "XSRF-TOKEN": "eyJpdiI6IkhOT...<truncated>",
-    "ignition4_session": "eyJpdiI6IlNhZ...<truncated>",
-    "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "eyJpdiI6InB4c1...<truncated>"
+    "XSRF-TOKEN": "<your_token_here>",
+    "ignition4_session": "<your_session_here>",
+    "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "<your_cookie_here>"
 }
 
 params = {
@@ -50,12 +50,13 @@ try:
         results = json_data.get("data", [])
         print(f"✅ Found {len(results)} results:")
         for entry in results:
-            artist = entry.get("Artist", "").strip()
-            title = entry.get("Title", "").strip()
-            link = f"https://ignition4.customsforge.com/cdlc/{entry.get('ID')}"
-            print(f"🎵 {artist} — {title}\n🔗 {link}\n")
-    except Exception:
-        print("⚠️ Could not parse response as JSON")
+            artist = entry.get("artistName", "").strip()
+            title = entry.get("titleName", "").strip()
+            url_suffix = entry.get("file_pc_link", "")
+            full_link = f"https://ignition4.customsforge.com{url_suffix}" if url_suffix else "N/A"
+            print(f"🎵 {artist} — {title}\n🔗 {full_link}\n")
+    except Exception as e:
+        print(f"⚠️ Could not parse response as JSON: {e}")
         print(response.text[:800])
 
 except requests.exceptions.RequestException as e:
