@@ -1,11 +1,9 @@
 import requests
 import json
 
-# Test data: Known CDLC that exists on CustomsForge
-artist = "Led Zeppelin"
-title = "Stairway to Heaven"
+# CustomForge Ignition4 search test
+url = "https://ignition4.customsforge.com/tablesettings"
 
-# Basic payload based on what we suspect the API expects
 payload = {
     "columns[0][data]": "Title",
     "columns[1][data]": "Artist",
@@ -17,21 +15,27 @@ payload = {
     "columns[7][data]": "Rating",
     "columns[8][data]": "Version",
     "columns[9][data]": "Hits",
-    "search[value]": f"{artist} {title}",
+    "search[value]": "Stairway to Heaven",
     "start": 0,
-    "length": 10
+    "length": 5,
+    "draw": 3,
 }
 
-try:
-    response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload, timeout=10)
-    if response.status_code == 200:
-        print("✅ Successfully reached API!")
-        data = response.json()
-        results = data.get("data", [])
-        print(f"Found {len(results)} results:")
-        for result in results:
-            print(f"- {result.get('Artist')} — {result.get('Title')}")
-    else:
-        print(f"❌ Status code: {response.status_code}")
-except Exception as e:
-    print(f"⚠️ Error during request: {e}")
+headers = {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "X-Requested-With": "XMLHttpRequest",
+}
+
+response = requests.post(url, data=payload, headers=headers)
+
+if response.status_code == 200:
+    print("✅ Success!")
+    results = response.json().get("data", [])
+    for i, result in enumerate(results, 1):
+        artist = result.get("artist", "Unknown Artist")
+        title = result.get("title", "Unknown Title")
+        downloads = result.get("downloads", 0)
+        print(f"{i}. {artist} — {title} ({downloads} downloads)")
+else:
+    print(f"❌ Status Code: {response.status_code}")
+    print(response.text)
