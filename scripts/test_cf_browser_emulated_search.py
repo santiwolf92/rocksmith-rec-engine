@@ -1,8 +1,9 @@
 import requests
+import re
 from urllib.parse import quote_plus
 
 # === CONFIGURATION ===
-SEARCH_TERM = "Stairway to Heaven"
+SEARCH_TERM = "Stairway to Heaven"  # Change this to your desired search
 ENCODED_TERM = quote_plus(SEARCH_TERM.lower())
 
 # === HEADERS & COOKIES ===
@@ -15,7 +16,6 @@ headers = {
 }
 
 cookies = {
-    # Your valid cookies
     "ips4_device_key": "645bd0b959cd970cd1075abf409b8d00",
     "ips4_forum_view": "table",
     "__eoi": "ID=0348d2efe62a6935:T=1738090324:RT=1738174489:S=AA-AfjZsCqcPCcQ0w3woMKhlIiYa",
@@ -25,11 +25,12 @@ cookies = {
     "ips4_login_key": "ec8240b88746352dd69ed968049f03de",
     "ips4_IPSSessionFront": "d63e881b49b4a25c2749f81f7e654373",
     "ips4_loggedIn": "1753306833",
-    "XSRF-TOKEN": "...",
-    "ignition4_session": "...",
-    "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "..."
+    "XSRF-TOKEN": "<your_token_here>",
+    "ignition4_session": "<your_session_here>",
+    "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "<your_remember_cookie_here>"
 }
 
+# === REQUEST ===
 params = {
     "draw": "1",
     "start": "0",
@@ -41,10 +42,10 @@ params = {
 
 url = "https://ignition4.customsforge.com/"
 
-print(f"🔎 Searching for: {SEARCH_TERM}")
+print(f"\U0001F50E Searching for: {SEARCH_TERM}")
 try:
     response = requests.get(url, headers=headers, cookies=cookies, params=params)
-    print(f"🔎 Status: {response.status_code}")
+    print(f"\U0001F50E Status: {response.status_code}")
 
     try:
         json_data = response.json()
@@ -52,11 +53,17 @@ try:
         print(f"✅ Found {len(results)} results:\n")
 
         for entry in results:
-            artist = entry.get("artistName", "").strip()
-            title = entry.get("titleName", "").strip()
-            link = entry.get("file_pc_link") or entry.get("file_mac_link") or "No link"
-            print(f"🎵 {artist} — {title}")
-            print(f"🔗 {link}\n")
+            raw_html = entry.get("titleName", "")
+            artist_html = entry.get("artistName", "")
+            download = entry.get("downloadUrl", "")
+
+            # Clean artist, title, and link
+            artist_match = re.search(r">(.*?)<", artist_html)
+            title_match = re.search(r">(.*?)<", raw_html)
+
+            artist = artist_match.group(1).strip() if artist_match else artist_html.strip()
+            title = title_match.group(1).strip() if title_match else raw_html.strip()
+            print(f"🎵 {artist} — {title}\n🔗 {download}\n")
 
     except Exception:
         print("⚠️ Could not parse response as JSON")
@@ -64,4 +71,3 @@ try:
 
 except requests.exceptions.RequestException as e:
     print(f"❌ Request failed: {e}")
-
