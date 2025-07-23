@@ -1,8 +1,7 @@
 import requests
 import json
 
-# CustomForge Ignition4 search test
-url = "https://ignition4.customsforge.com/tablesettings"
+url = "https://ignition4.customsforge.com/"
 
 payload = {
     "columns[0][data]": "Title",
@@ -30,7 +29,8 @@ response = requests.post(url, data=payload, headers=headers)
 
 if response.status_code == 200:
     print("✅ Success!")
-    results = response.json().get("data", [])
+    data = response.json()
+    results = data.get("data", [])
     for i, result in enumerate(results, 1):
         artist = result.get("artist", "Unknown Artist")
         title = result.get("title", "Unknown Title")
