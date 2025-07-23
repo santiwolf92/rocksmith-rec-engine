@@ -2,7 +2,7 @@ import requests
 from urllib.parse import quote_plus
 
 # === CONFIGURATION ===
-SEARCH_TERM = "Paranoid"
+SEARCH_TERM = "Black Sabbath Paranoid"
 ENCODED_TERM = quote_plus(SEARCH_TERM.lower())
 
 # === HEADERS & COOKIES ===
