@@ -1,63 +1,58 @@
 import requests
-from urllib.parse import quote_plus
+from bs4 import BeautifulSoup
 
-# === CONFIGURATION ===
-SEARCH_TERM = "Stairway to Heaven"  # Change this to your desired search
-ENCODED_TERM = quote_plus(SEARCH_TERM.lower())
+SEARCH_TERM = "Stairway to Heaven"
 
-# === HEADERS & COOKIES ===
-headers = {
-    "accept": "application/json, text/javascript, */*; q=0.01",
-    "accept-language": "en-GB,en;q=0.9,en-US;q=0.8,es;q=0.7",
-    "referer": "https://ignition4.customsforge.com/",
-    "x-requested-with": "XMLHttpRequest",
-    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
-}
-
-cookies = {
-    # Paste your cookies here (from your last message)
+# Paste your updated browser cookies here
+COOKIES = {
     "ips4_device_key": "645bd0b959cd970cd1075abf409b8d00",
-    "ips4_forum_view": "table",
-    "__eoi": "ID=0348d2efe62a6935:T=1738090324:RT=1738174489:S=AA-AfjZsCqcPCcQ0w3woMKhlIiYa",
-    "ips4_cookie_consent": "1",
-    "ips4_cookie_consent_optional": "1",
     "ips4_member_id": "512899",
     "ips4_login_key": "ec8240b88746352dd69ed968049f03de",
     "ips4_IPSSessionFront": "d63e881b49b4a25c2749f81f7e654373",
     "ips4_loggedIn": "1753306833",
-    "XSRF-TOKEN": "eyJpdiI6IkhOT...<truncated for brevity>...My9aZngyV0lkRUk2TlNrWlZzY0FmeXh3PT0i",
-    "ignition4_session": "eyJpdiI6IlNhZ...<truncated>...b2J2NFlSL0FaZngyV0lkRUk2TlNrWlZzY0FmeXh3PT0i",
-    "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "eyJpdiI6InB4c1...<truncated>...FlZzY0FmeXh3PT0i"
+    "ignition4_session": "eyJpdiI6IlNhZllXTzNzTzgxdkJ2Wnl2ak1YVkE9PSIsInZhbHVlIjoiS1lGejVlYlRFdlhpNk9MVjcvdVh6aGJKMExaQXVSTXdSSGgzd0RZTGd2TzZxNkxVUFpiTW9MOUdJbTl3L1FOcVVlREhIQ1NZOHlRKzY0QjdMU082QXAzaXNiNzBLQWhKaWRIenpTUXg1QlJrNTNPSXdsNW0xTy85WGNLSklTZzIiLCJtYWMiOiI3NDc5NmY5ZDViNzViY2M4YjE5NTY0MzViNjJhNDY0NDBkMmE1YjEwMTAzZGNiYzI4NGE4YTI4ZDg2NGI1MDIzIiwidGFnIjoiIn0%3D",
+    # ... add any others needed
 }
 
-# === REQUEST ===
+headers = {
+    "User-Agent": "Mozilla/5.0",
+    "Referer": "https://ignition4.customsforge.com/",
+}
+
 params = {
-    "draw": "1",
-    "start": "0",
-    "length": "25",
-    "search[value]": SEARCH_TERM,
-    "filter_preferred_platform": "windows",
-    "filter_hide_abandoned": "true",
+    "search": SEARCH_TERM,
 }
-
-url = "https://ignition4.customsforge.com/"
 
 print(f"🔎 Searching for: {SEARCH_TERM}")
-try:
-    response = requests.get(url, headers=headers, cookies=cookies, params=params)
-    print(f"🔎 Status: {response.status_code}")
+response = requests.get(
+    "https://ignition4.customsforge.com/search",
+    headers=headers,
+    cookies=COOKIES,
+    params=params,
+)
 
+print(f"🔎 Status: {response.status_code}")
+if response.status_code != 200:
+    print("❌ Failed to get a valid response.")
+    exit()
+
+soup = BeautifulSoup(response.text, "html.parser")
+results = []
+
+# Find each row in the search table
+for row in soup.select("tbody tr"):
     try:
-        json_data = response.json()
-        print(f"✅ Found {len(json_data.get('data', []))} results:")
-        for entry in json_data.get("data", []):
-            print(f"🎵 {entry.get('artistName')} — {entry.get('titleName')}")
+        artist = row.select_one("td:nth-of-type(2)").get_text(strip=True)
+        title = row.select_one("td:nth-of-type(3) a.table-link").get_text(strip=True)
+        url = row.select_one("td:nth-of-type(3) a.table-link")["href"]
+        if not url.startswith("http"):
+            url = "https://ignition4.customsforge.com" + url
+        results.append({"artist": artist, "title": title, "url": url})
     except Exception:
-        print("⚠️ Could not parse response as JSON")
-        print(response.text[:800])  # Print first 800 characters of HTML for debugging
+        continue
 
-except requests.exceptions.RequestException as e:
-    print(f"❌ Request failed: {e}")
-
+print(f"✅ Found {len(results)} results:")
+for item in results:
+    print(f"🎵 {item['artist']} — {item['title']}\n🔗 {item['url']}")
 
 
