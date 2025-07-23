@@ -2,7 +2,7 @@ import requests
 from urllib.parse import quote_plus
 
 # === CONFIGURATION ===
-SEARCH_TERM = "Stairway to Heaven"  # Change this to your desired search
+SEARCH_TERM = "Stairway to Heaven"
 ENCODED_TERM = quote_plus(SEARCH_TERM.lower())
 
 # === HEADERS & COOKIES ===
@@ -15,7 +15,6 @@ headers = {
 }
 
 cookies = {
-    # Paste your cookies here (from your last message)
     "ips4_device_key": "645bd0b959cd970cd1075abf409b8d00",
     "ips4_forum_view": "table",
     "__eoi": "ID=0348d2efe62a6935:T=1738090324:RT=1738174489:S=AA-AfjZsCqcPCcQ0w3woMKhlIiYa",
@@ -25,12 +24,11 @@ cookies = {
     "ips4_login_key": "ec8240b88746352dd69ed968049f03de",
     "ips4_IPSSessionFront": "d63e881b49b4a25c2749f81f7e654373",
     "ips4_loggedIn": "1753306833",
-    "XSRF-TOKEN": "eyJpdiI6IkhOT...<truncated for brevity>...My9aZngyV0lkRUk2TlNrWlZzY0FmeXh3PT0i",
-    "ignition4_session": "eyJpdiI6IlNhZ...<truncated>...b2J2NFlSL0FaZngyV0lkRUk2TlNrWlZzY0FmeXh3PT0i",
-    "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "eyJpdiI6InB4c1...<truncated>...FlZzY0FmeXh3PT0i"
+    "XSRF-TOKEN": "eyJpdiI6IkhOT...<truncated>",
+    "ignition4_session": "eyJpdiI6IlNhZ...<truncated>",
+    "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "eyJpdiI6InB4c1...<truncated>"
 }
 
-# === REQUEST ===
 params = {
     "draw": "1",
     "start": "0",
@@ -40,7 +38,7 @@ params = {
     "filter_hide_abandoned": "true",
 }
 
-url = "https://ignition4.customsforge.com/"
+url = "https://ignition4.customsforge.com/tablesettings"
 
 print(f"🔎 Searching for: {SEARCH_TERM}")
 try:
@@ -49,12 +47,16 @@ try:
 
     try:
         json_data = response.json()
-        print(f"✅ Found {len(json_data.get('data', []))} results:")
-        for entry in json_data.get("data", []):
-            print(f"🎵 {entry.get('artistName')} — {entry.get('titleName')}")
+        results = json_data.get("data", [])
+        print(f"✅ Found {len(results)} results:")
+        for entry in results:
+            artist = entry.get("Artist", "").strip()
+            title = entry.get("Title", "").strip()
+            link = f"https://ignition4.customsforge.com/cdlc/{entry.get('ID')}"
+            print(f"🎵 {artist} — {title}\n🔗 {link}\n")
     except Exception:
         print("⚠️ Could not parse response as JSON")
-        print(response.text[:800])  # Print first 800 characters of HTML for debugging
+        print(response.text[:800])
 
 except requests.exceptions.RequestException as e:
     print(f"❌ Request failed: {e}")
