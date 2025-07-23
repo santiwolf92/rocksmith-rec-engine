@@ -5,6 +5,7 @@ query = "stairway to heaven"
 headers = {
     "User-Agent": "Mozilla/5.0",
     "Referer": "https://ignition4.customsforge.com/",
+    "X-Requested-With": "XMLHttpRequest",  # mimic JS frontend
 }
 
 cookies = {
@@ -13,20 +14,25 @@ cookies = {
 }
 
 params = {
+    "draw": 1,
+    "columns[0][data]": "artistName",
+    "columns[0][searchable]": "true",
     "search[value]": query,
-    "length": "25",
-    "draw": "1"
+    "length": 25,
+    "start": 0,
 }
 
-url = "https://ignition4.customsforge.com/"
+url = "https://ignition4.customsforge.com/table"
 
 response = requests.get(url, headers=headers, cookies=cookies, params=params)
 
-if response.ok:
+print(f"🔎 Response status: {response.status_code}")
+if "application/json" in response.headers.get("Content-Type", ""):
     data = response.json()
     print(f"✅ Found {len(data.get('data', []))} results:")
     for row in data.get("data", []):
         print(f"🎸 {row['artistName']} — {row['titleName']}")
 else:
-    print(f"❌ Status Code: {response.status_code}")
-    print(response.text)
+    print("❌ Not a JSON response:")
+    print(response.text[:500])  # print first part for debugging
+
