@@ -1,5 +1,4 @@
 import requests
-from bs4 import BeautifulSoup
 from urllib.parse import quote_plus
 
 # === CONFIGURATION ===
@@ -16,7 +15,6 @@ headers = {
 }
 
 cookies = {
-    # Your cookies go here
     "ips4_device_key": "645bd0b959cd970cd1075abf409b8d00",
     "ips4_forum_view": "table",
     "__eoi": "ID=0348d2efe62a6935:T=1738090324:RT=1738174489:S=AA-AfjZsCqcPCcQ0w3woMKhlIiYa",
@@ -26,12 +24,11 @@ cookies = {
     "ips4_login_key": "ec8240b88746352dd69ed968049f03de",
     "ips4_IPSSessionFront": "d63e881b49b4a25c2749f81f7e654373",
     "ips4_loggedIn": "1753306833",
-    "XSRF-TOKEN": "eyJpdiI6IkhOT...<truncated>",
-    "ignition4_session": "eyJpdiI6IlNhZ...<truncated>",
-    "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "eyJpdiI6InB4c1...<truncated>"
+    "XSRF-TOKEN": "eyJpdiI6IkhOT...",
+    "ignition4_session": "eyJpdiI6IlNhZ...",
+    "remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d": "eyJpdiI6InB4c1..."
 }
 
-# === REQUEST ===
 params = {
     "draw": "1",
     "start": "0",
@@ -42,39 +39,33 @@ params = {
 }
 
 url = "https://ignition4.customsforge.com/"
-
 print(f"🔎 Searching for: {SEARCH_TERM}")
+
 try:
     response = requests.get(url, headers=headers, cookies=cookies, params=params)
     print(f"🔎 Status: {response.status_code}")
 
-    try:
-        json_data = response.json()
-        print(f"✅ Found {len(json_data.get('data', []))} results:\n")
+    json_data = response.json()
+    results = json_data.get("data", [])
 
-        for entry in json_data.get("data", []):
-            html = entry.get("DT_RowData", {}).get("content", "")
-            soup = BeautifulSoup(html, "html.parser")
+    print(f"✅ Found {len(results)} results:\n")
 
-            artist_tag = soup.find("span", class_="table-link truncate")
-            title_tag = soup.find("a", class_="table-link", href=lambda x: x and "/cdlc/" in x)
-            link_tag = soup.find_all("a")[-1]  # last <a> is usually the external download link
+    # Optional: map artist_id to names (you can expand this from earlier runs)
+    artist_map = {
+        33: "Led Zeppelin",
+        810: "Rodrigo y Gabriela",
+        8875: "Led Zeppelin/Igor Presnyakov",
+    }
 
-            artist = artist_tag.text.strip() if artist_tag else ""
-            title = title_tag.text.strip() if title_tag else ""
-            link = link_tag["href"].strip() if link_tag else ""
+    for entry in results:
+        title = entry.get("title", "Unknown Title")
+        artist_id = entry.get("artist_id")
+        artist = artist_map.get(artist_id, f"[Artist ID {artist_id}]")
+        cdlc_id = entry.get("id")
+        cdlc_url = f"https://ignition4.customsforge.com/cdlc/{cdlc_id}"
 
-            # Skip if artist and title are both missing
-            if not artist and not title:
-                continue
+        print(f"🎵 {artist} — {title}")
+        print(f"🔗 {cdlc_url}\n")
 
-            print(f"🎵 {artist} — {title}")
-            print(f"🔗 {link}\n")
-
-    except Exception:
-        print("⚠️ Could not parse response as JSON")
-        print(response.text[:800])  # Show preview of HTML for debugging
-
-except requests.exceptions.RequestException as e:
-    print(f"❌ Request failed: {e}")
-
+except Exception as e:
+    print(f"❌ Error: {e}")
