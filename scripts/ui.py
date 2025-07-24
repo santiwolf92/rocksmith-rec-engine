@@ -137,15 +137,10 @@ if st.button("➕ Load 50 More"):
 # Display recommendations
 if not st.session_state.recs.empty:
     st.success(f"Showing {len(st.session_state.recs)} recommendations")
-    display_cols = ['Artist Name(s)', 'Track Name', 'Scrobbles']
-    if 'CustomsForge Link' in st.session_state.recs.columns:
-        display_cols.append('CustomsForge Link')
-
     st.dataframe(
-        st.session_state.recs[display_cols],
+        st.session_state.recs[['Artist Name(s)', 'Track Name', 'Scrobbles']],
         use_container_width=True
     )
-
 
     csv = st.session_state.recs.to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
@@ -160,4 +155,3 @@ if st.button("🔁 Update CDLC Library"):
     except subprocess.CalledProcessError as e:
         st.error("❌ Failed to update CDLC library.")
         st.text(e.stderr)
-
