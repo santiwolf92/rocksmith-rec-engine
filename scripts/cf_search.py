@@ -35,12 +35,19 @@ def cdlc_exists_on_customsforge(artist, track):
         if response.status_code == 200:
             data = response.json().get("data", [])
             for result in data:
-                result_artist = str(result.get("Artist", "")).lower()
-                result_title = str(result.get("Title", "")).lower()
+                try:
+                    result_artist = str(result.get("Artist", "")).lower()
+                    result_title = str(result.get("Title", "")).lower()
+                except Exception as e:
+                    print(f"⚠️ Error parsing result: {e}")
+                    continue
                 if artist.lower() in result_artist and track.lower() in result_title:
                     cdlc_id = result.get("id")
                     return f"https://ignition4.customsforge.com/cdlc/{cdlc_id}"
+            return None
+        else:
+            print(f"⚠️ CF search failed with status {response.status_code} for: {artist} — {track}")
+            return None
     except Exception as e:
         print(f"❌ CF search error for {artist} — {track}: {e}")
-
-    return None
+        return None
