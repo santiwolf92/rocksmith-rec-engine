@@ -2,18 +2,8 @@ import os
 
 COOKIES_PY_PATH = os.path.join("scripts", "cookies.py")
 
-print("🍪 Paste your full cookies string below (the one from browser DevTools).")
-print("✅ Press Enter TWICE when you're done.\n")
-
-# Multi-line input until blank line
-lines = []
-while True:
-    line = input()
-    if line.strip() == "":
-        break
-    lines.append(line.strip())
-
-cookie_string = " ".join(lines)
+print("🍪 Paste your full cookies string below.")
+cookie_string = input("Cookies: ").strip()
 
 if not cookie_string:
     print("❌ No cookies pasted. Exiting.")
