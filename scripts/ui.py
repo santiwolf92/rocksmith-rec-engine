@@ -56,6 +56,9 @@ if 'max_scrobbles' not in st.session_state:
     st.session_state.max_scrobbles = 500
 if 'filter_existing' not in st.session_state:
     st.session_state.filter_existing = False
+if 'all_filtered' not in st.session_state:
+    st.session_state.all_filtered = pd.DataFrame()
+
 
 # Fixed scrobble slider cap between 1 and 500
 slider_cap = 500
