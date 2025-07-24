@@ -1,9 +1,15 @@
+import sys
+from pathlib import Path
+
+# Ensure root of repo is in the path
+sys.path.append(str(Path(__file__).resolve().parent))
+
 import pandas as pd
 import re
 import requests
 import time
 from pathlib import Path
-from .cf_search import cdlc_exists_on_customsforge
+from scripts.cf_search import cdlc_exists_on_customsforge
 
 BASE_PATH = Path(__file__).resolve().parent.parent / 'data'
 OUTPUT_PATH = BASE_PATH / 'recommendations'
