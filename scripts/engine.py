@@ -42,7 +42,7 @@ def load_and_prepare_data():
 
     return cdlc_df, liked_df, top_df, lastfm_df
 
-def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles=None, filter_existing=False, update_progress=None):
+def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles=None, filter_existing=False, update_progress=None, offset=0):
     cdlc_df, liked_df, top_df, lastfm_df = load_and_prepare_data()
 
     all_spotify = pd.concat([
@@ -83,6 +83,8 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     )
 
     recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
+    recommendations = recommendations.reset_index(drop=True)
+    recommendations = recommendations.iloc[offset:offset + top_n]
 
     if filter_existing:
         filtered = []
