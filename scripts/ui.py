@@ -112,28 +112,27 @@ if st.button("🎯 Generate Recommendations"):
 
 
 # Load More button (always visible, handles empty state internally)
+# Load More button (always visible, fetches next batch correctly)
 if st.button("➕ Load 50 More"):
-    if not st.session_state.all_filtered.empty:
-        with st.spinner("Loading more recommendations..."):
-            st.session_state.offset += 50
-            update_cb = streamlit_progress_callback() if st.session_state.filter_existing else None
+    with st.spinner("Loading more recommendations..."):
+        st.session_state.offset += 50
+        update_cb = streamlit_progress_callback() if st.session_state.filter_existing else None
 
-            new_recs = generate_recommendations(
-                top_n=50,
-                save=False,
-                min_scrobbles=st.session_state.min_scrobbles,
-                max_scrobbles=st.session_state.max_scrobbles,
-                filter_existing=st.session_state.filter_existing,
-                update_progress=update_cb,
-                offset=st.session_state.offset,
-            )
+        new_recs = generate_recommendations(
+            top_n=50,
+            save=False,
+            min_scrobbles=st.session_state.min_scrobbles,
+            max_scrobbles=st.session_state.max_scrobbles,
+            filter_existing=st.session_state.filter_existing,
+            update_progress=update_cb,
+            offset=st.session_state.offset,  # 👈 key to fetching the correct slice
+        )
 
-            if not new_recs.empty:
-                st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
-            else:
-                st.info("🚫 No more recommendations to load.")
-    else:
-        st.warning("⚠️ Nothing to load yet. Please try generating recommendations first.")
+        if not new_recs.empty:
+            st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
+        else:
+            st.info("🚫 No more recommendations to load.")
+
 
 # Display recommendations
 if not st.session_state.recs.empty:
