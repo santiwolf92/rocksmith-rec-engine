@@ -101,9 +101,14 @@ if st.button("🎯 Generate Recommendations"):
             update_progress=update_cb,
         )
 
-        filtered = all_recs.reset_index(drop=True)
-        st.session_state.all_filtered = filtered
-        st.session_state.recs = filtered.head(50) if not filtered.empty else pd.DataFrame()
+        if all_recs.empty:
+            st.session_state.recs = pd.DataFrame(columns=['Artist Name(s)', 'Track Name', 'Scrobbles'])
+            st.session_state.all_filtered = st.session_state.recs
+        else:
+            filtered = all_recs.reset_index(drop=True)
+            st.session_state.recs = filtered.head(50)
+            st.session_state.all_filtered = filtered
+
 
 # Load More button (new logic: fetch next batch dynamically)
 if not st.session_state.all_filtered.empty and st.button("➕ Load 50 More"):
