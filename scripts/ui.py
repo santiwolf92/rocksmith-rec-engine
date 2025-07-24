@@ -111,26 +111,29 @@ if st.button("🎯 Generate Recommendations"):
 
 
 
-# Load More button (new logic: fetch next batch dynamically)
-if not st.session_state.all_filtered.empty and st.button("➕ Load 50 More"):
-    with st.spinner("Loading more recommendations..."):
-        st.session_state.offset += 50
-        update_cb = streamlit_progress_callback() if st.session_state.filter_existing else None
+# Load More button (always visible, handles empty state internally)
+if st.button("➕ Load 50 More"):
+    if not st.session_state.all_filtered.empty:
+        with st.spinner("Loading more recommendations..."):
+            st.session_state.offset += 50
+            update_cb = streamlit_progress_callback() if st.session_state.filter_existing else None
 
-        new_recs = generate_recommendations(
-            top_n=50,
-            save=False,
-            min_scrobbles=st.session_state.min_scrobbles,
-            max_scrobbles=st.session_state.max_scrobbles,
-            filter_existing=st.session_state.filter_existing,
-            update_progress=update_cb,
-            offset=st.session_state.offset,
-        )
+            new_recs = generate_recommendations(
+                top_n=50,
+                save=False,
+                min_scrobbles=st.session_state.min_scrobbles,
+                max_scrobbles=st.session_state.max_scrobbles,
+                filter_existing=st.session_state.filter_existing,
+                update_progress=update_cb,
+                offset=st.session_state.offset,
+            )
 
-        if not new_recs.empty:
-            st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
-        else:
-            st.info("🚫 No more recommendations to load.")
+            if not new_recs.empty:
+                st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
+            else:
+                st.info("🚫 No more recommendations to load.")
+    else:
+        st.warning("⚠️ Nothing to load yet. Please try generating recommendations first.")
 
 # Display recommendations
 if not st.session_state.recs.empty:
