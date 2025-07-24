@@ -99,11 +99,11 @@ if st.button("🎯 Generate Recommendations"):
         )
 
         filtered = all_recs.reset_index(drop=True)
-        st.session_state.recs = filtered.head(50)
         st.session_state.all_filtered = filtered
+        st.session_state.recs = filtered.head(50) if not filtered.empty else pd.DataFrame()
 
 # Load More button (new logic: fetch next batch dynamically)
-if not st.session_state.recs.empty and st.button("➕ Load 50 More"):
+if not st.session_state.all_filtered.empty and st.button("➕ Load 50 More"):
     with st.spinner("Loading more recommendations..."):
         st.session_state.offset += 50
         update_cb = streamlit_progress_callback() if st.session_state.filter_existing else None
