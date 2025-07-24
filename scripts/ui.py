@@ -90,7 +90,7 @@ if st.button("🎯 Generate Recommendations"):
         update_cb = streamlit_progress_callback() if filter_existing else None
 
         all_recs = generate_recommendations(
-            top_n=500,
+            top_n=50,
             save=False,
             min_scrobbles=min_scrobbles,
             max_scrobbles=max_scrobbles,
@@ -107,8 +107,12 @@ if not st.session_state.recs.empty and st.button("➕ Load 50 More"):
     st.session_state.offset += 50
     start = st.session_state.offset
     end = start + 50
-    new_recs = st.session_state.all_filtered.iloc[start:end]
-    st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
+
+    if start >= len(st.session_state.all_filtered):
+        st.warning("No more recommendations to load.")
+    else:
+        new_recs = st.session_state.all_filtered.iloc[start:end]
+        st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
 
 # Display recommendations
 if not st.session_state.recs.empty:
