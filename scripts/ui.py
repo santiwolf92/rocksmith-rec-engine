@@ -103,11 +103,12 @@ if st.button("🎯 Generate Recommendations"):
 
         if all_recs.empty:
             st.session_state.recs = pd.DataFrame(columns=['Artist Name(s)', 'Track Name', 'Scrobbles'])
-            st.session_state.all_filtered = st.session_state.recs
+            st.session_state.all_filtered = pd.DataFrame(columns=['Artist Name(s)', 'Track Name', 'Scrobbles'])
         else:
             filtered = all_recs.reset_index(drop=True)
             st.session_state.recs = filtered.head(50)
             st.session_state.all_filtered = filtered
+
 
 
 # Load More button (new logic: fetch next batch dynamically)
