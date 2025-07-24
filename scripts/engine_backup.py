@@ -1,8 +1,15 @@
+import sys
+from pathlib import Path
+
+# Ensure root of repo is in the path
+sys.path.append(str(Path(__file__).resolve().parent))
+
 import pandas as pd
 import re
 import requests
 import time
 from pathlib import Path
+from cf_search import cdlc_exists_on_customsforge
 
 BASE_PATH = Path(__file__).resolve().parent.parent / 'data'
 OUTPUT_PATH = BASE_PATH / 'recommendations'
@@ -21,51 +28,6 @@ def normalize(text):
     text = text.lower().replace('&', 'and')
     return re.sub(r'[^a-z0-9]', '', text)
 
-def cdlc_exists_on_customsforge(artist, track):
-    query = f"{artist} {track}"
-    payload = {
-        "draw": 1,
-        "columns[0][data]": "Add",
-        "columns[0][name]": "",
-        "columns[0][searchable]": "true",
-        "columns[0][orderable]": "false",
-        "columns[0][search][value]": "",
-        "columns[0][search][regex]": "false",
-        "search[value]": query,
-        "search[regex]": "false",
-        "start": 0,
-        "length": 10,
-    }
-
-    try:
-        for attempt in range(3):
-            response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload, timeout=10)
-            if response.status_code != 200:
-                continue
-
-            try:
-                data = response.json()
-            except ValueError:
-                print(f"⚠️ Invalid JSON for: {artist} — {track}")
-                continue
-
-            print(f"✅ Received response for: {artist} — {track}")
-
-            for result in data.get("data", []):
-                result_artist = result.get("Artist", "").lower()
-                result_title = result.get("Title", "").lower()
-                if artist.lower() in result_artist and track.lower() in result_title:
-                    return True
-
-            time.sleep(0.5)
-
-        return False
-
-    except Exception as e:
-        print(f"⚠️ CustomsForge error for '{artist} – {track}': {e}")
-        return False
-
-
 def load_and_prepare_data():
     cdlc_df = pd.read_csv(BASE_PATH / 'cdlc_library.csv')
     liked_df = pd.read_csv(BASE_PATH / 'spotify_liked.csv')
@@ -80,7 +42,7 @@ def load_and_prepare_data():
 
     return cdlc_df, liked_df, top_df, lastfm_df
 
-def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles=None, filter_existing=False, update_progress=None):
+def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles=None, filter_existing=False, update_progress=None, offset=0):
     cdlc_df, liked_df, top_df, lastfm_df = load_and_prepare_data()
 
     all_spotify = pd.concat([
@@ -121,6 +83,8 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     )
 
     recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
+    recommendations = recommendations.reset_index(drop=True)
+    recommendations = recommendations.iloc[offset:offset + top_n]
 
     if filter_existing:
         filtered = []
