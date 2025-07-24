@@ -119,10 +119,10 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     if save:
         OUTPUT_PATH.mkdir(exist_ok=True)
         output_file = OUTPUT_PATH / 'recommendations.csv'
-        cols_to_save = ['Artist Name(s)', 'Track Name', 'Scrobbles']
-        if 'CustomsForge Link' in top_recommendations.columns:
-            cols_to_save.append('CustomsForge Link')
-        top_recommendations[cols_to_save].to_csv(output_file, index=False)
+       cols_to_save = ['Artist Name(s)', 'Track Name', 'Scrobbles']
+       if 'CustomsForge Link' in top_recommendations.columns:
+           cols_to_save.append('CustomsForge Link')
+       top_recommendations[cols_to_save].to_csv(output_file, index=False)
         print(f"\n✅ Saved to {output_file}")
 
     print("\u2705 Returning top recommendations")
