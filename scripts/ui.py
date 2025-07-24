@@ -142,9 +142,10 @@ if not st.session_state.recs.empty:
     if 'CustomsForge Link' in st.session_state.recs.columns:
         display_cols.append('CustomsForge Link')
 
-    st.dataframe(
-        st.session_state.recs[display_cols],
-        use_container_width=True
+    st.markdown("### 📋 Recommendations")
+    st.write(
+        st.session_state.recs[display_cols].to_html(escape=False, index=False),
+        unsafe_allow_html=True,
     )
 
     csv = st.session_state.recs[display_cols].to_csv(index=False).encode('utf-8')
