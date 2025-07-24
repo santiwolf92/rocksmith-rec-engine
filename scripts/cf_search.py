@@ -2,7 +2,11 @@
 
 import requests
 from urllib.parse import quote_plus
-from cookies import cookies
+try:
+    from cookies import cookies
+except (ImportError, AttributeError):
+    cookies = {}
+    print("⚠️ Warning: No cookies loaded. Please paste them in the UI.")
 
 def cdlc_exists_on_customsforge(artist, track):
     search_term = f"{artist} {track}"
