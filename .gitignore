@@ -13,3 +13,7 @@ __pycache__/
 
 # Misc
 *.log
+
+# Local cookies file (DO NOT TRACK)
+cookies.py
+
