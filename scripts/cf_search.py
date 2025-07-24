@@ -9,36 +9,40 @@ except (ImportError, AttributeError):
     print("⚠️ Warning: No cookies loaded. Please paste them in the UI.")
 
 def cdlc_exists_on_customsforge(artist, track):
-    search_term = f"{artist} {track}"
-    encoded_term = quote_plus(search_term.lower())
+    from cookies import cookies
+    import requests
+    from urllib.parse import quote_plus
 
+    query = f"{artist} {track}"
+    encoded_query = quote_plus(query)
+    url = "https://ignition4.customsforge.com/"
     headers = {
         "accept": "application/json, text/javascript, */*; q=0.01",
-        "accept-language": "en-GB,en;q=0.9,en-US;q=0.8,es;q=0.7",
         "referer": "https://ignition4.customsforge.com/",
         "x-requested-with": "XMLHttpRequest",
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "user-agent": "Mozilla/5.0",
     }
 
     params = {
         "draw": "1",
         "start": "0",
         "length": "25",
-        "search[value]": search_term,
+        "search[value]": query,
         "filter_preferred_platform": "windows",
         "filter_hide_abandoned": "true",
     }
 
-    url = "https://ignition4.customsforge.com/"
     try:
         response = requests.get(url, headers=headers, cookies=cookies, params=params, timeout=10)
-        if response.status_code == 200:
-            data = response.json().get("data", [])
-            return len(data) > 0
-        else:
-            print(f"⚠️ CF search failed with status {response.status_code} for: {artist} — {track}")
-            return False
+        response.raise_for_status()
+        data = response.json()
+        for result in data.get("data", []):
+            result_artist = result.get("artist", "").lower()
+            result_title = result.get("title", "").lower()
+            if artist.lower() in result_artist and track.lower() in result_title:
+                cdlc_id = result.get("id")
+                return f"https://ignition4.customsforge.com/cdlc/{cdlc_id}"
     except Exception as e:
-        print(f"❌ CF search error for {artist} — {track}: {e}")
-        return False
+        print(f"⚠️ Error searching for {artist} - {track}: {e}")
 
+    return None
