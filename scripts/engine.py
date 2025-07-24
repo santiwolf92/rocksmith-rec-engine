@@ -22,51 +22,6 @@ def normalize(text):
     text = text.lower().replace('&', 'and')
     return re.sub(r'[^a-z0-9]', '', text)
 
-def cdlc_exists_on_customsforge(artist, track):
-    query = f"{artist} {track}"
-    payload = {
-        "draw": 1,
-        "columns[0][data]": "Add",
-        "columns[0][name]": "",
-        "columns[0][searchable]": "true",
-        "columns[0][orderable]": "false",
-        "columns[0][search][value]": "",
-        "columns[0][search][regex]": "false",
-        "search[value]": query,
-        "search[regex]": "false",
-        "start": 0,
-        "length": 10,
-    }
-
-    try:
-        for attempt in range(3):
-            response = requests.post("https://ignition4.customsforge.com/tablesettings", data=payload, timeout=10)
-            if response.status_code != 200:
-                continue
-
-            try:
-                data = response.json()
-            except ValueError:
-                print(f"⚠️ Invalid JSON for: {artist} — {track}")
-                continue
-
-            print(f"✅ Received response for: {artist} — {track}")
-
-            for result in data.get("data", []):
-                result_artist = result.get("Artist", "").lower()
-                result_title = result.get("Title", "").lower()
-                if artist.lower() in result_artist and track.lower() in result_title:
-                    return True
-
-            time.sleep(0.5)
-
-        return False
-
-    except Exception as e:
-        print(f"⚠️ CustomsForge error for '{artist} – {track}': {e}")
-        return False
-
-
 def load_and_prepare_data():
     cdlc_df = pd.read_csv(BASE_PATH / 'cdlc_library.csv')
     liked_df = pd.read_csv(BASE_PATH / 'spotify_liked.csv')
