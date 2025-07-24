@@ -87,22 +87,22 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     recommendations = recommendations.iloc[offset:offset + top_n]
 
     if filter_existing:
-    filtered = []
-    total = len(recommendations.head(top_n))
-    for i, (_, row) in enumerate(recommendations.head(top_n).iterrows(), 1):
-        artist = row['Artist Name(s)']
-        track = row['Track Name']
+        filtered = []
+        total = len(recommendations.head(top_n))
+        for i, (_, row) in enumerate(recommendations.head(top_n).iterrows(), 1):
+            artist = row['Artist Name(s)']
+            track = row['Track Name']
+            if update_progress:
+                update_progress(i, total, artist, track)
+            link = cdlc_exists_on_customsforge(artist, track)
+            if link:
+                row_data = row.to_dict()
+                row_data['CustomsForge Link'] = link
+                filtered.append(row_data)
+            time.sleep(1)
         if update_progress:
-            update_progress(i, total, artist, track)
-        link = cdlc_exists_on_customsforge(artist, track)
-        if link:
-            row_data = row.to_dict()
-            row_data['CustomsForge Link'] = link
-            filtered.append(row_data)
-        time.sleep(1)
-    if update_progress:
-        update_progress(total, total, "Done", "")
-    recommendations = pd.DataFrame(filtered)
+            update_progress(total, total, "Done", "")
+        recommendations = pd.DataFrame(filtered)
 
     if recommendations.empty:
         print("\u26a0\ufe0f No filtered results were generated.")
