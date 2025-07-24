@@ -2,7 +2,7 @@
 
 import requests
 from urllib.parse import quote_plus
-from scripts.cookies import cookies  # assumes cookies dict is in cookies.py
+from cookies import cookies
 
 def cdlc_exists_on_customsforge(artist, track):
     search_term = f"{artist} {track}"
