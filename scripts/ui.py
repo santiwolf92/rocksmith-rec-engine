@@ -102,17 +102,26 @@ if st.button("🎯 Generate Recommendations"):
         st.session_state.recs = filtered.head(50)
         st.session_state.all_filtered = filtered
 
-# Load More button
+# Load More button (new logic: fetch next batch dynamically)
 if not st.session_state.recs.empty and st.button("➕ Load 50 More"):
-    st.session_state.offset += 50
-    start = st.session_state.offset
-    end = start + 50
+    with st.spinner("Loading more recommendations..."):
+        st.session_state.offset += 50
+        update_cb = streamlit_progress_callback() if st.session_state.filter_existing else None
 
-    if start >= len(st.session_state.all_filtered):
-        st.warning("No more recommendations to load.")
-    else:
-        new_recs = st.session_state.all_filtered.iloc[start:end]
-        st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
+        new_recs = generate_recommendations(
+            top_n=50,
+            save=False,
+            min_scrobbles=st.session_state.min_scrobbles,
+            max_scrobbles=st.session_state.max_scrobbles,
+            filter_existing=st.session_state.filter_existing,
+            update_progress=update_cb,
+            offset=st.session_state.offset,
+        )
+
+        if not new_recs.empty:
+            st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
+        else:
+            st.info("🚫 No more recommendations to load.")
 
 # Display recommendations
 if not st.session_state.recs.empty:
