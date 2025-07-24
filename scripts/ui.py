@@ -140,6 +140,10 @@ if not st.session_state.recs.empty:
 
     display_cols = ['Artist Name(s)', 'Track Name', 'Scrobbles']
     if 'CustomsForge Link' in st.session_state.recs.columns:
+        # Convert URLs into clickable links
+        st.session_state.recs['CustomsForge Link'] = st.session_state.recs['CustomsForge Link'].apply(
+            lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>'
+        )
         display_cols.append('CustomsForge Link')
 
     st.markdown("### 📋 Recommendations")
