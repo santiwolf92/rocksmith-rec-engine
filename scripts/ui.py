@@ -138,7 +138,7 @@ if st.button("➕ Load 50 More"):
 if not st.session_state.recs.empty:
     st.success(f"Showing {len(st.session_state.recs)} recommendations")
     st.dataframe(
-        st.session_state.recs[['Artist Name(s)', 'Track Name', 'Scrobbles']],
+        st.session_state.recs[['Artist Name(s)', 'Track Name', 'Scrobbles', 'CustomsForge Link']],
         use_container_width=True
     )
 
