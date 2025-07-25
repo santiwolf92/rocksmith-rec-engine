@@ -135,39 +135,31 @@ if st.button("➕ Load 50 More"):
             max_scrobbles=st.session_state.max_scrobbles,
             filter_existing=st.session_state.filter_existing,
             update_progress=update_cb,
-            offset=st.session_state.offset,  # 👈 key to fetching the correct slice
+            offset=st.session_state.offset,
         )
 
         if not new_recs.empty:
-            # ✅ Format just the new links before appending
-            if 'CustomsForge Link' in new_recs.columns:
-                new_recs['CustomsForge Link'] = new_recs['CustomsForge Link'].apply(
-                    lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>'
-                    if pd.notna(url) and str(url).startswith("http") else url
-                )
             st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
-
         else:
             st.info("🚫 No more recommendations to load.")
-
 
 # Display recommendations
 if not st.session_state.recs.empty:
     st.success(f"Showing {len(st.session_state.recs)} recommendations")
 
     display_cols = ['Artist Name(s)', 'Track Name', 'Scrobbles']
-    if 'CustomsForge Link' in st.session_state.recs.columns:
-        # Convert URLs into clickable links
-        st.session_state.recs['CustomsForge Link'] = st.session_state.recs['CustomsForge Link'].apply(
+    display_df = st.session_state.recs.copy()
+
+    # ✅ Format only for rendering (not modifying the session data)
+    if 'CustomsForge Link' in display_df.columns:
+        display_df['CustomsForge Link'] = display_df['CustomsForge Link'].apply(
             lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>'
+            if pd.notna(url) and str(url).startswith("http") else ''
         )
         display_cols.append('CustomsForge Link')
 
     st.markdown("### 📋 Recommendations")
-    st.write(
-        st.session_state.recs[display_cols].to_html(escape=False, index=False),
-        unsafe_allow_html=True,
-    )
+    st.write(display_df[display_cols].to_html(escape=False, index=False), unsafe_allow_html=True)
 
     csv = st.session_state.recs[display_cols].to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
