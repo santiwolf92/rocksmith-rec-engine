@@ -122,9 +122,6 @@ if st.button("🎯 Generate Recommendations"):
             st.session_state.recs = filtered.head(50)
             st.session_state.all_filtered = filtered
 
-
-
-# Load More button (always visible, handles empty state internally)
 # Load More button (always visible, fetches next batch correctly)
 if st.button("➕ Load 50 More"):
     with st.spinner("Loading more recommendations..."):
@@ -142,7 +139,13 @@ if st.button("➕ Load 50 More"):
         )
 
         if not new_recs.empty:
+            # ✅ Format just the new links before appending
+            if 'CustomsForge Link' in new_recs.columns:
+                new_recs['CustomsForge Link'] = new_recs['CustomsForge Link'].apply(
+                    lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>' if pd.notna(url) and not str(url).startswith('<a') else url
+                )
             st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
+
         else:
             st.info("🚫 No more recommendations to load.")
 
