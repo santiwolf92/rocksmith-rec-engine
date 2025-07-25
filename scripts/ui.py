@@ -145,11 +145,15 @@ if not st.session_state.recs.empty:
 
     display_cols = ['Artist Name(s)', 'Track Name', 'Scrobbles']
     if 'CustomsForge Link' in st.session_state.recs.columns:
-        # Convert URLs into clickable links
-        st.session_state.recs['CustomsForge Link'] = st.session_state.recs['CustomsForge Link'].apply(
-            lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>'
-        )
         display_cols.append('CustomsForge Link')
+
+        # ✅ Format CDLC links once, only if not already formatted
+        st.session_state.recs['CustomsForge Link'] = st.session_state.recs['CustomsForge Link'].apply(
+            lambda url: (
+                f'<a href="{url}" target="_blank">🔗 View CDLC</a>'
+                if pd.notna(url) and not str(url).startswith('<a') else url
+            )
+        )
 
     st.markdown("### 📋 Recommendations")
     st.write(
@@ -159,7 +163,6 @@ if not st.session_state.recs.empty:
 
     csv = st.session_state.recs[display_cols].to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
-
 
 # Update CDLC Library button
 if st.button("🔁 Update CDLC Library"):
