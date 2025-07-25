@@ -66,8 +66,16 @@ slider_cap = 500
 # Sidebar options
 with st.sidebar:
     st.header("🔧 Settings")
-    min_scrobbles = st.slider("Minimum Scrobbles", 1, slider_cap, st.session_state.min_scrobbles)
-    max_scrobbles = st.slider("Maximum Scrobbles", 1, slider_cap, st.session_state.max_scrobbles)
+    
+    # Sliders
+    min_slider = st.slider("Minimum Scrobbles", 1, slider_cap, st.session_state.min_scrobbles)
+    max_slider = st.slider("Maximum Scrobbles", 1, slider_cap, st.session_state.max_scrobbles)
+    
+    # Optional overrides
+    st.markdown("#### 🎯 Manual Override (optional)")
+    manual_min = st.number_input("Set Min Scrobbles", min_value=0, max_value=slider_cap, value=0, step=1)
+    manual_max = st.number_input("Set Max Scrobbles", min_value=1, max_value=slider_cap, value=0, step=1)
+
     filter_existing = st.checkbox("✅ Only show songs that exist on CustomsForge", value=st.session_state.filter_existing)
 
 # Progress callback
@@ -86,8 +94,13 @@ def streamlit_progress_callback():
 if st.button("🎯 Generate Recommendations"):
     with st.spinner("Crunching data..."):
         st.session_state.offset = 0
-        st.session_state.min_scrobbles = min_scrobbles
-        st.session_state.max_scrobbles = max_scrobbles
+        # Apply override only if values are non-zero
+        effective_min = manual_min if manual_min > 0 else min_slider
+        effective_max = manual_max if manual_max > 0 else max_slider
+        
+        # Save to session state
+        st.session_state.min_scrobbles = effective_min
+        st.session_state.max_scrobbles = effective_max
         st.session_state.filter_existing = filter_existing
 
         update_cb = streamlit_progress_callback() if filter_existing else None
@@ -95,8 +108,8 @@ if st.button("🎯 Generate Recommendations"):
         all_recs = generate_recommendations(
             top_n=50,
             save=False,
-            min_scrobbles=min_scrobbles,
-            max_scrobbles=max_scrobbles,
+            min_scrobbles=effective_min,
+            max_scrobbles=effective_max,
             filter_existing=filter_existing,
             update_progress=update_cb,
         )
@@ -130,13 +143,9 @@ if st.button("➕ Load 50 More"):
 
         if not new_recs.empty:
             st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
-            # Ensure all 'CustomsForge Link' values are converted to clickable links
-            if 'CustomsForge Link' in st.session_state.recs.columns:
-                st.session_state.recs['CustomsForge Link'] = st.session_state.recs['CustomsForge Link'].apply(
-                    lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>' if pd.notna(url) else ''
-                )
         else:
             st.info("🚫 No more recommendations to load.")
+
 
 # Display recommendations
 if not st.session_state.recs.empty:
@@ -144,19 +153,15 @@ if not st.session_state.recs.empty:
 
     display_cols = ['Artist Name(s)', 'Track Name', 'Scrobbles']
     if 'CustomsForge Link' in st.session_state.recs.columns:
-        display_cols.append('CustomsForge Link')
-
-    # ✅ Always reformat links cleanly just before display
-    display_df = st.session_state.recs.copy()
-    if 'CustomsForge Link' in display_df.columns:
-        display_df['CustomsForge Link'] = display_df['CustomsForge Link'].apply(
+        # Convert URLs into clickable links
+        st.session_state.recs['CustomsForge Link'] = st.session_state.recs['CustomsForge Link'].apply(
             lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>'
-            if pd.notna(url) and isinstance(url, str) and url.startswith('http') else ''
         )
+        display_cols.append('CustomsForge Link')
 
     st.markdown("### 📋 Recommendations")
     st.write(
-        display_df[display_cols].to_html(escape=False, index=False),
+        st.session_state.recs[display_cols].to_html(escape=False, index=False),
         unsafe_allow_html=True,
     )
 
