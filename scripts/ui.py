@@ -142,7 +142,8 @@ if st.button("➕ Load 50 More"):
             # ✅ Format just the new links before appending
             if 'CustomsForge Link' in new_recs.columns:
                 new_recs['CustomsForge Link'] = new_recs['CustomsForge Link'].apply(
-                    lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>' if pd.notna(url) and not str(url).startswith('<a') else url
+                    lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>'
+                    if pd.notna(url) and str(url).startswith("http") else url
                 )
             st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
 
