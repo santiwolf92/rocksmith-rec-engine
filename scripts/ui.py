@@ -138,7 +138,6 @@ if st.button("➕ Load 50 More"):
         else:
             st.info("🚫 No more recommendations to load.")
 
-
 # Display recommendations
 if not st.session_state.recs.empty:
     st.success(f"Showing {len(st.session_state.recs)} recommendations")
@@ -147,22 +146,23 @@ if not st.session_state.recs.empty:
     if 'CustomsForge Link' in st.session_state.recs.columns:
         display_cols.append('CustomsForge Link')
 
-        # ✅ Format CDLC links once, only if not already formatted
-        st.session_state.recs['CustomsForge Link'] = st.session_state.recs['CustomsForge Link'].apply(
-            lambda url: (
-                f'<a href="{url}" target="_blank">🔗 View CDLC</a>'
-                if pd.notna(url) and not str(url).startswith('<a') else url
-            )
+    # ✅ Always reformat links cleanly just before display
+    display_df = st.session_state.recs.copy()
+    if 'CustomsForge Link' in display_df.columns:
+        display_df['CustomsForge Link'] = display_df['CustomsForge Link'].apply(
+            lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>'
+            if pd.notna(url) and isinstance(url, str) and url.startswith('http') else ''
         )
 
     st.markdown("### 📋 Recommendations")
     st.write(
-        st.session_state.recs[display_cols].to_html(escape=False, index=False),
+        display_df[display_cols].to_html(escape=False, index=False),
         unsafe_allow_html=True,
     )
 
     csv = st.session_state.recs[display_cols].to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
+
 
 # Update CDLC Library button
 if st.button("🔁 Update CDLC Library"):
