@@ -74,7 +74,7 @@ with st.sidebar:
     # Optional overrides
     st.markdown("#### 🎯 Manual Override (optional)")
     manual_min = st.number_input("Set Min Scrobbles", min_value=0, max_value=slider_cap, value=0, step=1)
-    manual_max = st.number_input("Set Max Scrobbles", min_value=1, max_value=slider_cap, value=0, step=1)
+    manual_max = st.number_input("Set Max Scrobbles", min_value=0, max_value=slider_cap, value=0, step=1)
 
     filter_existing = st.checkbox("✅ Only show songs that exist on CustomsForge", value=st.session_state.filter_existing)
 
