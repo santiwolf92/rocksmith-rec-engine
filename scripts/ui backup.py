@@ -137,13 +137,24 @@ if st.button("➕ Load 50 More"):
 # Display recommendations
 if not st.session_state.recs.empty:
     st.success(f"Showing {len(st.session_state.recs)} recommendations")
-    st.dataframe(
-        st.session_state.recs[['Artist Name(s)', 'Track Name', 'Scrobbles']],
-        use_container_width=True
+
+    display_cols = ['Artist Name(s)', 'Track Name', 'Scrobbles']
+    if 'CustomsForge Link' in st.session_state.recs.columns:
+        # Convert URLs into clickable links
+        st.session_state.recs['CustomsForge Link'] = st.session_state.recs['CustomsForge Link'].apply(
+            lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>'
+        )
+        display_cols.append('CustomsForge Link')
+
+    st.markdown("### 📋 Recommendations")
+    st.write(
+        st.session_state.recs[display_cols].to_html(escape=False, index=False),
+        unsafe_allow_html=True,
     )
 
-    csv = st.session_state.recs.to_csv(index=False).encode('utf-8')
+    csv = st.session_state.recs[display_cols].to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
+
 
 # Update CDLC Library button
 if st.button("🔁 Update CDLC Library"):
