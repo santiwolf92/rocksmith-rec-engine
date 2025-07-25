@@ -130,6 +130,11 @@ if st.button("➕ Load 50 More"):
 
         if not new_recs.empty:
             st.session_state.recs = pd.concat([st.session_state.recs, new_recs], ignore_index=True)
+            # Ensure all 'CustomsForge Link' values are converted to clickable links
+            if 'CustomsForge Link' in st.session_state.recs.columns:
+                st.session_state.recs['CustomsForge Link'] = st.session_state.recs['CustomsForge Link'].apply(
+                    lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>' if pd.notna(url) else ''
+                )
         else:
             st.info("🚫 No more recommendations to load.")
 
