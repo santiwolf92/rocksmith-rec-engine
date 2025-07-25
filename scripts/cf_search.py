@@ -32,7 +32,7 @@ def cdlc_exists_on_customsforge(artist, track):
 
     url = "https://ignition4.customsforge.com/"
     try:
-        response = requests.get(url, headers=headers, cookies=cookies, params=params, timeout=10)
+        response = requests.get(url, headers=headers, cookies=cookies, params=params, timeout=20)
         if response.status_code == 200:
             data = response.json().get("data", [])
             if data:
