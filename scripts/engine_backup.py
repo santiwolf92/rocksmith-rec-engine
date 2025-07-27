@@ -34,6 +34,8 @@ def load_and_prepare_data():
     top_df = pd.read_csv(BASE_PATH / 'spotify_top.csv')
     lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv')
     lastfm_df = lastfm_df.apply(lambda col: col.map(fix_mojibake))
+    lastfm_df['Artist Normalized'] = lastfm_df['Artist Name(s)'].str.strip().str.lower()
+
 
     for df in [cdlc_df, liked_df, top_df]:
         df['Artist Normalized'] = df['Artist Name(s)'].apply(normalize)
