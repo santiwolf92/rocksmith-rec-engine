@@ -1,305 +1,419 @@
-Ranking,Artist Name(s),Scrobbles
-1,The Weeknd,206
-2,Guns N' Roses,184
-3,Led Zeppelin,150
-4,David Bowie,122
-5,Arctic Monkeys,99
-6,Queen,93
-7,My Chemical Romance,90
-8,Maroon 5,88
-9,Slash's Snakepit,70
-10,Foo Fighters,61
-11,Slash,54
-12,The Who,51
-13,John Mayer,50
-14,The Doors,49
-15,AC/DC,48
-16,System of a Down,48
-17,The Rolling Stones,48
-18,Kendrick Lamar,47
-19,Velvet Revolver,46
-20,Radiohead,38
-21,Jimi Hendrix,37
-22,Harry Styles,35
-23,Red Hot Chili Peppers,35
-24,The Police,33
-25,Metallica,32
-26,Sabrina Carpenter,32
-27,Rival Sons,31
-28,Slipknot,28
-29,Nirvana,27
-30,*NSYNC,26
-31,The Rasmus,26
-32,Octafonic,25
-33,Audioslave,24
-34,Limp Bizkit,24
-35,Oasis,24
-36,Aerosmith,23
-37,Connor Questa,23
-38,The Killers,23
-39,Daft Punk,22
-40,Eminem,22
-41,Mötley Crüe,22
-42,ZZ Top,22
-43,The Clash,21
-44,Van Halen,21
-45,Anderson .Paak,20
-46,Elton John,20
-47,Fleetwood Mac,20
-48,Kasabian,20
-49,Kiss,20
-50,Pink Floyd,20
-51,The Cure,20
-52,Ozzy Osbourne,19
-53,Green Day,18
-54,Iron Maiden,18
-55,Pantera,18
-56,blink-182,17
-57,Bon Jovi,17
-58,The Strokes,17
-59,Creedence Clearwater Revival,16
-60,Disturbed,16
-61,Taylor Swift,16
-62,The Offspring,16
-63,The Parcels,16
-64,Imagine Dragons,15
-65,Rammstein,15
-66,The Smiths,15
-67,Alice in Chains,14
-68,Black Sabbath,14
-69,Sum 41,14
-70,Britney Spears,13
-71,Queens of the Stone Age,13
-72,Soundgarden,13
-73,Starsailor,13
-74,Blur,12
-75,Foreigner,12
-76,Hoobastank,12
-77,Ratt,12
-78,Rob Zombie,12
-79,Billy Idol,11
-80,Coldplay,11
-81,Dua Lipa,11
-82,Keane,11
-83,Linkin Park,11
-84,The Beatles,11
-85,Airbag,10
-86,Blue Öyster Cult,10
-87,Collective Soul,10
-88,"Earth, Wind & Fire",10
-89,Kings of Leon,10
-90,Lynyrd Skynyrd,10
-91,No Doubt,10
-92,Ramones,10
-93,Stevie Nicks,10
-94,Journey,9
-95,Lenny Kravitz,9
-96,Michael Jackson,9
-97,Sean Paul,9
-98,Seether,9
-99,Skid Row,9
-100,Stone Temple Pilots,9
-101,The White Stripes,9
-102,Deep Purple,8
-103,Duran Duran,8
-104,Frank Ocean,8
-105,George Michael,8
-106,Iggy Azalea,8
-107,Lewis Capaldi,8
-108,Queensrÿche,8
-109,Rage Against the Machine,8
-110,Sublime,8
-111,Warrant,8
-112,Whitesnake,8
-113,Carl Orff,7
-114,Franz Ferdinand,7
-115,Free Nationals,7
-116,Godsmack,7
-117,James Brown,7
-118,Lady Gaga,7
-119,Lou Reed,7
-120,Megadeth,7
-121,MGMT,7
-122,Muse,7
-123,Poison,7
-124,Tame Impala,7
-125,The Black Keys,7
-126,The Cult,7
-127,The Hives,7
-128,Caesars,6
-129,CDM Project,6
-130,Foals,6
-131,Kansas,6
-132,Living Colour,6
-133,Mac Miller,6
-134,Marilyn Manson,6
-135,Motörhead,6
-136,Talking Heads,6
-137,Beastie Boys,5
-138,Boston,5
-139,Bruno Mars,5
-140,Def Leppard,5
-141,Korn,5
-142,Papa Roach,5
-143,Pearl Jam,5
-144,Ram Jam,5
-145,Royal Blood,5
-146,Rush,5
-147,The Raconteurs,5
-148,Toto,5
-149,Weezer,5
-150,50 Cent,4
-151,Backstreet Boys,4
-152,Bloc Party,4
-153,Cutting Crew,4
-154,Dire Straits,4
-155,Dr. Dre,4
-156,Drowning Pool,4
-157,Eagles,4
-158,Electric Light Orchestra,4
-159,Evanescence,4
-160,Good Charlotte,4
-161,Heart,4
-162,Himalayas,4
-163,Lizzo,4
-164,Mac DeMarco,4
-165,Modjo,4
-166,Peter Bjorn and John,4
-167,R.E.M,4
-168,Scorpions,4
-169,Simple Plan,4
-170,Steve Miller Band,4
-171,The Stone Roses,4
-172,The Vines,4
-173,Thundercat,4
-174,Wings,4
-175,Yeah Yeah Yeahs,4
-176,30 Seconds to Mars,3
-177,Adele,3
-178,Alice Cooper,3
-179,Ariana Grande,3
-180,Avril Lavigne,3
-181,Bad Nerves,3
-182,Billie Eilish,3
-183,Billy Joel,3
-184,Blondie,3
-185,Boldy James,3
-186,Celine Dion,3
-187,Creed,3
-188,Dirty Honey,3
-189,Eurythmics,3
-190,Gnarls Barkley,3
-191,Gorillaz,3
-192,Joan Jett,3
-193,Judas Priest,3
-194,Kaiser Chiefs,3
-195,Lime Cordiale,3
-196,Mumford & Sons,3
-197,Nickelback,3
-198, Olivia Rodrigo,3
-199,OutKast,3
-200,Prince,3
-201,Stone Giant,3
-202,T.Rex,3
-203,Tears For Fears,3
-204,Ted Nugent,3
-205,Tom Petty,3
-206,twenty one pilots,3
-207,Airbourne,2
-208,Alien Ant Farm,2
-209,Arcade Fire,2
-210,Badfinger,2
-211,Bikini Kill,2
-212,Black Rebel Motorcycle Club,2
-213,Capital Cities,2
-214,Chappell Roan,2
-215,Charli xcx,2
-216,Cheap Trick,2
-217,Dio,2
-218,Dragonforce,2
-219,Empire of the Sun,2
-220,Europe,2
-221,Future,2
-222,Hall & Oates,2
-223,Hozier,2
-224,Ice Cube,2
-225,Jack White,2
-226,Jet,2
-227,Jimmy Eat World,2
-228,Kate Bush,2
-229,Katy Perry,2
-230,MF DOOM,2
-231,Patricio Rey y sus Redonditos de Ricota,2
-232,Sia,2
-233,Simple Minds,2
-234,Smash Mouth,2
-235,Starship,2
-236,Stevie Wonder,2
-237,Sweedish House Mafia,2
-238,The Animals,2
-239,The Darkness,2
-240,The Kinks,2
-241,The Neighbourhood,2
-242,The Notorious B.I.G,2
-243,The Rare Occasions,2
-244,The Southern River Band,2
-245,The Temperance Movement,2
-246,Them Crooked Vultures,2
-247,Thin Lizzy,2
-248,U2,2
-249,White Zombie,2
-250,Winger,2
-251,Wolfmother,2
-252,3 Doors Down,1
-253,Beck,1
-254,Bob Dylan,1
-255,Bruce Springsteen,1
-256,Bryan Adams,1
-257,Buddy Guy,1
-258,Cage The Elephant,1
-259,Chickenfoot,1
-260,Childish Gambino,1
-261,Christina Aguilera,1
-262,Demi Lovato,1
-263,Doja Cat,1
-264,Faith No More,1
-265,Fall Out Boy,1
-266,Florence+the Machine,1
-267,Greta Van Fleet,1
-268,Jamiroquai,1
-269,Jack Johnson,1
-270,Janis Joplin,1
-271,Justin Bieber,1
-272,Kid Rock,1
-273,Liam Gallagher,1
-274,Noel Gallagher,1
-275,Luis Miguel,1
-276,Madonna,1
-277,Maneskin,1
-278,Marilina Bertoldi,1
-279,Nicki Minaj,1
-280,Paramore,1
-281,Phil Collins,1
-282,Pixies,1
-283,Quiet Riot,1
-284,Ritchie Kotzen,1
-285,Roxette,1
-286,Steppenwolf,1
-287,Stevie Ray Vaughan,1
-288,Stone Sour,1
-289,Supertramp,1
-290,SZA,1
-291,Temple of the Dog,1
-292,Tesla,1
-293,The Alan Parsons Project,1
-294,The Cardigans,1
-295,Sex Pistols,1
-296,The Fratellis,1
-297,The Verve,1
-298,Three Days Grace,1
-299,Tool,1
-300,Two Door Cinema Club,1
-301,Tyler The Creator,1
-302,Viagra Boys,1
-303,Wham!,1
-304,White Lion,1
+Artist Name(s),Scrobbles
+The Weeknd,206
+Guns N' Roses,188
+Led Zeppelin,150
+David Bowie,122
+Arctic Monkeys,103
+Queen,93
+My Chemical Romance,91
+Maroon 5,90
+Slash's Snakepit,75
+Foo Fighters,70
+Slash,60
+John Mayer,51
+The Who,51
+AC/DC,50
+System of a Down,50
+The Doors,49
+The Rolling Stones,48
+Kendrick Lamar,47
+Velvet Revolver,46
+Audioslave,39
+Radiohead,38
+Harry Styles,37
+Jimi Hendrix,37
+Red Hot Chili Peppers,37
+Rival Sons,34
+Sabrina Carpenter,33
+The Police,33
+Metallica,32
+Oasis,30
+Slipknot,29
+Nirvana,27
+*NSYNC,26
+The Rasmus,26
+Limp Bizkit,25
+Octafonic,25
+Aerosmith,24
+Connor Questa,23
+Mötley Crüe,23
+The Killers,23
+Daft Punk,22
+Eminem,22
+Kasabian,22
+The Clash,22
+ZZ Top,22
+Elton John,21
+Fleetwood Mac,21
+The Cure,21
+Van Halen,21
+Anderson .Paak,20
+Green Day,20
+Iron Maiden,20
+Kiss,20
+Pink Floyd,20
+The Parcels,20
+Ozzy Osbourne,19
+Bon Jovi,18
+Pantera,18
+The Strokes,18
+blink-182,17
+Rammstein,17
+Black Sabbath,16
+Creedence Clearwater Revival,16
+Disturbed,16
+Sum 41,16
+Taylor Swift,16
+The Offspring,16
+Imagine Dragons,15
+Starsailor,15
+The Smiths,15
+Alice in Chains,14
+Soundgarden,14
+Blur,13
+Britney Spears,13
+Keane,13
+Queens of the Stone Age,13
+Billy Idol,12
+Coldplay,12
+Foreigner,12
+Franz Ferdinand,12
+Hoobastank,12
+Linkin Park,12
+Ratt,12
+Rob Zombie,12
+The Beatles,12
+Dua Lipa,11
+Airbag,10
+Blue Öyster Cult,10
+Collective Soul,10
+"Earth, Wind & Fire",10
+Kings of Leon,10
+Lynyrd Skynyrd,10
+No Doubt,10
+Ramones,10
+Sean Paul,10
+Stevie Nicks,10
+Stone Temple Pilots,10
+George Michael,9
+Iggy Azalea,9
+Journey,9
+Lenny Kravitz,9
+Michael Jackson,9
+Seether,9
+Skid Row,9
+The Drills,9
+The White Stripes,9
+Deep Purple,8
+Duran Duran,8
+Frank Ocean,8
+Lewis Capaldi,8
+Marilyn Manson,8
+Muse,8
+Queensrÿche,8
+Rage Against the Machine,8
+Sublime,8
+Tame Impala,8
+Warrant,8
+Whitesnake,8
+Carl Orff,7
+Free Nationals,7
+Godsmack,7
+James Brown,7
+Kansas,7
+Lady Gaga,7
+Lou Reed,7
+Megadeth,7
+MGMT,7
+Poison,7
+The Black Keys,7
+The Cult,7
+The Hives,7
+a-ha,6
+Caesars,6
+CDM Project,6
+Foals,6
+Living Colour,6
+Mac Miller,6
+Motörhead,6
+Talking Heads,6
+Beastie Boys,5
+Bloc Party,5
+Boston,5
+Bruno Mars,5
+Def Leppard,5
+Depeche Mode,5
+Korn,5
+Papa Roach,5
+Pearl Jam,5
+Ram Jam,5
+Royal Blood,5
+Rush,5
+Scorpions,5
+T. Rex,5
+The Raconteurs,5
+Toto,5
+Weezer,5
+50 Cent,4
+Backstreet Boys,4
+Billy Joel,4
+Cutting Crew,4
+Dire Straits,4
+Dr. Dre,4
+Drowning Pool,4
+Eagles,4
+Electric Light Orchestra,4
+Evanescence,4
+Good Charlotte,4
+Heart,4
+Himalayas,4
+Lizzo,4
+Mac DeMarco,4
+Modjo,4
+Peter Bjorn and John,4
+R.E.M.,4
+Simple Plan,4
+Steve Miller Band,4
+Temple of the Dog,4
+The Stone Roses,4
+The Vines,4
+Thundercat,4
+Wings,4
+Yeah Yeah Yeahs,4
+30 Seconds to Mars,3
+Adele,3
+Alice Cooper,3
+Ariana Grande,3
+Avril Lavigne,3
+Bad Nerves,3
+Billie Eilish,3
+Blondie,3
+Boldy James,3
+Céline Dion,3
+Creed,3
+Dirty Honey,3
+Eurythmics,3
+Gnarls Barkley,3
+Gorillaz,3
+Joan Jett and the Blackhearts,3
+Judas Priest,3
+Kaiser Chiefs,3
+King Geedorah,3
+KREZUS,3
+Lime Cordiale,3
+Metronomy,3
+Mumford & Sons,3
+Nickelback,3
+Olivia Rodrigo,3
+OutKast,3
+Prince,3
+Stone Giant,3
+Tears for Fears,3
+Ted Nugent,3
+Tom Petty,3
+Tom Petty and The Heartbreakers,3
+twenty one pilots,3
+Airbourne,2
+Alien Ant Farm,2
+Alphabetics,2
+alt-J,2
+Arcade Fire,2
+ARCHEZ,2
+Badfinger,2
+Bikini Kill,2
+Black Rebel Motorcycle Club,2
+Capital Cities,2
+Chappell Roan,2
+Charli xcx,2
+Cheap Trick,2
+Chickenfoot,2
+Dio,2
+DJ L30,2
+DJ Topo,2
+Dr. Dog,2
+DragonForce,2
+Electric Mary,2
+Empire of the Sun,2
+Europe,2
+Fontaines D.C.,2
+Future,2
+Greta Van Fleet,2
+Hall & Oates,2
+Hozier,2
+Ice Cube,2
+Jack White,2
+Jet,2
+Jimmy Eat World,2
+Kate Bush,2
+Katy Perry,2
+Luis Miguel,2
+LXNGVX,2
+Manfred Mann's Earth Band,2
+MF DOOM,2
+Mike,2
+Neil Frances,2
+Noel Gallagher's High Flying Birds,2
+NUEKI,2
+Patricio Rey y sus Redonditos de Ricota,2
+Philip Bailey,2
+Rockwell,2
+RXDXVIL,2
+Sade,2
+Sam & Dave,2
+Sam Cooke,2
+Sia,2
+Simple Minds,2
+Smash Mouth,2
+Starship,2
+Stevie Wonder,2
+Swedish House Mafia,2
+The Alchemist,2
+The Animals,2
+The Darkness,2
+The Kinks,2
+The Neighbourhood,2
+The Notorious B.I.G.,2
+The Presidents of the United States of America,2
+The Rare Occasions,2
+The Southern River Band,2
+The Temperance Movement,2
+Them Crooked Vultures,2
+Thin Lizzy,2
+U2,2
+Vance Joy,2
+White Zombie,2
+Winger,2
+Wolfmother,2
+3 Doors Down,1
+6YNTHMANE,1
+All Time Low,1
+Altégo,1
+Alter Bridge,1
+Asleep At The Helm,1
+Bad Meets Evil,1
+Beck,1
+Bee Gees,1
+Bill Withers,1
+Blind Willie Johnson,1
+Blue Swede,1
+Bob Dylan,1
+Bob Seger,1
+Brent Faiyaz,1
+Bruce Springsteen,1
+Bryan Adams,1
+Buddy Guy,1
+Bush,1
+Cage the Elephant,1
+Casiopea,1
+Childish Gambino,1
+Christina Aguilera,1
+Cream,1
+"Crosby, Stills, Nash & Young",1
+David Gilmour,1
+Demi Lovato,1
+DJ BIEL PRADO,1
+DJ FKU,1
+Dj João Pereira,1
+DJ Maninho,1
+DNCE,1
+Doja Cat,1
+Dominic Fike,1
+Eternxlkz,1
+Faith No More,1
+Fall Out Boy,1
+Faster Pussycat,1
+Florence + the Machine,1
+Free,1
+G-Eazy,1
+g3ox_em,1
+Generation X,1
+George Harrison,1
+Golden Earring,1
+Greg Kihn Band,1
+Groovie Ghoulies,1
+h6itam,1
+Hotel Ugly,1
+Jack Johnson,1
+Jamiroquai,1
+Jane's Addiction,1
+Janis Joplin,1
+Jessie J,1
+Jimin,1
+Justin Bieber,1
+KAROL G,1
+Kid Rock,1
+KSLV Noh,1
+Liam Gallagher,1
+Lola Young,1
+Looking Glass,1
+Loverboy,1
+Luan Pereira,1
+M4GN,1
+Macy Gray,1
+Madonna,1
+Maggie Rogers,1
+Måneskin,1
+Marilina Bertoldi,1
+Mark Ronson,1
+Más Que Uno,1
+Mavi,1
+Mc Fioti,1
+MC Kevinho,1
+Mc Oliver,1
+Modest Mouse,1
+Nateki,1
+New Found Glory,1
+Nicki Minaj,1
+No Vacation,1
+Nuns of the Tundra,1
+nvxus,1
+Paolo Nutini,1
+Paramore,1
+Pat Benatar,1
+Phil Collins,1
+Pixies,1
+Player,1
+Primus,1
+Quiet Riot,1
+Rainbow Kitten Surprise,1
+Richie Kotzen,1
+Roxette,1
+S3BZS,1
+Semisonic,1
+Sex Pistols,1
+Shaboozey,1
+Sons Of Silver,1
+Spin Doctors,1
+Stealers Wheel,1
+Steely Dan,1
+Steppenwolf,1
+Steve Lacy,1
+Stevie Ray Vaughan,1
+Stone Sour,1
+Supertramp,1
+SZA,1
+Tesla,1
+The Alan Parsons Project,1
+The Box,1
+The Cardigans,1
+The Fratellis,1
+The Hollies,1
+The Monkees,1
+The Outfield,1
+The Temper Trap,1
+The Verve,1
+The Wallflowers,1
+The Wonder Years,1
+Three Days Grace,1
+Tool,1
+Tropa do Bruxo,1
+Trueno,1
+Two Door Cinema Club,1
+"Tyler, The Creator",1
+Viagra Boys,1
+Westside Gunn,1
+Wham!,1
+White Lion,1
+Wild Cherry,1
+Zedd,1
+ZWE1HVNDXR,1
