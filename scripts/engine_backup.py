@@ -73,16 +73,23 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     )
 
     missing_songs = merged[merged['_merge'] == 'left_only'][[
-        'Artist Name(s)', 'Track Name', 'Artist Normalized']].drop_duplicates()
+    'Artist Name(s)', 'Track Name', 'Artist Normalized']].drop_duplicates()
 
+    # 🧼 Normalize artist names before merging
+    missing_songs['Artist Normalized'] = missing_songs['Artist Normalized'].str.strip().str.lower()
+    artist_priority['Artist Normalized'] = artist_priority['Artist Normalized'].str.strip().str.lower()
+    
+    # 🔁 Merge in scrobbles
     missing_songs = missing_songs.merge(
         artist_priority[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']],
         on='Artist Normalized',
         how='left',
         suffixes=('', '_LastFM')
     )
-    # ✅ Clean up NaNs in scrobbles
+    
+    # ✅ Fill in missing scrobble data
     missing_songs['Scrobbles'] = missing_songs['Scrobbles'].fillna(0).astype(int)
+
 
     recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
     recommendations = recommendations.reset_index(drop=True)
