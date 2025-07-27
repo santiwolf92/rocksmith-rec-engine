@@ -81,6 +81,8 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         how='left',
         suffixes=('', '_LastFM')
     )
+    # ✅ Clean up NaNs in scrobbles
+    missing_songs['Scrobbles'] = missing_songs['Scrobbles'].fillna(0).astype(int)
 
     recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
     recommendations = recommendations.reset_index(drop=True)
