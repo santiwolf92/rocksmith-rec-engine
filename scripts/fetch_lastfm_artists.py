@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+from pathlib import Path
 
 API_KEY = "6f8742e558ad32dae99f51f3fb923910"
 USERNAME = "Santi_wolf"
@@ -34,5 +35,8 @@ def fetch_lastfm_artists(api_key, username, pages=1):
 
 if __name__ == "__main__":
     df = fetch_lastfm_artists(API_KEY, USERNAME, pages=PAGES)
-    df.to_csv("lastfm_artist_scrobbles_test.csv", index=False)
-    print("✅ Scrobble data saved to lastfm_artist_scrobbles_test.csv")
+
+    # ✅ Save to engine data path
+    output_path = Path(__file__).resolve().parent.parent / "data" / "lastfm_top_artists.csv"
+    df.to_csv(output_path, index=False)
+    print(f"✅ Last.fm artist scrobble data saved to: {output_path}")
