@@ -68,8 +68,8 @@ with st.sidebar:
     st.header("🔧 Settings")
     
     # Sliders
-    min_slider = st.slider("Minimum Scrobbles", 1, slider_cap, st.session_state.min_scrobbles)
-    max_slider = st.slider("Maximum Scrobbles", 1, slider_cap, st.session_state.max_scrobbles)
+    min_slider = st.slider("Minimum Scrobbles", 0, slider_cap, st.session_state.min_scrobbles)
+    max_slider = st.slider("Maximum Scrobbles", 0, slider_cap, st.session_state.max_scrobbles)
     
     # Optional overrides
     st.markdown("#### 🎯 Manual Override (optional)")
