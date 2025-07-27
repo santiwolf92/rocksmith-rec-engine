@@ -6,9 +6,12 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # === Load credentials from .env ===
-load_dotenv(dotenv_path=Path(__file__).parent / ".env")
+load_dotenv(dotenv_path=Path(__file__).parent.parent / ".env")
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
+
+# ✅ Add this debug line right below
+print("🧪 DEBUG ENV:", CLIENT_ID, CLIENT_SECRET[:4], "...", os.getenv("SPOTIFY_REFRESH_TOKEN")[:6])
 
 # === Paths and flags ===
 repo_root = Path(__file__).resolve().parent.parent
