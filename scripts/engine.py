@@ -82,18 +82,11 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         top_df[['Artist Name(s)', 'Track Name', 'Artist Normalized', 'Track Normalized']]
     ]).drop_duplicates(subset=['Artist Normalized', 'Track Normalized'])
 
-    artist_priority = lastfm_df[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']].copy()
-    artist_priority['Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
-    artist_priority = artist_priority.dropna()
+    artist_priority_all = lastfm_df[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']].copy()
+    artist_priority_all['Scrobbles'] = pd.to_numeric(artist_priority_all['Scrobbles'], errors='coerce')
+    artist_priority_all = artist_priority_all.dropna()
 
-    if max_scrobbles is not None:
-        artist_priority = artist_priority[
-            (artist_priority['Scrobbles'] >= min_scrobbles) & (artist_priority['Scrobbles'] <= max_scrobbles)
-        ]
-    else:
-        artist_priority = artist_priority[artist_priority['Scrobbles'] >= min_scrobbles]
-
-    artist_priority = artist_priority.sort_values(by='Scrobbles', ascending=False)
+    artist_priority = artist_priority_all.sort_values(by='Scrobbles', ascending=False)
 
     merged = pd.merge(
         all_spotify,
@@ -104,10 +97,7 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     )
 
     missing_songs = merged[merged['_merge'] == 'left_only'][[
-        'Artist Name(s)', 'Track Name', 'Artist Normalized'
-    ]].drop_duplicates()
-
-    # Do NOT re-normalize again — it's already done before!
+        'Artist Name(s)', 'Track Name', 'Artist Normalized']].drop_duplicates()
 
     missing_songs = missing_songs.merge(
         artist_priority[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']],
@@ -119,6 +109,12 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     missing_songs['Scrobbles'] = missing_songs['Scrobbles'].fillna(0).astype(int)
 
     recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
+
+    # ✅ Filter AFTER assigning scrobbles
+    recommendations = recommendations[recommendations['Scrobbles'] >= min_scrobbles]
+    if max_scrobbles is not None:
+        recommendations = recommendations[recommendations['Scrobbles'] <= max_scrobbles]
+
     recommendations = recommendations.reset_index(drop=True)
     recommendations = recommendations.iloc[offset:offset + top_n]
 
