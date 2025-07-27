@@ -8,7 +8,7 @@ from pathlib import Path
 def refresh_lastfm_data():
     try:
         current_dir = Path(__file__).resolve().parent
-        fetch_script = current_dir / "scripts" / "fetch_lastfm_artists.py"
+        fetch_script = current_dir.parent / "scripts" / "fetch_lastfm_artists.py"
 
         result = subprocess.run(
             ["python", str(fetch_script)],
