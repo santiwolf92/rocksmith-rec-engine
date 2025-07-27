@@ -34,13 +34,11 @@ def load_and_prepare_data():
     top_df = pd.read_csv(BASE_PATH / 'spotify_top.csv')
     lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv')
     lastfm_df = lastfm_df.apply(lambda col: col.map(fix_mojibake))
-    lastfm_df['Artist Normalized'] = lastfm_df['Artist Name(s)'].str.strip().str.lower()
-
+    lastfm_df['Artist Normalized'] = lastfm_df['Artist Name(s)'].apply(normalize)
 
     for df in [cdlc_df, liked_df, top_df]:
         df['Artist Normalized'] = df['Artist Name(s)'].apply(normalize)
         df['Track Normalized'] = df['Track Name'].apply(normalize)
-    lastfm_df['Artist Normalized'] = lastfm_df['Artist Name(s)'].apply(normalize)
 
     return cdlc_df, liked_df, top_df, lastfm_df
 
@@ -52,17 +50,10 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         top_df[['Artist Name(s)', 'Track Name', 'Artist Normalized', 'Track Normalized']]
     ]).drop_duplicates(subset=['Artist Normalized', 'Track Normalized'])
 
-    artist_priority = lastfm_df[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']]
-    artist_priority = artist_priority.copy()
+    artist_priority = lastfm_df[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']].copy()
     artist_priority['Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
     artist_priority = artist_priority.dropna()
-
-    if max_scrobbles is not None:
-        artist_priority = artist_priority[
-            (artist_priority['Scrobbles'] >= min_scrobbles) & (artist_priority['Scrobbles'] <= max_scrobbles)
-        ]
-    else:
-        artist_priority = artist_priority[artist_priority['Scrobbles'] >= min_scrobbles]
+    artist_priority['Scrobbles'] = artist_priority['Scrobbles'].astype(int)
 
     artist_priority = artist_priority.sort_values(by='Scrobbles', ascending=False)
 
@@ -75,37 +66,26 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     )
 
     missing_songs = merged[merged['_merge'] == 'left_only'][[
-    'Artist Name(s)', 'Track Name', 'Artist Normalized']].drop_duplicates()
+        'Artist Name(s)', 'Track Name', 'Artist Normalized']].drop_duplicates()
 
-    # 🧼 Normalize both sides with same logic
     missing_songs['Artist Normalized'] = missing_songs['Artist Name(s)'].apply(normalize)
     artist_priority['Artist Normalized'] = artist_priority['Artist Name(s)'].apply(normalize)
-    
-    # 🔁 Merge in scrobbles
+
     missing_songs = missing_songs.merge(
         artist_priority[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']],
         on='Artist Normalized',
         how='left',
         suffixes=('', '_LastFM')
     )
-    
-    # ✅ Fill in missing scrobble data
+
     missing_songs['Scrobbles'] = missing_songs['Scrobbles'].fillna(0).astype(int)
-    
 
-    # Extract Adele-related entries for debugging
-    adele_priority = artist_priority[artist_priority['Artist Name(s)'].str.contains("adele", case=False)]
-    adele_missing = missing_songs[missing_songs['Artist Name(s)'].str.contains("adele", case=False)]
-
-    # === 🔍 DIAGNOSTIC CHECK FOR ADELE ===
-    import streamlit as st
-
-    st.subheader("🎯 In artist_priority.csv:")
-    st.dataframe(adele_priority[['Artist Name(s)', 'Artist Normalized', 'Scrobbles']])
-    
-    st.subheader("👻 In missing_songs:")
-    st.dataframe(adele_missing[['Artist Name(s)', 'Artist Normalized', 'Scrobbles']])
-
+    if max_scrobbles is not None:
+        missing_songs = missing_songs[
+            (missing_songs['Scrobbles'] >= min_scrobbles) & (missing_songs['Scrobbles'] <= max_scrobbles)
+        ]
+    else:
+        missing_songs = missing_songs[missing_songs['Scrobbles'] >= min_scrobbles]
 
     recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
     recommendations = recommendations.reset_index(drop=True)
@@ -141,14 +121,14 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         scrobbles = int(row['Scrobbles']) if pd.notna(row['Scrobbles']) else '?'
         print(f"- {artist} — {song}  ({scrobbles} scrobbles)")
 
-        if save:
-            OUTPUT_PATH.mkdir(exist_ok=True)
-            output_file = OUTPUT_PATH / 'recommendations.csv'
-            cols_to_save = ['Artist Name(s)', 'Track Name', 'Scrobbles']
-            if 'CustomsForge Link' in top_recommendations.columns:
-                cols_to_save.append('CustomsForge Link')
-            top_recommendations[cols_to_save].to_csv(output_file, index=False)
-            print(f"\n✅ Saved to {output_file}")
+    if save:
+        OUTPUT_PATH.mkdir(exist_ok=True)
+        output_file = OUTPUT_PATH / 'recommendations.csv'
+        cols_to_save = ['Artist Name(s)', 'Track Name', 'Scrobbles']
+        if 'CustomsForge Link' in top_recommendations.columns:
+            cols_to_save.append('CustomsForge Link')
+        top_recommendations[cols_to_save].to_csv(output_file, index=False)
+        print(f"\n✅ Saved to {output_file}")
 
     print("\u2705 Returning top recommendations")
     return top_recommendations
