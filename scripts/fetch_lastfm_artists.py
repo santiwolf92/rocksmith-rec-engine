@@ -1,11 +1,15 @@
 import requests
 import pandas as pd
 from pathlib import Path
+import subprocess
 
+# === CONFIGURATION ===
 API_KEY = "6f8742e558ad32dae99f51f3fb923910"
 USERNAME = "Santi_wolf"
 PAGES = 1  # Increase if needed (each page = 1000 artists)
+AUTO_COMMIT = True  # Set to False if you don’t want auto-commit/push
 
+# === FUNCTIONS ===
 def fetch_lastfm_artists(api_key, username, pages=1):
     all_artists = []
 
@@ -33,24 +37,21 @@ def fetch_lastfm_artists(api_key, username, pages=1):
 
     return pd.DataFrame(all_artists)
 
+# === MAIN ===
 if __name__ == "__main__":
     df = fetch_lastfm_artists(API_KEY, USERNAME, pages=PAGES)
 
-    # ✅ Save to engine data path
-    output_path = Path(__file__).resolve().parent.parent / "data" / "lastfm_top_artists.csv"
-    df.to_csv(output_path, index=False)
-    print(f"✅ Last.fm artist scrobble data saved to: {output_path}")
+    # Save to correct data path in repo
+    repo_root = Path(__file__).resolve().parent.parent
+    file_path = repo_root / "data" / "lastfm_top_artists.csv"
+    df.to_csv(file_path, index=False)
+    print(f"✅ Last.fm artist scrobble data saved to: {file_path}")
 
-import subprocess
-
-# Git add + commit automatically
-try:
-    # Resolve path relative to git root
-    from pathlib import Path
-    git_file_path = Path(__file__).resolve().parent.parent / "data" / "lastfm_top_artists.csv"
-    subprocess.run(["git", "add", str(git_file_path.relative_to(Path.cwd()))], check=True)
-    subprocess.run(["git", "commit", "-m", "Update lastfm_top_artists.csv from fetch script"], check=True)
-    print("✅ File committed to Git")
-except subprocess.CalledProcessError as e:
-    print("⚠️ Git commit failed. Reason:", e)
-
+    if AUTO_COMMIT:
+        try:
+            subprocess.run(["git", "-C", str(repo_root), "add", "data/lastfm_top_artists.csv"], check=True)
+            subprocess.run(["git", "-C", str(repo_root), "commit", "-m", "🔄 Update Last.fm artist scrobble data"], check=True)
+            subprocess.run(["git", "-C", str(repo_root), "push"], check=True)
+            print("🚀 Git commit & push successful.")
+        except subprocess.CalledProcessError as e:
+            print(f"⚠️ Git operation failed: {e}")
