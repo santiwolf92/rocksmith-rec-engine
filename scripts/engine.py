@@ -42,7 +42,6 @@ ARTIST_ALIASES = {
     "Daft Punk,Pharrell Williams,Nile Rodgers": "Daft Punk",
     "Daft Punk,Pharrell Williams": "Daft Punk",
     "Daft Punk,Julian Casablancas": "Daft Punk",
-    
     # Add more here as needed
 }
 
@@ -107,6 +106,8 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     missing_songs = merged[merged['_merge'] == 'left_only'][[
         'Artist Name(s)', 'Track Name', 'Artist Normalized'
     ]].drop_duplicates()
+
+    # Do NOT re-normalize again — it's already done before!
 
     missing_songs = missing_songs.merge(
         artist_priority[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']],
