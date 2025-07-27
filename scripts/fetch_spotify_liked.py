@@ -15,16 +15,20 @@ repo_root = Path(__file__).resolve().parent.parent
 output_file = repo_root / "data" / "spotify_liked.csv"
 AUTO_COMMIT = True
 
-# === Step 1: Get access token ===
 def get_access_token():
+    refresh_token = os.getenv("SPOTIFY_REFRESH_TOKEN")
     auth_url = "https://accounts.spotify.com/api/token"
-    auth_response = requests.post(
+    response = requests.post(
         auth_url,
-        data={"grant_type": "client_credentials"},
-        auth=(CLIENT_ID, CLIENT_SECRET),
+        data={
+            "grant_type": "refresh_token",
+            "refresh_token": refresh_token
+        },
+        auth=(CLIENT_ID, CLIENT_SECRET)
     )
-    auth_response.raise_for_status()
-    return auth_response.json()["access_token"]
+    response.raise_for_status()
+    return response.json()["access_token"]
+
 
 # === Step 2: Fetch liked songs ===
 def fetch_liked_songs(access_token):
