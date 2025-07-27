@@ -47,11 +47,11 @@ if __name__ == "__main__":
     df.to_csv(file_path, index=False)
     print(f"[OK] Last.fm artist scrobble data saved to: {file_path}")
 
-    if AUTO_COMMIT:
+   if AUTO_COMMIT:
     try:
         subprocess.run(["git", "-C", str(repo_root), "add", "data/lastfm_top_artists.csv"], check=True)
 
-        # Check if any changes actually exist
+        # Check if any changes were staged
         diff_result = subprocess.run(
             ["git", "-C", str(repo_root), "diff", "--cached", "--quiet"],
             check=False
@@ -63,7 +63,6 @@ if __name__ == "__main__":
             print("[OK] Git commit & push successful.")
         else:
             print("[SKIP] No changes to commit.")
-
     except subprocess.CalledProcessError as e:
         import sys
         print(f"[!] Git operation failed: {e}", file=sys.stderr)
