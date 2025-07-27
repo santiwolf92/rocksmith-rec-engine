@@ -91,7 +91,15 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     
     # ✅ Fill in missing scrobble data
     missing_songs['Scrobbles'] = missing_songs['Scrobbles'].fillna(0).astype(int)
-
+    
+    # === 🔍 DIAGNOSTIC CHECK FOR ADELE ===
+    adele_priority = artist_priority[artist_priority['Artist Name(s)'].str.lower().str.contains("adele")]
+    print("\n🎯 In artist_priority.csv:")
+    print(adele_priority[['Artist Name(s)', 'Artist Normalized', 'Scrobbles']])
+    
+    adele_missing = missing_songs[missing_songs['Artist Name(s)'].str.lower().str.contains("adele")]
+    print("\n👻 In missing_songs:")
+    print(adele_missing[['Artist Name(s)', 'Artist Normalized', 'Scrobbles']])
 
     recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
     recommendations = recommendations.reset_index(drop=True)
