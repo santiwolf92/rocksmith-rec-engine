@@ -66,8 +66,16 @@ slider_cap = 500
 # Sidebar options
 with st.sidebar:
     st.header("🔧 Settings")
-    min_scrobbles = st.slider("Minimum Scrobbles", 1, slider_cap, st.session_state.min_scrobbles)
-    max_scrobbles = st.slider("Maximum Scrobbles", 1, slider_cap, st.session_state.max_scrobbles)
+    
+    # Sliders
+    min_slider = st.slider("Minimum Scrobbles", 1, slider_cap, st.session_state.min_scrobbles)
+    max_slider = st.slider("Maximum Scrobbles", 1, slider_cap, st.session_state.max_scrobbles)
+    
+    # Optional overrides
+    st.markdown("#### 🎯 Manual Override (optional)")
+    manual_min = st.number_input("Set Min Scrobbles", min_value=0, max_value=slider_cap, value=0, step=1)
+    manual_max = st.number_input("Set Max Scrobbles", min_value=0, max_value=slider_cap, value=0, step=1)
+
     filter_existing = st.checkbox("✅ Only show songs that exist on CustomsForge", value=st.session_state.filter_existing)
 
 # Progress callback
@@ -86,8 +94,13 @@ def streamlit_progress_callback():
 if st.button("🎯 Generate Recommendations"):
     with st.spinner("Crunching data..."):
         st.session_state.offset = 0
-        st.session_state.min_scrobbles = min_scrobbles
-        st.session_state.max_scrobbles = max_scrobbles
+        # Apply override only if values are non-zero
+        effective_min = manual_min if manual_min > 0 else min_slider
+        effective_max = manual_max if manual_max > 0 else max_slider
+        
+        # Save to session state
+        st.session_state.min_scrobbles = effective_min
+        st.session_state.max_scrobbles = effective_max
         st.session_state.filter_existing = filter_existing
 
         update_cb = streamlit_progress_callback() if filter_existing else None
@@ -95,8 +108,8 @@ if st.button("🎯 Generate Recommendations"):
         all_recs = generate_recommendations(
             top_n=50,
             save=False,
-            min_scrobbles=min_scrobbles,
-            max_scrobbles=max_scrobbles,
+            min_scrobbles=effective_min,
+            max_scrobbles=effective_max,
             filter_existing=filter_existing,
             update_progress=update_cb,
         )
@@ -109,9 +122,6 @@ if st.button("🎯 Generate Recommendations"):
             st.session_state.recs = filtered.head(50)
             st.session_state.all_filtered = filtered
 
-
-
-# Load More button (always visible, handles empty state internally)
 # Load More button (always visible, fetches next batch correctly)
 if st.button("➕ Load 50 More"):
     with st.spinner("Loading more recommendations..."):
@@ -125,7 +135,7 @@ if st.button("➕ Load 50 More"):
             max_scrobbles=st.session_state.max_scrobbles,
             filter_existing=st.session_state.filter_existing,
             update_progress=update_cb,
-            offset=st.session_state.offset,  # 👈 key to fetching the correct slice
+            offset=st.session_state.offset,
         )
 
         if not new_recs.empty:
@@ -133,24 +143,23 @@ if st.button("➕ Load 50 More"):
         else:
             st.info("🚫 No more recommendations to load.")
 
-
 # Display recommendations
 if not st.session_state.recs.empty:
     st.success(f"Showing {len(st.session_state.recs)} recommendations")
 
     display_cols = ['Artist Name(s)', 'Track Name', 'Scrobbles']
-    if 'CustomsForge Link' in st.session_state.recs.columns:
-        # Convert URLs into clickable links
-        st.session_state.recs['CustomsForge Link'] = st.session_state.recs['CustomsForge Link'].apply(
+    display_df = st.session_state.recs.copy()
+
+    # ✅ Format only for rendering (not modifying the session data)
+    if 'CustomsForge Link' in display_df.columns:
+        display_df['CustomsForge Link'] = display_df['CustomsForge Link'].apply(
             lambda url: f'<a href="{url}" target="_blank">🔗 View CDLC</a>'
+            if pd.notna(url) and str(url).startswith("http") else ''
         )
         display_cols.append('CustomsForge Link')
 
     st.markdown("### 📋 Recommendations")
-    st.write(
-        st.session_state.recs[display_cols].to_html(escape=False, index=False),
-        unsafe_allow_html=True,
-    )
+    st.write(display_df[display_cols].to_html(escape=False, index=False), unsafe_allow_html=True)
 
     csv = st.session_state.recs[display_cols].to_csv(index=False).encode('utf-8')
     st.download_button("⬇️ Download CSV", csv, "recommendations.csv", "text/csv")
