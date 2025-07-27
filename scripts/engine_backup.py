@@ -77,9 +77,9 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     missing_songs = merged[merged['_merge'] == 'left_only'][[
     'Artist Name(s)', 'Track Name', 'Artist Normalized']].drop_duplicates()
 
-    # 🧼 Normalize artist names before merging
-    missing_songs['Artist Normalized'] = missing_songs['Artist Normalized'].str.strip().str.lower()
-    artist_priority['Artist Normalized'] = artist_priority['Artist Normalized'].str.strip().str.lower()
+    # 🧼 Normalize both sides with same logic
+    missing_songs['Artist Normalized'] = missing_songs['Artist Name(s)'].apply(normalize)
+    artist_priority['Artist Normalized'] = artist_priority['Artist Name(s)'].apply(normalize)
     
     # 🔁 Merge in scrobbles
     missing_songs = missing_songs.merge(
