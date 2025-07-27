@@ -3,10 +3,31 @@ import pandas as pd
 from engine import generate_recommendations
 import subprocess
 import os
+from pathlib import Path
+
+def refresh_lastfm_data():
+    try:
+        result = subprocess.run(
+            ["python", "scripts/fetch_lastfm_artists.py"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        st.success("✅ Last.fm artist data refreshed successfully!")
+        st.text(result.stdout)
+    except subprocess.CalledProcessError as e:
+        st.error("❌ Failed to refresh Last.fm data.")
+        st.text(e.stderr)
 
 st.set_page_config(page_title="Rocksmith Recommender", layout="wide")
 st.title("🎸 Rocksmith CDLC Recommender")
 st.markdown("Compare your Spotify + Last.fm listening data with your CDLC library.")
+
+# Refresh Last.fm artist data
+st.sidebar.subheader("🎵 Last.fm Sync")
+if st.sidebar.button("🔄 Refresh Last.fm Data"):
+    refresh_lastfm_data()
+
 # Paste Cookies section
 st.sidebar.subheader("🔑 Paste Cookies")
 with st.sidebar.expander("Paste and Save CustomForge Cookies"):
