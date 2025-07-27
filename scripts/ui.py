@@ -7,8 +7,11 @@ from pathlib import Path
 
 def refresh_lastfm_data():
     try:
+        current_dir = Path(__file__).resolve().parent
+        fetch_script = current_dir / "scripts" / "fetch_lastfm_artists.py"
+
         result = subprocess.run(
-            ["python", "scripts/fetch_lastfm_artists.py"],
+            ["python", str(fetch_script)],
             capture_output=True,
             text=True,
             check=True
@@ -18,6 +21,8 @@ def refresh_lastfm_data():
     except subprocess.CalledProcessError as e:
         st.error("❌ Failed to refresh Last.fm data.")
         st.text(e.stderr)
+    except Exception as e:
+        st.error(f"❌ Unexpected error: {e}")
 
 st.set_page_config(page_title="Rocksmith Recommender", layout="wide")
 st.title("🎸 Rocksmith CDLC Recommender")
