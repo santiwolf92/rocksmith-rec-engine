@@ -14,6 +14,38 @@ from cf_search import cdlc_exists_on_customsforge
 BASE_PATH = Path(__file__).resolve().parent.parent / 'data'
 OUTPUT_PATH = BASE_PATH / 'recommendations'
 
+# === Manual aliases for artist name inconsistencies ===
+ARTIST_ALIASES = {
+    "the parcels": "parcels",
+    "Slash,Myles Kennedy And The Conspirators": "Slash",
+    "Slash,Ian Astbury": "Slash",
+    "Slash,Ozzy Osbourne": "Slash",
+    "Slash,Chris Cornell": "Slash",
+    "Slash,Andrew Stockdale": "Slash",
+    "Slash,Adam Levine": "Slash",
+    "Slash,Lemmy": "Slash",
+    "Slash,Dave Grohl,Duff McKagan": "Slash",
+    "Slash,Kid Rock": "Slash",
+    "Slash,M Shadows": "Slash",
+    "Slash,Myles Kennedy": "Slash",
+    "Slash,Rocco De Luca": "Slash",
+    "Slash,Iggy Pop": "Slash",
+    "Slash,Beth Hart": "Slash",
+    "Earth Wind & Fire,The Emotions": "Earth Wind & Fire",
+    "Phil X & The Drills": "The Drills",
+    "Eurythmics,Annie Lennox,Dave Stewart": "Eurythmics",
+    "Octafonic,Nico Sorin": "Octafonic",
+    "Tom Petty and the Heartbreakers": "Tom Petty",
+    "Daft Punk,Panda Bear": "Daft Punk",
+    "Daft Punk,Todd Edwards": "Daft Punk",
+    "Daft Punk,Paul Williams": "Daft Punk",
+    "Daft Punk,Pharrell Williams,Nile Rodgers": "Daft Punk",
+    "Daft Punk,Pharrell Williams": "Daft Punk",
+    "Daft Punk,Julian Casablancas": "Daft Punk",
+    
+    # Add more here as needed
+}
+
 def fix_mojibake(text):
     if isinstance(text, str):
         try:
@@ -25,8 +57,9 @@ def fix_mojibake(text):
 def normalize(text):
     if not isinstance(text, str):
         return ''
-    text = text.lower().replace('&', 'and')
-    return re.sub(r'[^a-z0-9]', '', text)
+    norm = text.lower().replace('&', 'and')
+    norm = re.sub(r'[^a-z0-9]', '', norm)
+    return ARTIST_ALIASES.get(norm, norm)
 
 def load_and_prepare_data():
     cdlc_df = pd.read_csv(BASE_PATH / 'cdlc_library.csv')
@@ -53,7 +86,13 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     artist_priority = lastfm_df[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']].copy()
     artist_priority['Scrobbles'] = pd.to_numeric(artist_priority['Scrobbles'], errors='coerce')
     artist_priority = artist_priority.dropna()
-    artist_priority['Scrobbles'] = artist_priority['Scrobbles'].astype(int)
+
+    if max_scrobbles is not None:
+        artist_priority = artist_priority[
+            (artist_priority['Scrobbles'] >= min_scrobbles) & (artist_priority['Scrobbles'] <= max_scrobbles)
+        ]
+    else:
+        artist_priority = artist_priority[artist_priority['Scrobbles'] >= min_scrobbles]
 
     artist_priority = artist_priority.sort_values(by='Scrobbles', ascending=False)
 
@@ -66,7 +105,8 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     )
 
     missing_songs = merged[merged['_merge'] == 'left_only'][[
-        'Artist Name(s)', 'Track Name', 'Artist Normalized']].drop_duplicates()
+        'Artist Name(s)', 'Track Name', 'Artist Normalized'
+    ]].drop_duplicates()
 
     missing_songs['Artist Normalized'] = missing_songs['Artist Name(s)'].apply(normalize)
     artist_priority['Artist Normalized'] = artist_priority['Artist Name(s)'].apply(normalize)
@@ -79,13 +119,6 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     )
 
     missing_songs['Scrobbles'] = missing_songs['Scrobbles'].fillna(0).astype(int)
-
-    if max_scrobbles is not None:
-        missing_songs = missing_songs[
-            (missing_songs['Scrobbles'] >= min_scrobbles) & (missing_songs['Scrobbles'] <= max_scrobbles)
-        ]
-    else:
-        missing_songs = missing_songs[missing_songs['Scrobbles'] >= min_scrobbles]
 
     recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
     recommendations = recommendations.reset_index(drop=True)
