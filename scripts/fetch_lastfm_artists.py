@@ -45,7 +45,10 @@ import subprocess
 
 # Git add + commit automatically
 try:
-    subprocess.run(["git", "add", "data/lastfm_top_artists.csv"], check=True)
+    # Resolve path relative to git root
+    from pathlib import Path
+    git_file_path = Path(__file__).resolve().parent.parent / "data" / "lastfm_top_artists.csv"
+    subprocess.run(["git", "add", str(git_file_path.relative_to(Path.cwd()))], check=True)
     subprocess.run(["git", "commit", "-m", "Update lastfm_top_artists.csv from fetch script"], check=True)
     print("✅ File committed to Git")
 except subprocess.CalledProcessError as e:
