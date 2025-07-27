@@ -32,7 +32,6 @@ def get_access_token():
     response.raise_for_status()
     return response.json()["access_token"]
 
-
 # === Step 2: Fetch liked songs ===
 def fetch_liked_songs(access_token):
     headers = {"Authorization": f"Bearer {access_token}"}
