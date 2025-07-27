@@ -90,10 +90,19 @@ def streamlit_progress_callback():
 
     return callback
 
+# Custom input for number of recommendations
+custom_rec_count = st.number_input(
+    "Number of recommendations to generate", 
+    min_value=1, 
+    max_value=1000, 
+    value=50, 
+    step=10
+)
+
 # Generate button
 if st.button("🎯 Generate Recommendations"):
     with st.spinner("Crunching data..."):
-        st.session_state.offset = 0
+        st.session_state.offset = custom_rec_count  # 👈 Set offset to match initial display count
         # Apply override only if values are non-zero
         effective_min = manual_min if manual_min > 0 else min_slider
         effective_max = manual_max if manual_max > 0 else max_slider
@@ -106,7 +115,7 @@ if st.button("🎯 Generate Recommendations"):
         update_cb = streamlit_progress_callback() if filter_existing else None
 
         all_recs = generate_recommendations(
-            top_n=50,
+            top_n=custom_rec_count,
             save=False,
             min_scrobbles=effective_min,
             max_scrobbles=effective_max,
@@ -119,7 +128,7 @@ if st.button("🎯 Generate Recommendations"):
             st.session_state.all_filtered = pd.DataFrame(columns=['Artist Name(s)', 'Track Name', 'Scrobbles'])
         else:
             filtered = all_recs.reset_index(drop=True)
-            st.session_state.recs = filtered.head(50)
+            st.session_state.recs = filtered.head(custom_rec_count)  # 👈 Display as many as requested
             st.session_state.all_filtered = filtered
 
 # Load More button (always visible, fetches next batch correctly)
