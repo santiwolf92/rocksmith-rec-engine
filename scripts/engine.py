@@ -108,9 +108,6 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
         'Artist Name(s)', 'Track Name', 'Artist Normalized'
     ]].drop_duplicates()
 
-    missing_songs['Artist Normalized'] = missing_songs['Artist Name(s)'].apply(normalize)
-    artist_priority['Artist Normalized'] = artist_priority['Artist Name(s)'].apply(normalize)
-
     missing_songs = missing_songs.merge(
         artist_priority[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']],
         on='Artist Normalized',
