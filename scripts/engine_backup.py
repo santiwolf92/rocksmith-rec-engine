@@ -34,8 +34,6 @@ def load_and_prepare_data():
     top_df = pd.read_csv(BASE_PATH / 'spotify_top.csv')
     lastfm_df = pd.read_csv(BASE_PATH / 'lastfm_top_artists.csv')
     lastfm_df = lastfm_df.apply(lambda col: col.map(fix_mojibake))
-    lastfm_df['Artist Normalized'] = lastfm_df['Artist Name(s)'].str.strip().str.lower()
-
 
     for df in [cdlc_df, liked_df, top_df]:
         df['Artist Normalized'] = df['Artist Name(s)'].apply(normalize)
@@ -75,32 +73,16 @@ def generate_recommendations(top_n=50, save=True, min_scrobbles=0, max_scrobbles
     )
 
     missing_songs = merged[merged['_merge'] == 'left_only'][[
-    'Artist Name(s)', 'Track Name', 'Artist Normalized']].drop_duplicates()
+        'Artist Name(s)', 'Track Name', 'Artist Normalized']].drop_duplicates()
 
-    # 🧼 Normalize both sides with same logic
-    missing_songs['Artist Normalized'] = missing_songs['Artist Name(s)'].apply(normalize)
-    artist_priority['Artist Normalized'] = artist_priority['Artist Name(s)'].apply(normalize)
-    
-    # 🔁 Merge in scrobbles
     missing_songs = missing_songs.merge(
         artist_priority[['Artist Name(s)', 'Scrobbles', 'Artist Normalized']],
         on='Artist Normalized',
         how='left',
         suffixes=('', '_LastFM')
     )
-    
-    # ✅ Fill in missing scrobble data
+    # ✅ Clean up NaNs in scrobbles
     missing_songs['Scrobbles'] = missing_songs['Scrobbles'].fillna(0).astype(int)
-    
-    # === 🔍 DIAGNOSTIC CHECK FOR ADELE ===
-    import streamlit as st
-
-    st.subheader("🎯 In artist_priority.csv:")
-    st.dataframe(adele_priority[['Artist Name(s)', 'Artist Normalized', 'Scrobbles']])
-    
-    st.subheader("👻 In missing_songs:")
-    st.dataframe(adele_missing[['Artist Name(s)', 'Artist Normalized', 'Scrobbles']])
-
 
     recommendations = missing_songs.sort_values(by='Scrobbles', ascending=False)
     recommendations = recommendations.reset_index(drop=True)
