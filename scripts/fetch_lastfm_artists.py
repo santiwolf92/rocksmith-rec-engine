@@ -45,7 +45,7 @@ if __name__ == "__main__":
     repo_root = Path(__file__).resolve().parent.parent
     file_path = repo_root / "data" / "lastfm_top_artists.csv"
     df.to_csv(file_path, index=False)
-    print(f"✅ Last.fm artist scrobble data saved to: {file_path}")
+    print(f"[OK] Last.fm artist scrobble data saved to: {file_path}")
 
     if AUTO_COMMIT:
         try:
