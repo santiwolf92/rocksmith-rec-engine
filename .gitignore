@@ -17,3 +17,5 @@ __pycache__/
 # Local cookies file (DO NOT TRACK)
 cookies.py
 
+scripts/.env
+
