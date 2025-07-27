@@ -40,3 +40,14 @@ if __name__ == "__main__":
     output_path = Path(__file__).resolve().parent.parent / "data" / "lastfm_top_artists.csv"
     df.to_csv(output_path, index=False)
     print(f"✅ Last.fm artist scrobble data saved to: {output_path}")
+
+import subprocess
+
+# Git add + commit automatically
+try:
+    subprocess.run(["git", "add", "data/lastfm_top_artists.csv"], check=True)
+    subprocess.run(["git", "commit", "-m", "Update lastfm_top_artists.csv from fetch script"], check=True)
+    print("✅ File committed to Git")
+except subprocess.CalledProcessError as e:
+    print("⚠️ Git commit failed. Reason:", e)
+
