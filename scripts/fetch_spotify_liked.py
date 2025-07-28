@@ -1,17 +1,22 @@
 import os
+import requests
+import pandas as pd
+import subprocess
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Force absolute path to .env in root regardless of where script is run
+# === Load .env from root ===
 repo_root = Path(__file__).resolve().parent.parent
 load_dotenv(dotenv_path=repo_root / ".env")
 
+# === Fetch credentials ===
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
+REFRESH_TOKEN = os.getenv("SPOTIFY_REFRESH_TOKEN")
 
-# ✅ Safe debug print
-refresh_token = os.getenv("SPOTIFY_REFRESH_TOKEN")
-print("🧪 DEBUG ENV:", CLIENT_ID, CLIENT_SECRET[:4] if CLIENT_SECRET else None, "...", refresh_token[:6] if refresh_token else None)
+# ✅ Debug print
+print("🧪 DEBUG ENV:", CLIENT_ID, CLIENT_SECRET[:4] if CLIENT_SECRET else None, "...", REFRESH_TOKEN[:6] if REFRESH_TOKEN else None)
+
 
 # === Paths and flags ===
 repo_root = Path(__file__).resolve().parent.parent
