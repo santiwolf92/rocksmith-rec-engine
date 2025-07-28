@@ -2,6 +2,7 @@
 
 import requests
 from urllib.parse import quote_plus
+
 try:
     from cookies import cookies
 except (ImportError, AttributeError):
@@ -10,7 +11,7 @@ except (ImportError, AttributeError):
 
 def cdlc_exists_on_customsforge(artist, track):
     search_term = f"{artist} {track}"
-    encoded_term = quote_plus(search_term.lower())
+    encoded_term = quote_plus(search_term)
 
     headers = {
         "accept": "application/json, text/javascript, */*; q=0.01",
@@ -31,10 +32,15 @@ def cdlc_exists_on_customsforge(artist, track):
 
     url = "https://ignition4.customsforge.com/"
     try:
-        response = requests.get(url, headers=headers, cookies=cookies, params=params, timeout=10)
+        response = requests.get(url, headers=headers, cookies=cookies, params=params, timeout=20)
         if response.status_code == 200:
             data = response.json().get("data", [])
-            return len(data) > 0
+            if data:
+                first_result = data[0]
+                cdlc_id = first_result.get("id")
+                if cdlc_id:
+                    return f"https://ignition4.customsforge.com/cdlc/{cdlc_id}"
+            return False  # no match
         else:
             print(f"⚠️ CF search failed with status {response.status_code} for: {artist} — {track}")
             return False
