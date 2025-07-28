@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 
 # === Load credentials from .env ===
 from dotenv import load_dotenv, find_dotenv
-
 load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
