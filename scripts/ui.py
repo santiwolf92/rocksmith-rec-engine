@@ -34,11 +34,15 @@ if st.sidebar.button("🔄 Refresh Last.fm Data"):
     refresh_lastfm_data()
 
 # Refresh Spotify Liked
+from pathlib import Path
+
+spotify_script_path = Path(__file__).parent / "fetch_spotify_liked.py"
+
 if st.sidebar.button("🔄 Refresh Spotify Liked Songs"):
     with st.spinner("Fetching your liked Spotify tracks..."):
         try:
             result = subprocess.run(
-                ["python", "fetch_spotify_liked.py"],
+                ["python", str(spotify_script_path)],
                 capture_output=True,
                 text=True,
                 check=True,
