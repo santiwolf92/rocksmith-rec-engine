@@ -5,17 +5,18 @@ import subprocess
 from pathlib import Path
 from dotenv import load_dotenv
 
-# === Load .env from root ===
+# === Always resolve .env relative to /scripts location ===
 repo_root = Path(__file__).resolve().parent.parent
-load_dotenv(dotenv_path=repo_root / ".env")
+env_path = repo_root / ".env"
+load_dotenv(dotenv_path=env_path)
 
-# === Fetch credentials ===
+# === Load credentials ===
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 REFRESH_TOKEN = os.getenv("SPOTIFY_REFRESH_TOKEN")
 
-# ✅ Debug print
 print("🧪 DEBUG ENV:", CLIENT_ID, CLIENT_SECRET[:4] if CLIENT_SECRET else None, "...", REFRESH_TOKEN[:6] if REFRESH_TOKEN else None)
+
 
 
 # === Paths and flags ===
