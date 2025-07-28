@@ -6,8 +6,12 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # === Load credentials from .env ===
-from dotenv import load_dotenv, find_dotenv
-load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")
+# === Load credentials from .env ===
+from dotenv import load_dotenv
+from pathlib import Path
+
+load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")  # 👈 force loading from root
+
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID")
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 
