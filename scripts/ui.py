@@ -33,6 +33,22 @@ st.sidebar.subheader("🎵 Last.fm Sync")
 if st.sidebar.button("🔄 Refresh Last.fm Data"):
     refresh_lastfm_data()
 
+if st.sidebar.button("🔄 Refresh Spotify Liked Songs"):
+    with st.spinner("Fetching your liked Spotify tracks..."):
+        try:
+            result = subprocess.run(
+                ["python", "fetch_spotify_liked.py"],
+                cwd="scripts",
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+            st.success("✅ Spotify liked songs updated successfully!")
+            st.text(result.stdout)
+        except subprocess.CalledProcessError as e:
+            st.error("❌ Failed to refresh Spotify liked songs.")
+            st.text(e.stderr)
+
 # Paste Cookies section
 st.sidebar.subheader("🔑 Paste Cookies")
 with st.sidebar.expander("Paste and Save CustomForge Cookies"):
