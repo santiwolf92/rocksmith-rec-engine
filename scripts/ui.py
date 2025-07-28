@@ -33,12 +33,12 @@ st.sidebar.subheader("🎵 Last.fm Sync")
 if st.sidebar.button("🔄 Refresh Last.fm Data"):
     refresh_lastfm_data()
 
+# Refresh Spotify Liked
 if st.sidebar.button("🔄 Refresh Spotify Liked Songs"):
     with st.spinner("Fetching your liked Spotify tracks..."):
         try:
             result = subprocess.run(
                 ["python", "fetch_spotify_liked.py"],
-                cwd="scripts",
                 capture_output=True,
                 text=True,
                 check=True,
