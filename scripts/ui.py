@@ -140,7 +140,7 @@ def streamlit_progress_callback():
 custom_rec_count = st.number_input(
     "Number of recommendations to generate", 
     min_value=1, 
-    max_value=1000, 
+    max_value=5000, 
     value=50, 
     step=10
 )
