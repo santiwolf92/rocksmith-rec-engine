@@ -62,7 +62,7 @@ def cdlc_exists_on_customsforge(artist, track):
                 elif similarity < 0.50:
                     print(f"❌ Likely mismatch: searched '{track}', got '{result_title}' (sim={similarity:.2f})")
                 else:
-                    print(f"⚠️ Borderline match: searched '{track}', got '{result_title}' (sim={similarity:.2f})")
+                    print(f"🟡 Borderline match: searched '{track}', got '{result_title}' (sim={similarity:.2f}) — NOT included but might be close")
 
             return False
         else:
