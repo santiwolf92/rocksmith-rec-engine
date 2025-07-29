@@ -49,7 +49,7 @@ def cdlc_exists_on_customsforge(artist, track):
                 first_result = data[0]
                 print(f"🔍 First CF result raw data: {first_result}")  # << Debug print
 
-                result_title = first_result.get("Title", "").strip()
+                result_title = first_result.get("title", "").strip()
 
                 query_title = normalize_title(track)
                 matched_title = normalize_title(result_title)
