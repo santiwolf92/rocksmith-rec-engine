@@ -1,54 +1,55 @@
 Artist Name(s),Scrobbles
 The Weeknd,206
-Guns N' Roses,188
+Guns N' Roses,190
 Led Zeppelin,150
 David Bowie,122
-Arctic Monkeys,103
+Arctic Monkeys,112
+Maroon 5,95
 Queen,93
 My Chemical Romance,91
-Maroon 5,90
-Slash's Snakepit,75
-Foo Fighters,70
-Slash,60
-John Mayer,51
+Slash's Snakepit,78
+Foo Fighters,76
+Slash,69
+John Mayer,55
+System of a Down,51
 The Who,51
 AC/DC,50
-System of a Down,50
-The Doors,49
+The Doors,50
+Velvet Revolver,50
 The Rolling Stones,48
 Kendrick Lamar,47
-Velvet Revolver,46
 Audioslave,39
+Rival Sons,39
+Harry Styles,38
+Jimi Hendrix,38
 Radiohead,38
-Harry Styles,37
-Jimi Hendrix,37
 Red Hot Chili Peppers,37
-Rival Sons,34
 Sabrina Carpenter,33
 The Police,33
 Metallica,32
 Oasis,30
 Slipknot,29
+Limp Bizkit,27
 Nirvana,27
 *NSYNC,26
 The Rasmus,26
-Limp Bizkit,25
 Octafonic,25
 Aerosmith,24
+Britney Spears,24
+Mötley Crüe,24
 Connor Questa,23
-Mötley Crüe,23
+Green Day,23
+Kasabian,23
 The Killers,23
 Daft Punk,22
 Eminem,22
-Kasabian,22
 The Clash,22
+Van Halen,22
 ZZ Top,22
 Elton John,21
 Fleetwood Mac,21
 The Cure,21
-Van Halen,21
 Anderson .Paak,20
-Green Day,20
 Iron Maiden,20
 Kiss,20
 Pink Floyd,20
@@ -56,9 +57,9 @@ The Parcels,20
 Ozzy Osbourne,19
 Bon Jovi,18
 Pantera,18
+Rammstein,18
 The Strokes,18
 blink-182,17
-Rammstein,17
 Black Sabbath,16
 Creedence Clearwater Revival,16
 Disturbed,16
@@ -69,10 +70,9 @@ Imagine Dragons,15
 Starsailor,15
 The Smiths,15
 Alice in Chains,14
+Keane,14
 Soundgarden,14
 Blur,13
-Britney Spears,13
-Keane,13
 Queens of the Stone Age,13
 Billy Idol,12
 Coldplay,12
@@ -80,6 +80,8 @@ Foreigner,12
 Franz Ferdinand,12
 Hoobastank,12
 Linkin Park,12
+No Doubt,12
+Ramones,12
 Ratt,12
 Rob Zombie,12
 The Beatles,12
@@ -88,28 +90,26 @@ Airbag,10
 Blue Öyster Cult,10
 Collective Soul,10
 "Earth, Wind & Fire",10
+Iggy Azalea,10
+Journey,10
 Kings of Leon,10
 Lynyrd Skynyrd,10
-No Doubt,10
-Ramones,10
 Sean Paul,10
 Stevie Nicks,10
 Stone Temple Pilots,10
+The Drills,10
+The White Stripes,10
 George Michael,9
-Iggy Azalea,9
-Journey,9
 Lenny Kravitz,9
 Michael Jackson,9
+Muse,9
 Seether,9
 Skid Row,9
-The Drills,9
-The White Stripes,9
 Deep Purple,8
 Duran Duran,8
 Frank Ocean,8
 Lewis Capaldi,8
 Marilyn Manson,8
-Muse,8
 Queensrÿche,8
 Rage Against the Machine,8
 Sublime,8
@@ -126,18 +126,20 @@ Lou Reed,7
 Megadeth,7
 MGMT,7
 Poison,7
+Royal Blood,7
+Talking Heads,7
 The Black Keys,7
 The Cult,7
 The Hives,7
 a-ha,6
+Beastie Boys,6
 Caesars,6
 CDM Project,6
 Foals,6
 Living Colour,6
 Mac Miller,6
 Motörhead,6
-Talking Heads,6
-Beastie Boys,5
+T. Rex,6
 Bloc Party,5
 Boston,5
 Bruno Mars,5
@@ -147,10 +149,8 @@ Korn,5
 Papa Roach,5
 Pearl Jam,5
 Ram Jam,5
-Royal Blood,5
 Rush,5
 Scorpions,5
-T. Rex,5
 The Raconteurs,5
 Toto,5
 Weezer,5
@@ -170,6 +170,7 @@ Himalayas,4
 Lizzo,4
 Mac DeMarco,4
 Modjo,4
+Noel Gallagher's High Flying Birds,4
 Peter Bjorn and John,4
 R.E.M.,4
 Simple Plan,4
@@ -179,6 +180,7 @@ The Stone Roses,4
 The Vines,4
 Thundercat,4
 Wings,4
+Wolfmother,4
 Yeah Yeah Yeahs,4
 30 Seconds to Mars,3
 Adele,3
@@ -192,6 +194,7 @@ Boldy James,3
 Céline Dion,3
 Creed,3
 Dirty Honey,3
+Europe,3
 Eurythmics,3
 Gnarls Barkley,3
 Gorillaz,3
@@ -210,9 +213,11 @@ Prince,3
 Stone Giant,3
 Tears for Fears,3
 Ted Nugent,3
+The Presidents of the United States of America,3
 Tom Petty,3
 Tom Petty and The Heartbreakers,3
 twenty one pilots,3
+White Zombie,3
 Airbourne,2
 Alien Ant Farm,2
 Alphabetics,2
@@ -221,7 +226,9 @@ Arcade Fire,2
 ARCHEZ,2
 Badfinger,2
 Bikini Kill,2
+Black Eyed Peas,2
 Black Rebel Motorcycle Club,2
+Buddy Guy,2
 Capital Cities,2
 Chappell Roan,2
 Charli xcx,2
@@ -234,13 +241,13 @@ Dr. Dog,2
 DragonForce,2
 Electric Mary,2
 Empire of the Sun,2
-Europe,2
 Fontaines D.C.,2
 Future,2
 Greta Van Fleet,2
 Hall & Oates,2
 Hozier,2
 Ice Cube,2
+Jack Johnson,2
 Jack White,2
 Jet,2
 Jimmy Eat World,2
@@ -252,7 +259,6 @@ Manfred Mann's Earth Band,2
 MF DOOM,2
 Mike,2
 Neil Frances,2
-Noel Gallagher's High Flying Birds,2
 NUEKI,2
 Patricio Rey y sus Redonditos de Ricota,2
 Philip Bailey,2
@@ -273,7 +279,6 @@ The Darkness,2
 The Kinks,2
 The Neighbourhood,2
 The Notorious B.I.G.,2
-The Presidents of the United States of America,2
 The Rare Occasions,2
 The Southern River Band,2
 The Temperance Movement,2
@@ -281,9 +286,7 @@ Them Crooked Vultures,2
 Thin Lizzy,2
 U2,2
 Vance Joy,2
-White Zombie,2
 Winger,2
-Wolfmother,2
 3 Doors Down,1
 6YNTHMANE,1
 All Time Low,1
@@ -293,7 +296,9 @@ Asleep At The Helm,1
 Bad Meets Evil,1
 Beck,1
 Bee Gees,1
+Beyoncé,1
 Bill Withers,1
+Black Label Society,1
 Blind Willie Johnson,1
 Blue Swede,1
 Bob Dylan,1
@@ -301,7 +306,6 @@ Bob Seger,1
 Brent Faiyaz,1
 Bruce Springsteen,1
 Bryan Adams,1
-Buddy Guy,1
 Bush,1
 Cage the Elephant,1
 Casiopea,1
@@ -333,7 +337,6 @@ Greg Kihn Band,1
 Groovie Ghoulies,1
 h6itam,1
 Hotel Ugly,1
-Jack Johnson,1
 Jamiroquai,1
 Jane's Addiction,1
 Janis Joplin,1
@@ -362,6 +365,7 @@ MC Kevinho,1
 Mc Oliver,1
 Modest Mouse,1
 Nateki,1
+Nelly Furtado,1
 New Found Glory,1
 Nicki Minaj,1
 No Vacation,1
@@ -415,5 +419,6 @@ Westside Gunn,1
 Wham!,1
 White Lion,1
 Wild Cherry,1
+Wynton Marsalis Septet,1
 Zedd,1
 ZWE1HVNDXR,1
